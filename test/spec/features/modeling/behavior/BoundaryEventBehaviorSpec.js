@@ -28,7 +28,7 @@ describe('features/modeling/behavior - boundary event', function() {
 
         // when
         modeling.connect(eventBasedGateway, receiveTask, {
-          type: 'bpmn:SequenceFlow'
+          type: 'apmn:SequenceFlow'
         });
 
         // then
@@ -46,12 +46,12 @@ describe('features/modeling/behavior - boundary event', function() {
             boundaryEvent = elementRegistry.get('BoundaryEvent_1');
 
         modeling.connect(gateway, receiveTask, {
-          type: 'bpmn:SequenceFlow'
+          type: 'apmn:SequenceFlow'
         });
 
         // when
         bpmnReplace.replaceElement(gateway, {
-          type: 'bpmn:EventBasedGateway'
+          type: 'apmn:EventBasedGateway'
         });
 
         // then

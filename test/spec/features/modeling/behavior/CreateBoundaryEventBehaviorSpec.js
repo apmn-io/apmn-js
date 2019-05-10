@@ -21,8 +21,8 @@ describe('features/modeling/behavior - create boundary events', function() {
 
     // given
     var rootElement = canvas.getRootElement(),
-        task = elementFactory.createShape({ type: 'bpmn:Task' }),
-        intermediateEvent = elementFactory.createShape({ type: 'bpmn:IntermediateThrowEvent' });
+        task = elementFactory.createShape({ type: 'apmn:Task' }),
+        intermediateEvent = elementFactory.createShape({ type: 'apmn:IntermediateThrowEvent' });
 
     modeling.createShape(task, { x: 100, y: 100 }, rootElement);
 
@@ -30,7 +30,7 @@ describe('features/modeling/behavior - create boundary events', function() {
     var newEvent = modeling.createShape(intermediateEvent, { x: 50 + 15, y: 100 }, task, { attach: true });
 
     // then
-    expect(newEvent.type).to.equal('bpmn:BoundaryEvent');
+    expect(newEvent.type).to.equal('apmn:BoundaryEvent');
     expect(newEvent.businessObject.attachedToRef).to.equal(task.businessObject);
   }));
 
@@ -39,8 +39,8 @@ describe('features/modeling/behavior - create boundary events', function() {
 
     // given
     var rootElement = canvas.getRootElement(),
-        subProcess = elementFactory.createShape({ type: 'bpmn:SubProcess', isExpanded: true }),
-        intermediateEvent = elementFactory.createShape({ type: 'bpmn:IntermediateThrowEvent' });
+        subProcess = elementFactory.createShape({ type: 'apmn:SubProcess', isExpanded: true }),
+        intermediateEvent = elementFactory.createShape({ type: 'apmn:IntermediateThrowEvent' });
 
 
     modeling.createShape(subProcess, { x: 300, y: 200 }, rootElement);
@@ -50,7 +50,7 @@ describe('features/modeling/behavior - create boundary events', function() {
 
     // then
     expect(newEvent).to.exist;
-    expect(newEvent.type).to.equal('bpmn:IntermediateThrowEvent');
+    expect(newEvent.type).to.equal('apmn:IntermediateThrowEvent');
   }));
 
 });

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Definitions_1" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="1.9.0-dev">
+<bpmn:definitions xmlns:bpmn="http://apmn.io/spec/APMN/MODEL" xmlns:bpmndi="http://apmn.io/spec/APMN/DI" xmlns:di="http://apmn.io/spec/DD/DI" xmlns:dc="http://apmn.io/spec/DD/DC" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Definitions_1" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="1.9.0-dev">
   <bpmn:process id="Process_1" isExecutable="false">
     <bpmn:startEvent id="StartEvent_1">
       <bpmn:outgoing>SequenceFlow_1</bpmn:outgoing>
@@ -10,18 +10,18 @@
     <bpmn:sequenceFlow id="SequenceFlow_1" sourceRef="StartEvent_1" targetRef="Task_1" />
     <bpmn:task id="Task_099t40a" />
   </bpmn:process>
-  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
-    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Process_1">
-      <bpmndi:BPMNShape id="StartEvent_1oc4unz_di" bpmnElement="StartEvent_1">
+  <bpmndi:APMNDiagram id="BPMNDiagram_1">
+    <bpmndi:APMNPlane id="BPMNPlane_1" apmnElement="Process_1">
+      <bpmndi:APMNShape id="StartEvent_1oc4unz_di" apmnElement="StartEvent_1">
         <dc:Bounds x="70" y="49" width="36" height="36" />
-        <bpmndi:BPMNLabel>
+        <bpmndi:APMNLabel>
           <dc:Bounds x="88" y="88" width="0" height="13" />
-        </bpmndi:BPMNLabel>
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Task_1ndpsyi_di" bpmnElement="Task_1">
+        </bpmndi:APMNLabel>
+      </bpmndi:APMNShape>
+      <bpmndi:APMNShape id="Task_1ndpsyi_di" apmnElement="Task_1">
         <dc:Bounds x="538" y="405" width="100" height="80" />
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNEdge id="SequenceFlow_1mpqh64_di" bpmnElement="SequenceFlow_1">
+      </bpmndi:APMNShape>
+      <bpmndi:APMNEdge id="SequenceFlow_1mpqh64_di" apmnElement="SequenceFlow_1">
         <di:waypoint xsi:type="dc:Point" x="106" y="67" />
         <di:waypoint xsi:type="dc:Point" x="191" y="67" />
         <di:waypoint xsi:type="dc:Point" x="191" y="134" />
@@ -29,13 +29,13 @@
         <di:waypoint xsi:type="dc:Point" x="304" y="325" />
         <di:waypoint xsi:type="dc:Point" x="588" y="325" />
         <di:waypoint xsi:type="dc:Point" x="588" y="405" />
-        <bpmndi:BPMNLabel>
+        <bpmndi:APMNLabel>
           <dc:Bounds x="247.5" y="112.5" width="0" height="13" />
-        </bpmndi:BPMNLabel>
-      </bpmndi:BPMNEdge>
-      <bpmndi:BPMNShape id="Task_099t40a_di" bpmnElement="Task_099t40a">
+        </bpmndi:APMNLabel>
+      </bpmndi:APMNEdge>
+      <bpmndi:APMNShape id="Task_099t40a_di" apmnElement="Task_099t40a">
         <dc:Bounds x="118" y="405" width="100" height="80" />
-      </bpmndi:BPMNShape>
-    </bpmndi:BPMNPlane>
-  </bpmndi:BPMNDiagram>
+      </bpmndi:APMNShape>
+    </bpmndi:APMNPlane>
+  </bpmndi:APMNDiagram>
 </bpmn:definitions>

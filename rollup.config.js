@@ -16,15 +16,15 @@ const outputDir = 'dist';
 const distros = [
   {
     input: 'Viewer',
-    output: 'bpmn-viewer'
+    output: 'apmn-viewer'
   },
   {
     input: 'NavigatedViewer',
-    output: 'bpmn-navigated-viewer'
+    output: 'apmn-navigated-viewer'
   },
   {
     input: 'Modeler',
-    output: 'bpmn-modeler'
+    output: 'apmn-modeler'
   }
 ];
 

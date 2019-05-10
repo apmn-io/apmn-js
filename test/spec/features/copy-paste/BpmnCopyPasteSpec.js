@@ -85,7 +85,7 @@ describe('features/copy-paste', function() {
         // then
         expect(tree.getLength()).to.equal(1);
 
-        expect(eventDescriptor.type).to.eql('bpmn:StartEvent');
+        expect(eventDescriptor.type).to.eql('apmn:StartEvent');
       }));
 
     });
@@ -122,7 +122,7 @@ describe('features/copy-paste', function() {
         expect(rootElement.children).to.have.length(9);
 
         var pastedElements = elementRegistry.filter(function(e) {
-          return e !== element && is(e, 'bpmn:SubProcess');
+          return e !== element && is(e, 'apmn:SubProcess');
         });
 
         expect(pastedElements[0].id).not.to.equal(pastedElements[1].id);
@@ -156,11 +156,11 @@ describe('features/copy-paste', function() {
           });
 
           newEvent = elementRegistry.filter(function(element) {
-            return element.parent === rootElement && element.type === 'bpmn:StartEvent';
+            return element.parent === rootElement && element.type === 'apmn:StartEvent';
           })[0];
 
           newFlow = elementRegistry.filter(function(element) {
-            return element.parent === rootElement && element.type === 'bpmn:SequenceFlow';
+            return element.parent === rootElement && element.type === 'apmn:SequenceFlow';
           })[0];
 
           // then
@@ -197,15 +197,15 @@ describe('features/copy-paste', function() {
           });
 
           task = elementRegistry.filter(function(element) {
-            return element.type === 'bpmn:Task';
+            return element.type === 'apmn:Task';
           })[0];
 
           defaultFlow = elementRegistry.filter(function(element) {
-            return !!(element.type === 'bpmn:SequenceFlow' && task.businessObject.default.id === element.id);
+            return !!(element.type === 'apmn:SequenceFlow' && task.businessObject.default.id === element.id);
           })[0];
 
           conditionalFlow = elementRegistry.filter(function(element) {
-            return !!(element.type === 'bpmn:SequenceFlow' && element.businessObject.conditionExpression);
+            return !!(element.type === 'apmn:SequenceFlow' && element.businessObject.conditionExpression);
           })[0];
 
           expect(defaultFlow).to.exist;
@@ -236,12 +236,12 @@ describe('features/copy-paste', function() {
           });
 
           subProcess = elementRegistry.filter(function(element) {
-            return !!(element.id !== 'SubProcess_1kd6ist' && element.type === 'bpmn:SubProcess');
+            return !!(element.id !== 'SubProcess_1kd6ist' && element.type === 'apmn:SubProcess');
           })[0];
 
           loopCharacteristics = subProcess.businessObject.loopCharacteristics;
 
-          expect(loopCharacteristics.$type).to.equal('bpmn:MultiInstanceLoopCharacteristics');
+          expect(loopCharacteristics.$type).to.equal('apmn:MultiInstanceLoopCharacteristics');
           expect(loopCharacteristics.isSequential).to.be.true;
         })
       );
@@ -275,11 +275,11 @@ describe('features/copy-paste', function() {
           });
 
           newTask = elementRegistry.filter(function(element) {
-            return element.parent === rootElement && element.type === 'bpmn:Task' && element.id !== 'Task_1fo63a7';
+            return element.parent === rootElement && element.type === 'apmn:Task' && element.id !== 'Task_1fo63a7';
           })[0];
 
           // then
-          expect(newTask.type).to.equal('bpmn:Task');
+          expect(newTask.type).to.equal('apmn:Task');
           expect(newTask.businessObject.di.fill).to.equal(fill);
           expect(newTask.businessObject.di.stroke).to.equal(stroke);
         })
@@ -344,7 +344,7 @@ describe('features/copy-paste', function() {
         copyPasteElement(elementRegistry, canvas, copyPaste, modeling, 'Sub_non_interrupt');
 
         var subProcess = elementRegistry.filter(function(element) {
-          return element.type === 'bpmn:SubProcess' && (subProcesses.indexOf(element.id) === -1);
+          return element.type === 'apmn:SubProcess' && (subProcesses.indexOf(element.id) === -1);
         })[0];
 
         var nonInterruptEvt = subProcess.attachers[0].businessObject;
@@ -362,7 +362,7 @@ describe('features/copy-paste', function() {
         copyPasteElement(elementRegistry, canvas, copyPaste, modeling, 'Sub_event_subprocess');
 
         var subProcess = elementRegistry.filter(function(element) {
-          return element.type === 'bpmn:SubProcess' && (subProcesses.indexOf(element.id) === -1);
+          return element.type === 'apmn:SubProcess' && (subProcesses.indexOf(element.id) === -1);
         })[0];
 
         expect(subProcess.businessObject.triggeredByEvent).to.be.true;
@@ -378,7 +378,7 @@ describe('features/copy-paste', function() {
         copyPasteElement(elementRegistry, canvas, copyPaste, modeling, 'Sub_interrupt');
 
         var subProcess = elementRegistry.filter(function(element) {
-          return element.type === 'bpmn:SubProcess' && (subProcesses.indexOf(element.id) === -1);
+          return element.type === 'apmn:SubProcess' && (subProcesses.indexOf(element.id) === -1);
         })[0];
 
         var interruptEvt = subProcess.attachers[0].businessObject;
@@ -396,7 +396,7 @@ describe('features/copy-paste', function() {
         copyPasteElement(elementRegistry, canvas, copyPaste, modeling, 'Sub_transaction');
 
         var transaction = elementRegistry.filter(function(element) {
-          return element.type === 'bpmn:Transaction';
+          return element.type === 'apmn:Transaction';
         })[0];
 
         expect(transaction).to.exist;
@@ -466,7 +466,7 @@ describe('features/copy-paste', function() {
 
           var participant = elementRegistry.get('Participant_145muai'),
               otherParticipant = elementRegistry.get('Participant_0uu1rvj'),
-              startEvent = elementFactory.create('shape', { type: 'bpmn:StartEvent' }),
+              startEvent = elementFactory.create('shape', { type: 'apmn:StartEvent' }),
               rootElement;
 
           var pasteRejected = sinon.spy(function() {});
@@ -603,7 +603,7 @@ describe('features/copy-paste', function() {
 
         // then
         var elements = elementRegistry.filter(function(element) {
-          return element.type === 'bpmn:Participant';
+          return element.type === 'apmn:Participant';
         });
 
         var processIds = map(elements, function(e) {
@@ -657,7 +657,7 @@ describe('features/copy-paste', function() {
         });
 
         newTask = filter(participant.children, function(element) {
-          return is(element, 'bpmn:Task');
+          return is(element, 'apmn:Task');
         })[0];
 
         // then

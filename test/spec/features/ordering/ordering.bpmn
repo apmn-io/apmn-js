@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bpmn2:definitions xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="_Sp0bEEZWEeW8AbPIK3dKxg" targetNamespace="http://camunda.org/schema/1.0/bpmn" exporter="Camunda Modeler" exporterVersion="1.2.2" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd">
+<bpmn2:definitions xmlns:bpmn2="http://apmn.io/spec/APMN/MODEL" xmlns:bpmndi="http://apmn.io/spec/APMN/DI" xmlns:di="http://apmn.io/spec/DD/DI" xmlns:dc="http://apmn.io/spec/DD/DC" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="_Sp0bEEZWEeW8AbPIK3dKxg" targetNamespace="http://camunda.org/schema/1.0/bpmn" exporter="Camunda Modeler" exporterVersion="1.2.2" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd">
   <bpmn2:collaboration id="Collaboration">
     <bpmn2:participant id="Participant" name="Participant" processRef="Process_Tasks" />
     <bpmn2:participant id="Participant_StartEvent" name="Participant_StartEvent" processRef="Process_StartEvent" />
@@ -32,74 +32,74 @@
       </bpmn2:dataOutputAssociation>
     </bpmn2:task>
   </bpmn2:process>
-  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
-    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Collaboration">
-      <bpmndi:BPMNShape id="_BPMNShape_Participant_2" bpmnElement="Participant" isHorizontal="true">
+  <bpmndi:APMNDiagram id="BPMNDiagram_1">
+    <bpmndi:APMNPlane id="BPMNPlane_1" apmnElement="Collaboration">
+      <bpmndi:APMNShape id="_BPMNShape_Participant_2" apmnElement="Participant" isHorizontal="true">
         <dc:Bounds x="192" y="108" width="686" height="198" />
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="_BPMNShape_Participant_3" bpmnElement="Participant_StartEvent" isHorizontal="true">
+      </bpmndi:APMNShape>
+      <bpmndi:APMNShape id="_BPMNShape_Participant_3" apmnElement="Participant_StartEvent" isHorizontal="true">
         <dc:Bounds x="192" y="444" width="685" height="160" />
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="_BPMNShape_Task_2" bpmnElement="Task_With_Boundary">
+      </bpmndi:APMNShape>
+      <bpmndi:APMNShape id="_BPMNShape_Task_2" apmnElement="Task_With_Boundary">
         <dc:Bounds x="300" y="144" width="100" height="80" />
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="_BPMNShape_BoundaryEvent_2" bpmnElement="BoundaryEvent">
+      </bpmndi:APMNShape>
+      <bpmndi:APMNShape id="_BPMNShape_BoundaryEvent_2" apmnElement="BoundaryEvent">
         <dc:Bounds x="346" y="206" width="36" height="36" />
-        <bpmndi:BPMNLabel>
+        <bpmndi:APMNLabel>
           <dc:Bounds x="319" y="242" width="90" height="20" />
-        </bpmndi:BPMNLabel>
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="_BPMNShape_Task_3" bpmnElement="Task">
+        </bpmndi:APMNLabel>
+      </bpmndi:APMNShape>
+      <bpmndi:APMNShape id="_BPMNShape_Task_3" apmnElement="Task">
         <dc:Bounds x="480" y="144" width="100" height="80" />
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNEdge id="BPMNEdge_SequenceFlow_1" bpmnElement="SequenceFlow" sourceElement="_BPMNShape_BoundaryEvent_2" targetElement="_BPMNShape_Task_3">
+      </bpmndi:APMNShape>
+      <bpmndi:APMNEdge id="BPMNEdge_SequenceFlow_1" apmnElement="SequenceFlow" sourceElement="_BPMNShape_BoundaryEvent_2" targetElement="_BPMNShape_Task_3">
         <di:waypoint x="364" y="242" />
         <di:waypoint x="364" y="272" />
         <di:waypoint x="530" y="272" />
         <di:waypoint x="530" y="224" />
-        <bpmndi:BPMNLabel>
+        <bpmndi:APMNLabel>
           <dc:Bounds x="429" y="272" width="90" height="6" />
-        </bpmndi:BPMNLabel>
-      </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge id="BPMNEdge_MessageFlow_1" bpmnElement="MessageFlow" sourceElement="_BPMNShape_Task_2" targetElement="_BPMNShape_Participant_3">
+        </bpmndi:APMNLabel>
+      </bpmndi:APMNEdge>
+      <bpmndi:APMNEdge id="BPMNEdge_MessageFlow_1" apmnElement="MessageFlow" sourceElement="_BPMNShape_Task_2" targetElement="_BPMNShape_Participant_3">
         <di:waypoint x="326" y="224" />
         <di:waypoint x="326" y="444" />
-        <bpmndi:BPMNLabel>
+        <bpmndi:APMNLabel>
           <dc:Bounds x="370" y="334" width="6" height="6" />
-        </bpmndi:BPMNLabel>
-      </bpmndi:BPMNEdge>
-      <bpmndi:BPMNShape id="_BPMNShape_StartEvent_2" bpmnElement="StartEvent">
+        </bpmndi:APMNLabel>
+      </bpmndi:APMNEdge>
+      <bpmndi:APMNShape id="_BPMNShape_StartEvent_2" apmnElement="StartEvent">
         <dc:Bounds x="271" y="495" width="36" height="36" />
-        <bpmndi:BPMNLabel>
+        <bpmndi:APMNLabel>
           <dc:Bounds x="244" y="531" width="90" height="20" />
-        </bpmndi:BPMNLabel>
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="DataStore_di" bpmnElement="DataStore">
+        </bpmndi:APMNLabel>
+      </bpmndi:APMNShape>
+      <bpmndi:APMNShape id="DataStore_di" apmnElement="DataStore">
         <dc:Bounds x="629" y="159" width="50" height="50" />
-        <bpmndi:BPMNLabel>
+        <bpmndi:APMNLabel>
           <dc:Bounds x="641" y="129" width="27" height="14" />
-        </bpmndi:BPMNLabel>
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Task_1w5ze4k_di" bpmnElement="Task_With_Input">
+        </bpmndi:APMNLabel>
+      </bpmndi:APMNShape>
+      <bpmndi:APMNShape id="Task_1w5ze4k_di" apmnElement="Task_With_Input">
         <dc:Bounds x="604" y="473" width="100" height="80" />
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNEdge id="DataInputAssociation_1ubbgym_di" bpmnElement="DataInputAssociation">
+      </bpmndi:APMNShape>
+      <bpmndi:APMNEdge id="DataInputAssociation_1ubbgym_di" apmnElement="DataInputAssociation">
         <di:waypoint x="654" y="209" />
         <di:waypoint x="654" y="473" />
-      </bpmndi:BPMNEdge>
-      <bpmndi:BPMNShape id="DataStoreReference_0jbctd4_di" bpmnElement="DataStore_With_Output">
+      </bpmndi:APMNEdge>
+      <bpmndi:APMNShape id="DataStoreReference_0jbctd4_di" apmnElement="DataStore_With_Output">
         <dc:Bounds x="772" y="159" width="50" height="50" />
-        <bpmndi:BPMNLabel>
+        <bpmndi:APMNLabel>
           <dc:Bounds x="752" y="209" width="90" height="20" />
-        </bpmndi:BPMNLabel>
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Task_0vcqjeq_di" bpmnElement="Task_With_Output">
+        </bpmndi:APMNLabel>
+      </bpmndi:APMNShape>
+      <bpmndi:APMNShape id="Task_0vcqjeq_di" apmnElement="Task_With_Output">
         <dc:Bounds x="747" y="473" width="100" height="80" />
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNEdge id="DataOutputAssociation_1fcd0id_di" bpmnElement="DataOutputAssociation">
+      </bpmndi:APMNShape>
+      <bpmndi:APMNEdge id="DataOutputAssociation_1fcd0id_di" apmnElement="DataOutputAssociation">
         <di:waypoint x="797" y="473" />
         <di:waypoint x="797" y="209" />
-      </bpmndi:BPMNEdge>
-    </bpmndi:BPMNPlane>
-  </bpmndi:BPMNDiagram>
+      </bpmndi:APMNEdge>
+    </bpmndi:APMNPlane>
+  </bpmndi:APMNDiagram>
 </bpmn2:definitions>

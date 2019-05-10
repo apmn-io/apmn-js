@@ -384,7 +384,7 @@ describe('features - context-pad', function() {
 
         // disallow replacement
         customRules.addRule('shape.replace', function(context) {
-          return !is(context.element, 'bpmn:StartEvent');
+          return !is(context.element, 'apmn:StartEvent');
         });
 
         // when
@@ -406,7 +406,7 @@ describe('features - context-pad', function() {
 
         // disallow replacement
         customRules.addRule('shape.replace', function(context) {
-          return !is(context.element, 'bpmn:StartEvent');
+          return !is(context.element, 'apmn:StartEvent');
         });
 
         // when
@@ -427,7 +427,7 @@ describe('features - context-pad', function() {
 
           // given
           var rootShape = canvas.getRootElement(),
-              startEvent = elementFactory.createShape({ type: 'bpmn:StartEvent' }),
+              startEvent = elementFactory.createShape({ type: 'apmn:StartEvent' }),
               replaceMenu;
 
           // when
@@ -452,8 +452,8 @@ describe('features - context-pad', function() {
 
           // given
           var rootShape = canvas.getRootElement();
-          var task = elementFactory.createShape({ type: 'bpmn:Task' });
-          var intermediateEvent = elementFactory.createShape({ type: 'bpmn:IntermediateThrowEvent' });
+          var task = elementFactory.createShape({ type: 'apmn:Task' });
+          var intermediateEvent = elementFactory.createShape({ type: 'apmn:IntermediateThrowEvent' });
 
           modeling.createShape(task, { x: 100, y: 100 }, rootShape);
 
@@ -478,7 +478,7 @@ describe('features - context-pad', function() {
         function(create, dragging, canvas, elementFactory) {
           // given
           var rootShape = canvas.getRootElement(),
-              dataObject = elementFactory.createShape({ type: 'bpmn:DataObjectReference' }),
+              dataObject = elementFactory.createShape({ type: 'apmn:DataObjectReference' }),
               replaceMenu;
 
           // when

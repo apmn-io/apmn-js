@@ -127,7 +127,7 @@ describe('features/modeling/rules - BpmnRules', function() {
         sequenceFlow: false,
         messageFlow: false,
         association: false,
-        dataAssociation: { type: 'bpmn:DataOutputAssociation' }
+        dataAssociation: { type: 'apmn:DataOutputAssociation' }
       });
     }));
 
@@ -138,7 +138,7 @@ describe('features/modeling/rules - BpmnRules', function() {
         sequenceFlow: false,
         messageFlow: false,
         association: false,
-        dataAssociation: { type: 'bpmn:DataInputAssociation' }
+        dataAssociation: { type: 'apmn:DataInputAssociation' }
       });
     }));
 
@@ -160,7 +160,7 @@ describe('features/modeling/rules - BpmnRules', function() {
         sequenceFlow: false,
         messageFlow: false,
         association: false,
-        dataAssociation: { type: 'bpmn:DataOutputAssociation' }
+        dataAssociation: { type: 'apmn:DataOutputAssociation' }
       });
     }));
 
@@ -171,7 +171,7 @@ describe('features/modeling/rules - BpmnRules', function() {
         sequenceFlow: false,
         messageFlow: false,
         association: false,
-        dataAssociation: { type: 'bpmn:DataInputAssociation' }
+        dataAssociation: { type: 'apmn:DataInputAssociation' }
       });
     }));
 
@@ -182,7 +182,7 @@ describe('features/modeling/rules - BpmnRules', function() {
         sequenceFlow: false,
         messageFlow: false,
         association: false,
-        dataAssociation: { type: 'bpmn:DataOutputAssociation' }
+        dataAssociation: { type: 'apmn:DataOutputAssociation' }
       });
     }));
 
@@ -193,7 +193,7 @@ describe('features/modeling/rules - BpmnRules', function() {
         sequenceFlow: false,
         messageFlow: false,
         association: false,
-        dataAssociation: { type: 'bpmn:DataInputAssociation' }
+        dataAssociation: { type: 'apmn:DataInputAssociation' }
       });
     }));
 
@@ -259,7 +259,7 @@ describe('features/modeling/rules - BpmnRules', function() {
         sequenceFlow: false,
         messageFlow: false,
         association: false,
-        dataAssociation: { type: 'bpmn:DataOutputAssociation' }
+        dataAssociation: { type: 'apmn:DataOutputAssociation' }
       });
     }));
 
@@ -270,7 +270,7 @@ describe('features/modeling/rules - BpmnRules', function() {
         sequenceFlow: false,
         messageFlow: false,
         association: false,
-        dataAssociation: { type: 'bpmn:DataInputAssociation' }
+        dataAssociation: { type: 'apmn:DataInputAssociation' }
       });
     }));
 
@@ -292,7 +292,7 @@ describe('features/modeling/rules - BpmnRules', function() {
         sequenceFlow: false,
         messageFlow: false,
         association: false,
-        dataAssociation: { type: 'bpmn:DataOutputAssociation' }
+        dataAssociation: { type: 'apmn:DataOutputAssociation' }
       });
     }));
 
@@ -303,7 +303,7 @@ describe('features/modeling/rules - BpmnRules', function() {
         sequenceFlow: false,
         messageFlow: false,
         association: false,
-        dataAssociation: { type: 'bpmn:DataInputAssociation' }
+        dataAssociation: { type: 'apmn:DataInputAssociation' }
       });
     }));
 
@@ -314,7 +314,7 @@ describe('features/modeling/rules - BpmnRules', function() {
         sequenceFlow: false,
         messageFlow: false,
         association: false,
-        dataAssociation: { type: 'bpmn:DataOutputAssociation' }
+        dataAssociation: { type: 'apmn:DataOutputAssociation' }
       });
     }));
 
@@ -325,7 +325,7 @@ describe('features/modeling/rules - BpmnRules', function() {
         sequenceFlow: false,
         messageFlow: false,
         association: false,
-        dataAssociation: { type: 'bpmn:DataInputAssociation' }
+        dataAssociation: { type: 'apmn:DataInputAssociation' }
       });
     }));
 
@@ -1261,7 +1261,7 @@ describe('features/modeling/rules - BpmnRules', function() {
 
       // given
       var eventShape = elementFactory.createShape({
-        type: 'bpmn:IntermediateThrowEvent',
+        type: 'apmn:IntermediateThrowEvent',
         x: 413, y: 254
       });
 
@@ -1278,7 +1278,7 @@ describe('features/modeling/rules - BpmnRules', function() {
 
         // given
         var eventShape = elementFactory.createShape({
-          type: 'bpmn:IntermediateThrowEvent',
+          type: 'apmn:IntermediateThrowEvent',
           x: 413, y: 254
         });
 
@@ -1297,7 +1297,7 @@ describe('features/modeling/rules - BpmnRules', function() {
         // given
         var subProcessElement = elementRegistry.get('SubProcess_1');
         var eventShape = elementFactory.createShape({
-          type: 'bpmn:IntermediateThrowEvent',
+          type: 'apmn:IntermediateThrowEvent',
           x: 413, y: 350
         });
 
@@ -1326,7 +1326,7 @@ describe('features/modeling/rules - BpmnRules', function() {
         // given
         var subProcessElement = elementRegistry.get('SubProcess_1');
         var eventShape = elementFactory.createShape({
-          type: 'bpmn:IntermediateThrowEvent',
+          type: 'apmn:IntermediateThrowEvent',
           x: 0, y: 0
         });
 
@@ -1355,7 +1355,7 @@ describe('features/modeling/rules - BpmnRules', function() {
         // given
         var compensationTask = elementRegistry.get('CompensationTask');
         var eventShape = elementFactory.createShape({
-          type: 'bpmn:IntermediateThrowEvent',
+          type: 'apmn:IntermediateThrowEvent',
           x: 0, y: 0
         });
 
@@ -1382,10 +1382,10 @@ describe('features/modeling/rules - BpmnRules', function() {
 
         // given
         var rootElement = canvas.getRootElement(),
-            eventBasedGatewayShape = elementFactory.createShape({ type: 'bpmn:EventBasedGateway' }),
-            receiveTaskShape = elementFactory.createShape({ type: 'bpmn:ReceiveTask' }),
+            eventBasedGatewayShape = elementFactory.createShape({ type: 'apmn:EventBasedGateway' }),
+            receiveTaskShape = elementFactory.createShape({ type: 'apmn:ReceiveTask' }),
             eventShape = elementFactory.createShape({
-              type: 'bpmn:IntermediateThrowEvent',
+              type: 'apmn:IntermediateThrowEvent',
               x: 0, y: 0
             });
 
@@ -1398,7 +1398,7 @@ describe('features/modeling/rules - BpmnRules', function() {
         modeling.createShape(eventBasedGatewayShape, { x: 100, y: 100 }, rootElement);
         modeling.createShape(receiveTaskShape, { x : 150, y: 100 }, rootElement);
         modeling.connect(eventBasedGatewayShape, receiveTaskShape, {
-          type: 'bpmn:SequenceFlow'
+          type: 'apmn:SequenceFlow'
         });
 
         var canAttach = bpmnRules.canAttach(
@@ -1419,7 +1419,7 @@ describe('features/modeling/rules - BpmnRules', function() {
         // given
         var subProcessElement = elementRegistry.get('SubProcess_1');
         var eventShape = elementFactory.createShape({
-          type: 'bpmn:IntermediateThrowEvent',
+          type: 'apmn:IntermediateThrowEvent',
           x: 413, y: 250
         });
 
@@ -1467,7 +1467,7 @@ describe('features/modeling/rules - BpmnRules', function() {
             taskElement = elementRegistry.get('Task_2');
 
         var eventShape = elementFactory.createShape({
-          type: 'bpmn:IntermediateThrowEvent',
+          type: 'apmn:IntermediateThrowEvent',
           x: 413, y: 250
         });
 
@@ -1506,7 +1506,7 @@ describe('features/modeling/rules - BpmnRules', function() {
             taskElement = elementRegistry.get('Task_2');
 
         var eventShape = elementFactory.createShape({
-          type: 'bpmn:IntermediateThrowEvent',
+          type: 'apmn:IntermediateThrowEvent',
           x: 413, y: 250
         });
 
@@ -1547,7 +1547,7 @@ describe('features/modeling/rules - BpmnRules', function() {
         var participantElement = elementRegistry.get('Participant');
 
         var laneShape = elementFactory.createShape({
-          type: 'bpmn:Lane',
+          type: 'apmn:Lane',
           x: 413, y: 250
         });
 
@@ -1565,7 +1565,7 @@ describe('features/modeling/rules - BpmnRules', function() {
         var participantElement = elementRegistry.get('Participant_Lane');
 
         var laneShape = elementFactory.createShape({
-          type: 'bpmn:Lane',
+          type: 'apmn:Lane',
           x: 413, y: 250
         });
 
@@ -1583,7 +1583,7 @@ describe('features/modeling/rules - BpmnRules', function() {
         var subProcessElement = elementRegistry.get('SubProcess');
 
         var laneShape = elementFactory.createShape({
-          type: 'bpmn:Lane',
+          type: 'apmn:Lane',
           x: 413, y: 250
         });
 
@@ -1809,10 +1809,10 @@ describe('features/modeling/rules - BpmnRules', function() {
     it('should allow start for given element types', inject(function(elementFactory, rules) {
       // given
       var types = [
-        'bpmn:FlowNode',
-        'bpmn:InteractionNode',
-        'bpmn:DataObjectReference',
-        'bpmn:DataStoreReference'
+        'apmn:FlowNode',
+        'apmn:InteractionNode',
+        'apmn:DataObjectReference',
+        'apmn:DataStoreReference'
       ];
 
       // when
@@ -1830,7 +1830,7 @@ describe('features/modeling/rules - BpmnRules', function() {
 
     it('should ignore label elements', inject(function(elementFactory, rules) {
       // given
-      var label = elementFactory.createShape({ type: 'bpmn:FlowNode', labelTarget: {} });
+      var label = elementFactory.createShape({ type: 'apmn:FlowNode', labelTarget: {} });
 
       // when
       var result = rules.allowed('connection.start', { source: label });
@@ -1842,7 +1842,7 @@ describe('features/modeling/rules - BpmnRules', function() {
 
     it('should NOT allow start on unknown element', inject(function(rules) {
       // given
-      var element = { type: 'bpmn:SomeUnknownType' };
+      var element = { type: 'apmn:SomeUnknownType' };
 
       // when
       var result = rules.allowed('connection.start', { source: element });

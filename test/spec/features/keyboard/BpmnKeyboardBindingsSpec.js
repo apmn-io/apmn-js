@@ -43,7 +43,7 @@ describe('features/keyboard', function() {
   beforeEach(bootstrapViewer(diagramXML, { modules: testModules }));
 
 
-  describe('bpmn keyboard bindings', function() {
+  describe('apmn keyboard bindings', function() {
 
     it('should include triggers inside editorActions', inject(function(editorActions) {
       // given

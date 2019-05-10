@@ -7,7 +7,7 @@ import modelingModule from 'lib/features/modeling';
 import coreModule from 'lib/core';
 
 
-describe('features - bpmn-factory', function() {
+describe('features - apmn-factory', function() {
 
   var diagramXML = require('../../../fixtures/bpmn/simple.bpmn');
 
@@ -20,30 +20,30 @@ describe('features - bpmn-factory', function() {
 
     it('should return instance', inject(function(bpmnFactory) {
 
-      var task = bpmnFactory.create('bpmn:Task');
+      var task = bpmnFactory.create('apmn:Task');
       expect(task).to.exist;
-      expect(task.$type).to.equal('bpmn:Task');
+      expect(task.$type).to.equal('apmn:Task');
     }));
 
 
     it('should assign id (with semantic prefix)', inject(function(bpmnFactory) {
-      var task = bpmnFactory.create('bpmn:ServiceTask');
+      var task = bpmnFactory.create('apmn:ServiceTask');
 
-      expect(task.$type).to.equal('bpmn:ServiceTask');
+      expect(task.$type).to.equal('apmn:ServiceTask');
       expect(task.id).to.match(/^ServiceTask_/g);
     }));
 
 
     it('should assign id (with semantic prefix)', inject(function(bpmnFactory) {
-      var plane = bpmnFactory.create('bpmndi:BPMNPlane');
+      var plane = bpmnFactory.create('apmndi:APMNPlane');
 
-      expect(plane.$type).to.equal('bpmndi:BPMNPlane');
-      expect(plane.id).to.match(/^BPMNPlane_/g);
+      expect(plane.$type).to.equal('apmndi:APMNPlane');
+      expect(plane.id).to.match(/^APMNPlane_/g);
     }));
 
 
-    it('should assign bpmn:LaneSet id', inject(function(bpmnFactory) {
-      var set = bpmnFactory.create('bpmn:LaneSet');
+    it('should assign apmn:LaneSet id', inject(function(bpmnFactory) {
+      var set = bpmnFactory.create('apmn:LaneSet');
 
       expect(set.id).to.exist;
     }));

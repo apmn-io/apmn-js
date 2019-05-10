@@ -26,7 +26,7 @@ describe('features/modeling - create connection', function() {
 
     // when
     var sequenceFlowConnection = modeling.createConnection(taskShape, gatewayShape, {
-      type: 'bpmn:SequenceFlow'
+      type: 'apmn:SequenceFlow'
     }, taskShape.parent);
 
     var sequenceFlow = sequenceFlowConnection.businessObject;
@@ -109,7 +109,7 @@ describe('features/modeling - create connection', function() {
 
 
     var sequenceFlowConnection = modeling.createConnection(taskShape, gatewayShape, {
-      type: 'bpmn:SequenceFlow'
+      type: 'apmn:SequenceFlow'
     }, taskShape.parent);
 
     var sequenceFlow = sequenceFlowConnection.businessObject;
@@ -137,7 +137,7 @@ describe('features/modeling - create connection', function() {
 
 
     var sequenceFlowConnection = modeling.createConnection(taskShape, gatewayShape, {
-      type: 'bpmn:SequenceFlow'
+      type: 'apmn:SequenceFlow'
     }, taskShape.parent);
 
     var sequenceFlow = sequenceFlowConnection.businessObject;

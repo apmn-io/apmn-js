@@ -63,7 +63,7 @@ describe('features/modeling - ordering', function() {
       it('should add in front of Task', inject(function() {
 
         // when
-        var boundaryShape = attach({ type: 'bpmn:BoundaryEvent' }, { x: 300, y: 80 }, 'Task');
+        var boundaryShape = attach({ type: 'apmn:BoundaryEvent' }, { x: 300, y: 80 }, 'Task');
 
         // then
         expectZOrder('Task', boundaryShape.id);

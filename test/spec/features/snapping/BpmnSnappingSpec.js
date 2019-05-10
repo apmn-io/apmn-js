@@ -43,7 +43,7 @@ describe('features/snapping - BpmnSnapping', function() {
       task = elementRegistry.get('Task_1');
 
       intermediateThrowEvent = elementFactory.createShape({
-        type: 'bpmn:IntermediateThrowEvent'
+        type: 'apmn:IntermediateThrowEvent'
       });
 
       dragging.setOptions({ manual: true });
@@ -114,7 +114,7 @@ describe('features/snapping - BpmnSnapping', function() {
       sequenceFlow = elementRegistry.get('SequenceFlow_1');
 
       task = elementFactory.createShape({
-        type: 'bpmn:Task'
+        type: 'apmn:Task'
       });
 
       dragging.setOptions({ manual: true });

@@ -38,7 +38,7 @@ describe('features/modeling - update properties', function() {
 
         // given
         var loopCharacteristics = moddle.create(
-          'bpmn:MultiInstanceLoopCharacteristics'
+          'apmn:MultiInstanceLoopCharacteristics'
         );
 
         var taskShape = elementRegistry.get('ServiceTask_1');
@@ -129,7 +129,7 @@ describe('features/modeling - update properties', function() {
         var conditionExpression = conditionalBo.conditionExpression;
 
         var userTaskData = {
-          type: 'bpmn:UserTask'
+          type: 'apmn:UserTask'
         };
 
         // when
@@ -152,8 +152,8 @@ describe('features/modeling - update properties', function() {
         var conditionExpression = conditionalBo.conditionExpression;
 
         var messageEndEventData = {
-          type: 'bpmn:EndEvent',
-          eventDefinitionType: 'bpmn:MessageEventDefinition'
+          type: 'apmn:EndEvent',
+          eventDefinitionType: 'apmn:MessageEventDefinition'
         };
 
         // when
@@ -276,7 +276,7 @@ describe('features/modeling - update properties', function() {
       function(elementRegistry, modeling, commandStack, moddle) {
 
         // given
-        var loopCharactersistics = moddle.create('bpmn:MultiInstanceLoopCharacteristics');
+        var loopCharactersistics = moddle.create('apmn:MultiInstanceLoopCharacteristics');
 
         var taskShape = elementRegistry.get('ServiceTask_1');
 
@@ -430,7 +430,7 @@ describe('features/modeling - update properties', function() {
 
         // given
         var loopCharacteristics = moddle.create(
-          'bpmn:MultiInstanceLoopCharacteristics'
+          'apmn:MultiInstanceLoopCharacteristics'
         );
 
         var taskShape = elementRegistry.get('ServiceTask_1'),

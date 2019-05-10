@@ -26,7 +26,7 @@ describe('features/modeling - update attachment', function() {
     subProcess = subProcessElement.businessObject;
 
     boundaryEventElement = elementFactory.createShape({
-      type: 'bpmn:BoundaryEvent',
+      type: 'apmn:BoundaryEvent',
       host: task,
       x: 513, y: 254
     });

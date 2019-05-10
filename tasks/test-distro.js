@@ -25,14 +25,14 @@ function runTest(variant, env) {
 
 function test() {
 
-  runTest('bpmn-modeler', 'development');
-  runTest('bpmn-modeler', 'production');
+  runTest('apmn-modeler', 'development');
+  runTest('apmn-modeler', 'production');
 
-  runTest('bpmn-navigated-viewer', 'development');
-  runTest('bpmn-navigated-viewer', 'production');
+  runTest('apmn-navigated-viewer', 'development');
+  runTest('apmn-navigated-viewer', 'production');
 
-  runTest('bpmn-viewer', 'development');
-  runTest('bpmn-viewer', 'production');
+  runTest('apmn-viewer', 'development');
+  runTest('apmn-viewer', 'production');
 
   if (failures) {
     process.exit(1);

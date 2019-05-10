@@ -1,11 +1,11 @@
-import BpmnModdle from 'bpmn-moddle';
+import ApmnModdle from 'apmn-moddle';
 
 
-describe('bpmn-moddle', function() {
+describe('apmn-moddle', function() {
 
   function parse(xml, done) {
-    var moddle = new BpmnModdle();
-    moddle.fromXML(xml, 'bpmn:Definitions', done);
+    var moddle = new ApmnModdle();
+    moddle.fromXML(xml, 'apmn:Definitions', done);
   }
 
 
@@ -15,7 +15,7 @@ describe('bpmn-moddle', function() {
 
       var xml =
         '<?xml version="1.0" encoding="UTF-8"?>' +
-        '<bpmn2:definitions xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" ' +
+        '<bpmn2:definitions xmlns:bpmn2="http://apmn.io/spec/APMN/MODEL" ' +
                            'id="simple" ' +
                            'targetNamespace="http://bpmn.io/schema/bpmn">' +
           '<bpmn2:process id="Process_1"></bpmn2:process>' +

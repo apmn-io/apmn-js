@@ -178,7 +178,7 @@ describe('Viewer', function() {
     });
 
 
-    it('should handle invalid BPMNPlane#bpmnElement', function(done) {
+    it('should handle invalid APMNPlane#apmnElement', function(done) {
 
       var xml = require('../fixtures/bpmn/error/di-plane-no-bpmn-element.bpmn');
 
@@ -190,10 +190,10 @@ describe('Viewer', function() {
 
         expectWarnings(warnings, [
           'unresolved reference <Collaboration_2>',
-          'no bpmnElement referenced in <bpmndi:BPMNPlane id="BPMNPlane_1" />',
-          'correcting missing bpmnElement ' +
-            'on <bpmndi:BPMNPlane id="BPMNPlane_1" /> ' +
-            'to <bpmn:Process id="Process_1" />'
+          'no apmnElement referenced in <apmndi:APMNPlane id="BPMNPlane_1" />',
+          'correcting missing apmnElement ' +
+            'on <apmndi:APMNPlane id="BPMNPlane_1" /> ' +
+            'to <apmn:Process id="Process_1" />'
         ]);
 
         done();
@@ -230,7 +230,7 @@ describe('Viewer', function() {
 
         // then
         expect(err).to.exist;
-        expect(err.message).to.eql('failed to parse document as <bpmn:Definitions>');
+        expect(err.message).to.eql('failed to parse document as <apmn:Definitions>');
 
         expect(warnings).to.have.length(1);
         expect(warnings[0].message).to.match(/unparsable content <definitions> detected/);
@@ -687,7 +687,7 @@ describe('Viewer', function() {
     });
 
 
-    describe('multiple BPMNDiagram elements', function() {
+    describe('multiple APMNDiagram elements', function() {
 
       var multipleXML = require('../fixtures/bpmn/multiple-diagrams.bpmn');
 
@@ -724,7 +724,7 @@ describe('Viewer', function() {
 
           // then
           expect(err).to.exist;
-          expect(err.message).to.eql('BPMNDiagram <Diagram_IDontExist> not found');
+          expect(err.message).to.eql('APMNDiagram <Diagram_IDontExist> not found');
 
           done();
         });
@@ -748,7 +748,7 @@ describe('Viewer', function() {
         });
 
 
-        it('should open specified BPMNDiagram', function(done) {
+        it('should open specified APMNDiagram', function(done) {
 
           // given
           var viewer = new Viewer({ container: container });
@@ -961,7 +961,7 @@ describe('Viewer', function() {
 
           // then
           expect(err).to.exist;
-          expect(err.message).to.eql('BPMNDiagram <Diagram_IDontExist> not found');
+          expect(err.message).to.eql('APMNDiagram <Diagram_IDontExist> not found');
 
           // definitions stay the same
           expect(viewer.getDefinitions()).to.eql(definitions);

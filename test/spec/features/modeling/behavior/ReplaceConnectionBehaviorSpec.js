@@ -76,7 +76,7 @@ describe('features/modeling - replace connection', function() {
         modeling.reconnectEnd(connection, task4Shape, newWaypoints);
 
         // then
-        expectConnected(element('Task_2'), task4Shape, 'bpmn:MessageFlow');
+        expectConnected(element('Task_2'), task4Shape, 'apmn:MessageFlow');
       }));
 
 
@@ -92,7 +92,7 @@ describe('features/modeling - replace connection', function() {
         modeling.reconnectEnd(connection, task4Shape, newWaypoints);
 
         // then
-        expectConnected(element('Task_3'), task4Shape, 'bpmn:SequenceFlow');
+        expectConnected(element('Task_3'), task4Shape, 'apmn:SequenceFlow');
       }));
 
 
@@ -108,7 +108,7 @@ describe('features/modeling - replace connection', function() {
         modeling.reconnectEnd(connection, participant2, newWaypoints);
 
         // then
-        expectConnected(element('Task_2'), participant2, 'bpmn:MessageFlow');
+        expectConnected(element('Task_2'), participant2, 'apmn:MessageFlow');
       }));
 
 
@@ -128,7 +128,7 @@ describe('features/modeling - replace connection', function() {
         modeling.reconnectStart(connection, participant2, newWaypoints);
 
         // then
-        expectConnected(participant2, subProcess1, 'bpmn:MessageFlow');
+        expectConnected(participant2, subProcess1, 'apmn:MessageFlow');
       }));
 
     });
@@ -148,10 +148,10 @@ describe('features/modeling - replace connection', function() {
         // then
         expect(taskShape.parent).to.eql(targetShape);
 
-        expectNotConnected(element('StartEvent_1'), taskShape, 'bpmn:SequenceFlow');
+        expectNotConnected(element('StartEvent_1'), taskShape, 'apmn:SequenceFlow');
 
-        expectConnected(taskShape, element('Task_4'), 'bpmn:SequenceFlow');
-        expectConnected(taskShape, element('SubProcess_1'), 'bpmn:MessageFlow');
+        expectConnected(taskShape, element('Task_4'), 'apmn:SequenceFlow');
+        expectConnected(taskShape, element('SubProcess_1'), 'apmn:MessageFlow');
       }));
 
 
@@ -197,8 +197,8 @@ describe('features/modeling - replace connection', function() {
 
         expectConnected(startEventShape, taskShape, element('SequenceFlow_3'));
 
-        expectNotConnected(element('Participant_2'), startEventShape, 'bpmn:MessageFlow');
-        expectConnected(taskShape, element('SubProcess_1'), 'bpmn:MessageFlow');
+        expectNotConnected(element('Participant_2'), startEventShape, 'apmn:MessageFlow');
+        expectConnected(taskShape, element('SubProcess_1'), 'apmn:MessageFlow');
       }));
 
 
@@ -242,9 +242,9 @@ describe('features/modeling - replace connection', function() {
         // then
         expect(subProcessShape.parent).to.eql(targetShape);
 
-        expectConnected(element('Task_2'), subProcessShape, 'bpmn:MessageFlow');
+        expectConnected(element('Task_2'), subProcessShape, 'apmn:MessageFlow');
 
-        expectNotConnected(element('Task_1'), element('Participant_2'), 'bpmn:MessageFlow');
+        expectNotConnected(element('Task_1'), element('Participant_2'), 'apmn:MessageFlow');
       }));
 
 
@@ -302,7 +302,7 @@ describe('features/modeling - replace connection', function() {
         // then
         expect(textAnnotationShape.parent).to.eql(targetShape);
 
-        expectNotConnected(textAnnotationShape, targetShape, 'bpmn:TextAnnotation');
+        expectNotConnected(textAnnotationShape, targetShape, 'apmn:TextAnnotation');
       }));
 
 

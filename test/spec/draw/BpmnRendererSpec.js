@@ -31,7 +31,7 @@ function checkErrors(done) {
 }
 
 
-describe('draw - bpmn renderer', function() {
+describe('draw - apmn renderer', function() {
 
   it('should render labels', function(done) {
     var xml = require('./BpmnRenderer.labels.bpmn');
@@ -322,7 +322,7 @@ describe('draw - bpmn renderer', function() {
         var g = svgCreate('g');
 
         var connection = elementFactory.create('connection', {
-          type: 'bpmn:SequenceFlow',
+          type: 'apmn:SequenceFlow',
           waypoints: [
             { x: 0, y: 0 },
             { x: 10, y: 100 }
@@ -415,19 +415,19 @@ describe('draw - bpmn renderer', function() {
           polyline = domQuery('polyline', djsVisual);
 
           expectStrokeColor(path || polyline, strokeColor);
-        } else if (isAny(element, [ 'bpmn:StartEvent', 'bpmn:EndEvent' ])) {
+        } else if (isAny(element, [ 'apmn:StartEvent', 'apmn:EndEvent' ])) {
           circle = domQuery('circle', djsVisual);
 
           expectFillColor(circle, fillColor);
           expectStrokeColor(circle, strokeColor);
-        } else if (isAny(element, [ 'bpmn:Task', 'bpmn:SubProcess', 'bpmn:Particpant' ])) {
+        } else if (isAny(element, [ 'apmn:Task', 'apmn:SubProcess', 'apmn:Particpant' ])) {
           rect = domQuery('rect', djsVisual);
           text = domQuery('text', djsVisual);
 
           expectFillColor(rect, fillColor);
           expectStrokeColor(rect, strokeColor);
           expectFillColor(text, strokeColor);
-        } else if (isAny(element, [ 'bpmn:Gateway' ])) {
+        } else if (isAny(element, [ 'apmn:Gateway' ])) {
           polygon = domQuery('polygon', djsVisual);
 
           expectFillColor(polygon, fillColor);

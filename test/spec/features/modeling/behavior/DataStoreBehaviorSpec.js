@@ -30,7 +30,7 @@ describe('features/modeling/behavior - data store', function() {
 
       // when
       var dataStoreShape = modeling.createShape(
-        { type: 'bpmn:DataStoreReference' },
+        { type: 'apmn:DataStoreReference' },
         { x: 220, y: 220 },
         participantElement
       );
@@ -55,7 +55,7 @@ describe('features/modeling/behavior - data store', function() {
 
       // when
       var dataStoreShape = modeling.createShape(
-        { type: 'bpmn:DataStoreReference' },
+        { type: 'apmn:DataStoreReference' },
         { x: 420, y: 220 },
         subProcessElement
       );
@@ -81,7 +81,7 @@ describe('features/modeling/behavior - data store', function() {
 
       // when
       var dataStoreShape = modeling.createShape(
-        { type: 'bpmn:DataStoreReference' },
+        { type: 'apmn:DataStoreReference' },
         { x: 420, y: 370 },
         collaborationElement
       );
@@ -464,7 +464,7 @@ describe('features/modeling/behavior - data store', function() {
 
         // when
         participant = modeling.createShape(
-          { type: 'bpmn:Participant' },
+          { type: 'apmn:Participant' },
           { x: 200, y: 200 },
           process
         );

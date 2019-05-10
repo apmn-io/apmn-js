@@ -215,7 +215,7 @@ describe('features/auto-resize', function() {
       it('should expand the bottom right edges', inject(function(modeling) {
 
         // when
-        modeling.appendShape(taskShape, { type: 'bpmn:Task' }, { x: 660, y: 350 }, participantShape);
+        modeling.appendShape(taskShape, { type: 'apmn:Task' }, { x: 660, y: 350 }, participantShape);
 
         // then
         var expectedBounds = assign(originalBounds, { width: 563, height: 290 });
@@ -227,7 +227,7 @@ describe('features/auto-resize', function() {
       it('should undo resizing', inject(function(modeling, commandStack) {
 
         // given
-        modeling.appendShape(taskShape, { type: 'bpmn:Task' }, { x: 660, y: 250 }, participantShape);
+        modeling.appendShape(taskShape, { type: 'apmn:Task' }, { x: 660, y: 250 }, participantShape);
 
         // when
         commandStack.undo();
@@ -241,7 +241,7 @@ describe('features/auto-resize', function() {
         inject(function(modeling, commandStack) {
 
           // given
-          var taskShape2 = modeling.appendShape(taskShape, { type: 'bpmn:Task' }, { x: 660, y: 250 }, participantShape);
+          var taskShape2 = modeling.appendShape(taskShape, { type: 'apmn:Task' }, { x: 660, y: 250 }, participantShape);
 
           // when
           commandStack.undo();
@@ -265,7 +265,7 @@ describe('features/auto-resize', function() {
 
       // given
       var laneAttrs = {
-        type: 'bpmn:Lane',
+        type: 'apmn:Lane',
         width: 341,
         height: 178
       };
@@ -281,7 +281,7 @@ describe('features/auto-resize', function() {
     it('should not auto-resize when creating with { root: false } hint', inject(function(modeling) {
 
       // given
-      var taskAttrs = { type: 'bpmn:Task' };
+      var taskAttrs = { type: 'apmn:Task' };
 
       // when
       modeling.createShape(taskAttrs, { x: 600, y: 320 }, participantShape, { root: false });
@@ -308,7 +308,7 @@ describe('features/auto-resize', function() {
       var participantShape = elementRegistry.get('Participant_Lanes');
 
       // when
-      modeling.createShape({ type: 'bpmn:Task' }, { x: 600, y: 320 }, participantShape);
+      modeling.createShape({ type: 'apmn:Task' }, { x: 600, y: 320 }, participantShape);
 
       // then
       expect(participantShape).to.have.bounds({ x: 247, y: 160, width: 503, height: 260 });
@@ -371,7 +371,7 @@ describe('features/auto-resize', function() {
       var originalBounds = getBounds(subProcessShape);
 
       // when
-      modeling.createShape({ type: 'bpmn:Task' }, { x: 450, y: 250 }, subProcessShape);
+      modeling.createShape({ type: 'apmn:Task' }, { x: 450, y: 250 }, subProcessShape);
 
       // then
       var expectedBounds = assign(originalBounds, { width: 480, height: 298 });

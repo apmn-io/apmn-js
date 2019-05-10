@@ -41,7 +41,7 @@ describe('modeling/behavior - drop on connection', function() {
 
           // given
           var intermediateThrowEvent = elementFactory.createShape({
-            type: 'bpmn:IntermediateThrowEvent'
+            type: 'apmn:IntermediateThrowEvent'
           });
 
           var startEvent = elementRegistry.get('StartEvent'),
@@ -70,7 +70,7 @@ describe('modeling/behavior - drop on connection', function() {
           // new outgoing connection
           expect(newShape.outgoing.length).to.equal(1);
           expect(targetConnection).to.exist;
-          expect(targetConnection.type).to.equal('bpmn:SequenceFlow');
+          expect(targetConnection.type).to.equal('apmn:SequenceFlow');
 
           expect(startEvent.outgoing[0]).to.equal(newShape.incoming[0]);
           expect(task.incoming[1]).to.equal(newShape.outgoing[0]);
@@ -97,7 +97,7 @@ describe('modeling/behavior - drop on connection', function() {
         function(modeling, elementRegistry, elementFactory) {
 
           // given
-          var endEventShape = elementFactory.createShape({ type: 'bpmn:EndEvent' });
+          var endEventShape = elementFactory.createShape({ type: 'apmn:EndEvent' });
 
           var sequenceFlow = elementRegistry.get('SequenceFlow_1');
           var originalWaypoints = sequenceFlow.waypoints;
@@ -134,7 +134,7 @@ describe('modeling/behavior - drop on connection', function() {
 
           // given
           var startEventShape = elementFactory.createShape({
-            type: 'bpmn:StartEvent'
+            type: 'apmn:StartEvent'
           });
 
           var sequenceFlow = elementRegistry.get('SequenceFlow_1');
@@ -170,7 +170,7 @@ describe('modeling/behavior - drop on connection', function() {
       it('should connect start -> target -> end (with bendpointBefore inside bbox)', inject(
         function(modeling, elementRegistry, elementFactory) {
           // given
-          var taskShape = elementFactory.createShape({ type: 'bpmn:Task' }),
+          var taskShape = elementFactory.createShape({ type: 'apmn:Task' }),
               sequenceFlow = elementRegistry.get('SequenceFlow_1'),
               originalWaypoints = sequenceFlow.waypoints,
               dropPosition = { x: 340, y: 145 }; // 25 pixels below bendpoint
@@ -194,7 +194,7 @@ describe('modeling/behavior - drop on connection', function() {
         function(modeling, elementRegistry, elementFactory) {
 
           // given
-          var taskShape = elementFactory.createShape({ type: 'bpmn:Task' }),
+          var taskShape = elementFactory.createShape({ type: 'apmn:Task' }),
               sequenceFlow = elementRegistry.get('SequenceFlow_1'),
               originalWaypoints = sequenceFlow.waypoints,
               dropPosition = { x: 340, y: 280 }; // 25 pixels above bendpoint
@@ -260,7 +260,7 @@ describe('modeling/behavior - drop on connection', function() {
           // new outgoing connection
           expect(intermediateThrowEvent.outgoing.length).to.equal(1);
           expect(targetConnection).to.exist;
-          expect(targetConnection.type).to.equal('bpmn:SequenceFlow');
+          expect(targetConnection.type).to.equal('apmn:SequenceFlow');
 
           expect(startEvent.outgoing[0]).to.equal(intermediateThrowEvent.incoming[0]);
           expect(task.incoming[1]).to.equal(intermediateThrowEvent.outgoing[0]);
@@ -320,7 +320,7 @@ describe('modeling/behavior - drop on connection', function() {
           // new outgoing connection
           expect(intermediateThrowEvent.outgoing.length).to.equal(1);
           expect(targetConnection).to.exist;
-          expect(targetConnection.type).to.equal('bpmn:SequenceFlow');
+          expect(targetConnection.type).to.equal('apmn:SequenceFlow');
 
           expect(startEvent.outgoing[0]).to.equal(intermediateThrowEvent.incoming[0]);
           expect(task.incoming[1]).to.equal(intermediateThrowEvent.outgoing[0]);
@@ -608,7 +608,7 @@ describe('modeling/behavior - drop on connection', function() {
         // when
         var sequenceFlow = elementRegistry.get('SequenceFlow_1');
         var intermediateThrowEvent = elementFactory.createShape({
-          type: 'bpmn:IntermediateThrowEvent'
+          type: 'apmn:IntermediateThrowEvent'
         });
 
         // then
@@ -622,7 +622,7 @@ describe('modeling/behavior - drop on connection', function() {
 
         // given
         var participantShape = elementFactory.createShape({
-          type: 'bpmn:Participant'
+          type: 'apmn:Participant'
         });
 
         var sequenceFlow = elementRegistry.get('SequenceFlow_1');

@@ -7,7 +7,7 @@ function testImport(BpmnJS, done) {
 
   document.body.appendChild(container);
 
-  get('/base/resources/initial.bpmn', function(err, text) {
+  get('/base/resources/initial.apmn', function(err, text) {
 
     if (err) {
       return done(err);

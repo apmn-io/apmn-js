@@ -38,7 +38,7 @@ module.exports = function(karma) {
       'dist/' + VARIANT + '.' + (NODE_ENV === 'production' ? 'production.min' : 'development') + '.js',
       'dist/assets/bpmn-font/css/bpmn.css',
       'dist/assets/diagram-js.css',
-      { pattern: 'resources/initial.bpmn', included: false },
+      { pattern: 'resources/initial.apmn', included: false },
       { pattern: 'dist/assets/**/*', included: false },
       'test/distro/helper.js',
       'test/distro/' + VARIANT + '.js'

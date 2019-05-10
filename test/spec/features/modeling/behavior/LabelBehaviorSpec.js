@@ -72,13 +72,13 @@ describe('behavior - LabelBehavior', function() {
         // given
         var startEvent = elementRegistry.get('StartEvent_1'),
             task = elementRegistry.get('Task_1'),
-            businessObject = bpmnFactory.create('bpmn:SequenceFlow', {
+            businessObject = bpmnFactory.create('apmn:SequenceFlow', {
               name: 'foo'
             });
 
         // when
         var connection = modeling.createConnection(startEvent, task, {
-          type: 'bpmn:SequenceFlow',
+          type: 'apmn:SequenceFlow',
           businessObject: businessObject
         }, startEvent.parent);
 
@@ -109,11 +109,11 @@ describe('behavior - LabelBehavior', function() {
 
         // given
         var parentShape = elementRegistry.get('Process_1'),
-            businessObject = bpmnFactory.create('bpmn:ExclusiveGateway', {
+            businessObject = bpmnFactory.create('apmn:ExclusiveGateway', {
               name: 'foo'
             }),
             newShapeAttrs = {
-              type: 'bpmn:ExclusiveGateway',
+              type: 'apmn:ExclusiveGateway',
               businessObject: businessObject
             };
 
@@ -132,7 +132,7 @@ describe('behavior - LabelBehavior', function() {
         // given
         var parentShape = elementRegistry.get('Process_1'),
             newShapeAttrs = {
-              type: 'bpmn:ExclusiveGateway'
+              type: 'apmn:ExclusiveGateway'
             };
 
         // when
@@ -149,7 +149,7 @@ describe('behavior - LabelBehavior', function() {
 
         // given
         var parentShape = elementRegistry.get('Process_1'),
-            newShapeAttrs = { type: 'bpmn:Task' };
+            newShapeAttrs = { type: 'apmn:Task' };
 
         // when
         var newShape = modeling.createShape(newShapeAttrs, { x: 50, y: 50 }, parentShape);
@@ -167,13 +167,13 @@ describe('behavior - LabelBehavior', function() {
 
           // given
           var startEventShape = elementRegistry.get('StartEvent_1'),
-              businessObject = bpmnFactory.create('bpmn:EndEvent', {
+              businessObject = bpmnFactory.create('apmn:EndEvent', {
                 name: 'foo'
               });
 
           // when
           var targetShape = modeling.appendShape(startEventShape, {
-            type: 'bpmn:EndEvent',
+            type: 'apmn:EndEvent',
             businessObject: businessObject
           });
 
@@ -196,13 +196,13 @@ describe('behavior - LabelBehavior', function() {
 
           // given
           var startEventShape = elementRegistry.get('StartEvent_1'),
-              businessObject = bpmnFactory.create('bpmn:EndEvent', {
+              businessObject = bpmnFactory.create('apmn:EndEvent', {
                 name: 'foo'
               });
 
           // when
           var targetShape = modeling.appendShape(startEventShape, {
-                type: 'bpmn:EndEvent',
+                type: 'apmn:EndEvent',
                 businessObject: businessObject
               }),
               target = targetShape.businessObject;
@@ -222,13 +222,13 @@ describe('behavior - LabelBehavior', function() {
 
         // given
         var startEventShape = elementRegistry.get('StartEvent_1'),
-            businessObject = bpmnFactory.create('bpmn:SequenceFlow', {
+            businessObject = bpmnFactory.create('apmn:SequenceFlow', {
               name: 'foo'
             });
 
         // when
         var targetShape = modeling.appendShape(startEventShape, {
-              type: 'bpmn:EndEvent',
+              type: 'apmn:EndEvent',
               businessObject: businessObject
             }),
             target = targetShape.businessObject;
@@ -271,12 +271,12 @@ describe('behavior - LabelBehavior', function() {
           // given
           var startEventShape = elementRegistry.get('StartEvent_1'),
               taskShape = elementRegistry.get('Task_1'),
-              businessObject = bpmnFactory.create('bpmn:SequenceFlow', {
+              businessObject = bpmnFactory.create('apmn:SequenceFlow', {
                 name: 'foo'
               });
 
           var sequenceFlowConnection = modeling.createConnection(startEventShape, taskShape, {
-            type: 'bpmn:SequenceFlow',
+            type: 'apmn:SequenceFlow',
             businessObject: businessObject
           }, startEventShape.parent);
 

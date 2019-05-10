@@ -73,12 +73,12 @@ describe('custom elements', function() {
     }));
 
 
-    it('should still render bpmn elements', inject(function(elementFactory) {
+    it('should still render apmn elements', inject(function(elementFactory) {
       // when
-      var startEvent = elementFactory.createShape({ type: 'bpmn:StartEvent' });
+      var startEvent = elementFactory.createShape({ type: 'apmn:StartEvent' });
 
       // then
-      expect(startEvent.businessObject.$type).to.equal('bpmn:StartEvent');
+      expect(startEvent.businessObject.$type).to.equal('apmn:StartEvent');
     }));
 
   });
@@ -158,7 +158,7 @@ describe('custom elements', function() {
       );
 
 
-      it('should not connect a bpmn element to a custom one',
+      it('should not connect a apmn element to a custom one',
         inject(function(elementFactory, dragging, elementRegistry, connect) {
 
           // given

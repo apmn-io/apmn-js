@@ -28,10 +28,10 @@
     {
       "name": "ServiceTaskGroupOverride",
       "extends": [
-        "bpmn:ServiceTask",
-        "bpmn:BusinessRuleTask",
-        "bpmn:SendTask",
-        "bpmn:MessageEventDefinition"
+        "apmn:ServiceTask",
+        "apmn:BusinessRuleTask",
+        "apmn:SendTask",
+        "apmn:MessageEventDefinition"
       ]
     }
   ],

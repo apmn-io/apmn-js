@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" id="Definitions_1" targetNamespace="http://bpmn.io/schema/bpmn">
+<bpmn:definitions xmlns:bpmn="http://apmn.io/spec/APMN/MODEL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmndi="http://apmn.io/spec/APMN/DI" xmlns:di="http://apmn.io/spec/DD/DI" xmlns:dc="http://apmn.io/spec/DD/DC" id="Definitions_1" targetNamespace="http://bpmn.io/schema/bpmn">
   <bpmn:collaboration id="Collaboration_1">
     <bpmn:participant id="Participant_Lanes" processRef="Process_Lanes" />
   </bpmn:collaboration>
@@ -22,33 +22,33 @@
       <bpmn:outgoing>SequenceFlow_1</bpmn:outgoing>
     </bpmn:startEvent>
   </bpmn:process>
-  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
-    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Collaboration_1">
-      <bpmndi:BPMNShape id="Participant_Lanes_di" bpmnElement="Participant_Lanes">
+  <bpmndi:APMNDiagram id="BPMNDiagram_1">
+    <bpmndi:APMNPlane id="BPMNPlane_1" apmnElement="Collaboration_1">
+      <bpmndi:APMNShape id="Participant_Lanes_di" apmnElement="Participant_Lanes">
         <dc:Bounds x="247" y="160" width="371" height="178" />
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="StartEvent_1_di" bpmnElement="StartEvent_1">
+      </bpmndi:APMNShape>
+      <bpmndi:APMNShape id="StartEvent_1_di" apmnElement="StartEvent_1">
         <dc:Bounds x="345" y="231" width="36" height="36" />
-        <bpmndi:BPMNLabel>
+        <bpmndi:APMNLabel>
           <dc:Bounds x="318" y="267" width="90" height="20" />
-        </bpmndi:BPMNLabel>
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Task_1_di" bpmnElement="Task_1">
+        </bpmndi:APMNLabel>
+      </bpmndi:APMNShape>
+      <bpmndi:APMNShape id="Task_1_di" apmnElement="Task_1">
         <dc:Bounds x="472" y="209" width="100" height="80" />
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNEdge id="SequenceFlow_1_di" bpmnElement="SequenceFlow_1">
+      </bpmndi:APMNShape>
+      <bpmndi:APMNEdge id="SequenceFlow_1_di" apmnElement="SequenceFlow_1">
         <di:waypoint xsi:type="dc:Point" x="381" y="249" />
         <di:waypoint xsi:type="dc:Point" x="472" y="249" />
-        <bpmndi:BPMNLabel>
+        <bpmndi:APMNLabel>
           <dc:Bounds x="370" y="239" width="90" height="20" />
-        </bpmndi:BPMNLabel>
-      </bpmndi:BPMNEdge>
-      <bpmndi:BPMNShape id="Lane_di" bpmnElement="Lane">
+        </bpmndi:APMNLabel>
+      </bpmndi:APMNEdge>
+      <bpmndi:APMNShape id="Lane_di" apmnElement="Lane">
         <dc:Bounds x="277" y="160" width="341" height="178" />
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Lane_Nested_di" bpmnElement="Lane_Nested">
+      </bpmndi:APMNShape>
+      <bpmndi:APMNShape id="Lane_Nested_di" apmnElement="Lane_Nested">
         <dc:Bounds x="307" y="160" width="311" height="178" />
-      </bpmndi:BPMNShape>
-    </bpmndi:BPMNPlane>
-  </bpmndi:BPMNDiagram>
+      </bpmndi:APMNShape>
+    </bpmndi:APMNPlane>
+  </bpmndi:APMNDiagram>
 </bpmn:definitions>

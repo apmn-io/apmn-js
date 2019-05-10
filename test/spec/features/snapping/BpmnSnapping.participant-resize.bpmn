@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Definitions_1" targetNamespace="http://bpmn.io/schema/bpmn">
+<bpmn:definitions xmlns:bpmn="http://apmn.io/spec/APMN/MODEL" xmlns:bpmndi="http://apmn.io/spec/APMN/DI" xmlns:di="http://apmn.io/spec/DD/DI" xmlns:dc="http://apmn.io/spec/DD/DC" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Definitions_1" targetNamespace="http://bpmn.io/schema/bpmn">
   <bpmn:collaboration id="Collaboration_1">
     <bpmn:participant id="Participant_1" processRef="Process_1" />
     <bpmn:participant id="Participant_2" processRef="Process_2" />
@@ -15,36 +15,36 @@
     <bpmn:startEvent id="StartEvent_1" />
     <bpmn:task id="Task_1" />
   </bpmn:process>
-  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
-    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Collaboration_1">
-      <bpmndi:BPMNShape id="Participant_1_di" bpmnElement="Participant_1">
+  <bpmndi:APMNDiagram id="BPMNDiagram_1">
+    <bpmndi:APMNPlane id="BPMNPlane_1" apmnElement="Collaboration_1">
+      <bpmndi:APMNShape id="Participant_1_di" apmnElement="Participant_1">
         <dc:Bounds x="624" y="30" width="442" height="234" />
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Participant_2_di" bpmnElement="Participant_2">
+      </bpmndi:APMNShape>
+      <bpmndi:APMNShape id="Participant_2_di" apmnElement="Participant_2">
         <dc:Bounds x="47" y="30" width="506" height="299" />
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="SubProcess_1_di" bpmnElement="SubProcess_1" isExpanded="true">
+      </bpmndi:APMNShape>
+      <bpmndi:APMNShape id="SubProcess_1_di" apmnElement="SubProcess_1" isExpanded="true">
         <dc:Bounds x="136" y="113" width="213" height="149" />
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="TextAnnotation_1_di" bpmnElement="TextAnnotation_1">
+      </bpmndi:APMNShape>
+      <bpmndi:APMNShape id="TextAnnotation_1_di" apmnElement="TextAnnotation_1">
         <dc:Bounds x="409" y="62" width="100" height="80" />
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNEdge id="Association_1_di" bpmnElement="Association_1">
+      </bpmndi:APMNShape>
+      <bpmndi:APMNEdge id="Association_1_di" apmnElement="Association_1">
         <di:waypoint xsi:type="dc:Point" x="349" y="154" />
         <di:waypoint xsi:type="dc:Point" x="409" y="119" />
-      </bpmndi:BPMNEdge>
-      <bpmndi:BPMNShape id="Participant_3_di" bpmnElement="Participant_3">
+      </bpmndi:APMNEdge>
+      <bpmndi:APMNShape id="Participant_3_di" apmnElement="Participant_3">
         <dc:Bounds x="624" y="290" width="400" height="200" />
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="StartEvent_1_di" bpmnElement="StartEvent_1">
+      </bpmndi:APMNShape>
+      <bpmndi:APMNShape id="StartEvent_1_di" apmnElement="StartEvent_1">
         <dc:Bounds x="721" y="355" width="36" height="36" />
-        <bpmndi:BPMNLabel>
+        <bpmndi:APMNLabel>
           <dc:Bounds x="694" y="391" width="90" height="20" />
-        </bpmndi:BPMNLabel>
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Task_1_di" bpmnElement="Task_1">
+        </bpmndi:APMNLabel>
+      </bpmndi:APMNShape>
+      <bpmndi:APMNShape id="Task_1_di" apmnElement="Task_1">
         <dc:Bounds x="809" y="333" width="100" height="80" />
-      </bpmndi:BPMNShape>
-    </bpmndi:BPMNPlane>
-  </bpmndi:BPMNDiagram>
+      </bpmndi:APMNShape>
+    </bpmndi:APMNPlane>
+  </bpmndi:APMNDiagram>
 </bpmn:definitions>

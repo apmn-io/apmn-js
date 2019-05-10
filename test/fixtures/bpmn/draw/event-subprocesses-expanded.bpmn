@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL"
-             xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
-             xmlns:omgdc="http://www.omg.org/spec/DD/20100524/DC"
+<definitions xmlns="http://apmn.io/spec/APMN/MODEL"
+             xmlns:bpmndi="http://apmn.io/spec/APMN/DI"
+             xmlns:omgdc="http://apmn.io/spec/DD/DC"
              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
              expressionLanguage="http://www.w3.org/1999/XPath"
              id="sid-e6447230-d8ba-4e9c-9a82-45467108d2c2"
@@ -105,170 +105,170 @@
          <text>No Non-Interrupting</text>
       </textAnnotation>
    </process>
-   <bpmndi:BPMNDiagram id="sid-9ce9f3ed-bbe8-47db-8215-3b8d17cdbd67">
-      <bpmndi:BPMNPlane bpmnElement="sid-cc400c02-688e-4e48-90f1-6550e2c6f690" id="sid-59c679ca-9ffc-4c6a-b1ea-0dad11996681">
-         <bpmndi:BPMNShape bpmnElement="sid-B6C65639-D513-4674-80F9-152D48CC4329" id="sid-B6C65639-D513-4674-80F9-152D48CC4329_gui" isExpanded="true">
+   <bpmndi:APMNDiagram id="sid-9ce9f3ed-bbe8-47db-8215-3b8d17cdbd67">
+      <bpmndi:APMNPlane apmnElement="sid-cc400c02-688e-4e48-90f1-6550e2c6f690" id="sid-59c679ca-9ffc-4c6a-b1ea-0dad11996681">
+         <bpmndi:APMNShape apmnElement="sid-B6C65639-D513-4674-80F9-152D48CC4329" id="sid-B6C65639-D513-4674-80F9-152D48CC4329_gui" isExpanded="true">
             <omgdc:Bounds height="160.0" width="200.0" x="135.0" y="45.0"/>
-            <bpmndi:BPMNLabel labelStyle="sid-385de329-bbfa-4618-8f2d-bffca39d9f50">
+            <bpmndi:APMNLabel labelStyle="sid-385de329-bbfa-4618-8f2d-bffca39d9f50">
                <omgdc:Bounds height="24.0" width="180.85714721679688" x="143.0" y="55.0"/>
-            </bpmndi:BPMNLabel>
-         </bpmndi:BPMNShape>
-         <bpmndi:BPMNShape bpmnElement="sid-0C0BC81D-BB9C-4693-B88A-DB3C6C63691B" id="sid-0C0BC81D-BB9C-4693-B88A-DB3C6C63691B_gui">
+            </bpmndi:APMNLabel>
+         </bpmndi:APMNShape>
+         <bpmndi:APMNShape apmnElement="sid-0C0BC81D-BB9C-4693-B88A-DB3C6C63691B" id="sid-0C0BC81D-BB9C-4693-B88A-DB3C6C63691B_gui">
             <omgdc:Bounds height="30.0" width="30.0" x="165.0" y="110.0"/>
-         </bpmndi:BPMNShape>
-         <bpmndi:BPMNShape bpmnElement="sid-72325D9B-5B9D-4521-A511-23F0DD9C4902" id="sid-72325D9B-5B9D-4521-A511-23F0DD9C4902_gui" isExpanded="true">
+         </bpmndi:APMNShape>
+         <bpmndi:APMNShape apmnElement="sid-72325D9B-5B9D-4521-A511-23F0DD9C4902" id="sid-72325D9B-5B9D-4521-A511-23F0DD9C4902_gui" isExpanded="true">
             <omgdc:Bounds height="160.0" width="200.0" x="485.0" y="45.0"/>
-            <bpmndi:BPMNLabel labelStyle="sid-385de329-bbfa-4618-8f2d-bffca39d9f50">
+            <bpmndi:APMNLabel labelStyle="sid-385de329-bbfa-4618-8f2d-bffca39d9f50">
                <omgdc:Bounds height="24.0" width="138.85714721679688" x="493.0" y="55.0"/>
-            </bpmndi:BPMNLabel>
-         </bpmndi:BPMNShape>
-         <bpmndi:BPMNShape bpmnElement="sid-646C6A20-93FF-4029-A43C-A4A9A0DF283B" id="sid-646C6A20-93FF-4029-A43C-A4A9A0DF283B_gui">
+            </bpmndi:APMNLabel>
+         </bpmndi:APMNShape>
+         <bpmndi:APMNShape apmnElement="sid-646C6A20-93FF-4029-A43C-A4A9A0DF283B" id="sid-646C6A20-93FF-4029-A43C-A4A9A0DF283B_gui">
             <omgdc:Bounds height="30.0" width="30.0" x="515.0" y="110.0"/>
-         </bpmndi:BPMNShape>
-         <bpmndi:BPMNShape bpmnElement="sid-42177BEE-0B89-43BF-A442-DE3037220EFC" id="sid-42177BEE-0B89-43BF-A442-DE3037220EFC_gui" isExpanded="true">
+         </bpmndi:APMNShape>
+         <bpmndi:APMNShape apmnElement="sid-42177BEE-0B89-43BF-A442-DE3037220EFC" id="sid-42177BEE-0B89-43BF-A442-DE3037220EFC_gui" isExpanded="true">
             <omgdc:Bounds height="160.0" width="200.0" x="135.0" y="250.0"/>
-            <bpmndi:BPMNLabel labelStyle="sid-385de329-bbfa-4618-8f2d-bffca39d9f50">
+            <bpmndi:APMNLabel labelStyle="sid-385de329-bbfa-4618-8f2d-bffca39d9f50">
                <omgdc:Bounds height="24.0" width="180.85714721679688" x="143.0" y="260.0"/>
-            </bpmndi:BPMNLabel>
-         </bpmndi:BPMNShape>
-         <bpmndi:BPMNShape bpmnElement="sid-A6985EA2-30AD-460C-B948-265D3A59FDFD" id="sid-A6985EA2-30AD-460C-B948-265D3A59FDFD_gui">
+            </bpmndi:APMNLabel>
+         </bpmndi:APMNShape>
+         <bpmndi:APMNShape apmnElement="sid-A6985EA2-30AD-460C-B948-265D3A59FDFD" id="sid-A6985EA2-30AD-460C-B948-265D3A59FDFD_gui">
             <omgdc:Bounds height="30.0" width="30.0" x="165.0" y="315.0"/>
-         </bpmndi:BPMNShape>
-         <bpmndi:BPMNShape bpmnElement="sid-3F2B4024-0230-4EF8-B6FF-01D99F7B0B65" id="sid-3F2B4024-0230-4EF8-B6FF-01D99F7B0B65_gui" isExpanded="true">
+         </bpmndi:APMNShape>
+         <bpmndi:APMNShape apmnElement="sid-3F2B4024-0230-4EF8-B6FF-01D99F7B0B65" id="sid-3F2B4024-0230-4EF8-B6FF-01D99F7B0B65_gui" isExpanded="true">
             <omgdc:Bounds height="160.0" width="200.0" x="485.0" y="250.0"/>
-            <bpmndi:BPMNLabel labelStyle="sid-385de329-bbfa-4618-8f2d-bffca39d9f50">
+            <bpmndi:APMNLabel labelStyle="sid-385de329-bbfa-4618-8f2d-bffca39d9f50">
                <omgdc:Bounds height="24.0" width="138.0" x="493.0" y="260.0"/>
-            </bpmndi:BPMNLabel>
-         </bpmndi:BPMNShape>
-         <bpmndi:BPMNShape bpmnElement="sid-1DAE9538-E52C-46B8-8530-650C226AEE07" id="sid-1DAE9538-E52C-46B8-8530-650C226AEE07_gui">
+            </bpmndi:APMNLabel>
+         </bpmndi:APMNShape>
+         <bpmndi:APMNShape apmnElement="sid-1DAE9538-E52C-46B8-8530-650C226AEE07" id="sid-1DAE9538-E52C-46B8-8530-650C226AEE07_gui">
             <omgdc:Bounds height="30.0" width="30.0" x="515.0" y="315.0"/>
-         </bpmndi:BPMNShape>
-         <bpmndi:BPMNShape bpmnElement="sid-BC707A18-F0A6-4CD3-98E4-625CA35472B9" id="sid-BC707A18-F0A6-4CD3-98E4-625CA35472B9_gui" isExpanded="true">
+         </bpmndi:APMNShape>
+         <bpmndi:APMNShape apmnElement="sid-BC707A18-F0A6-4CD3-98E4-625CA35472B9" id="sid-BC707A18-F0A6-4CD3-98E4-625CA35472B9_gui" isExpanded="true">
             <omgdc:Bounds height="160.0" width="200.0" x="135.0" y="455.0"/>
-            <bpmndi:BPMNLabel labelStyle="sid-385de329-bbfa-4618-8f2d-bffca39d9f50">
+            <bpmndi:APMNLabel labelStyle="sid-385de329-bbfa-4618-8f2d-bffca39d9f50">
                <omgdc:Bounds height="24.0" width="180.85714721679688" x="143.0" y="465.0"/>
-            </bpmndi:BPMNLabel>
-         </bpmndi:BPMNShape>
-         <bpmndi:BPMNShape bpmnElement="sid-9556478F-C388-45D4-B7AA-19531C9A2AC4" id="sid-9556478F-C388-45D4-B7AA-19531C9A2AC4_gui">
+            </bpmndi:APMNLabel>
+         </bpmndi:APMNShape>
+         <bpmndi:APMNShape apmnElement="sid-9556478F-C388-45D4-B7AA-19531C9A2AC4" id="sid-9556478F-C388-45D4-B7AA-19531C9A2AC4_gui">
             <omgdc:Bounds height="30.0" width="30.0" x="165.0" y="520.0"/>
-         </bpmndi:BPMNShape>
-         <bpmndi:BPMNShape bpmnElement="sid-8DE5DA1F-F9B7-4D26-A074-C2617B7392F4" id="sid-8DE5DA1F-F9B7-4D26-A074-C2617B7392F4_gui" isExpanded="true">
+         </bpmndi:APMNShape>
+         <bpmndi:APMNShape apmnElement="sid-8DE5DA1F-F9B7-4D26-A074-C2617B7392F4" id="sid-8DE5DA1F-F9B7-4D26-A074-C2617B7392F4_gui" isExpanded="true">
             <omgdc:Bounds height="160.0" width="200.0" x="485.0" y="455.0"/>
-            <bpmndi:BPMNLabel labelStyle="sid-385de329-bbfa-4618-8f2d-bffca39d9f50">
+            <bpmndi:APMNLabel labelStyle="sid-385de329-bbfa-4618-8f2d-bffca39d9f50">
                <omgdc:Bounds height="24.0" width="154.2857208251953" x="493.0" y="465.0"/>
-            </bpmndi:BPMNLabel>
-         </bpmndi:BPMNShape>
-         <bpmndi:BPMNShape bpmnElement="sid-16A0BD37-50D9-4AD0-B179-8AE9925F1F3B" id="sid-16A0BD37-50D9-4AD0-B179-8AE9925F1F3B_gui">
+            </bpmndi:APMNLabel>
+         </bpmndi:APMNShape>
+         <bpmndi:APMNShape apmnElement="sid-16A0BD37-50D9-4AD0-B179-8AE9925F1F3B" id="sid-16A0BD37-50D9-4AD0-B179-8AE9925F1F3B_gui">
             <omgdc:Bounds height="30.0" width="30.0" x="515.0" y="520.0"/>
-         </bpmndi:BPMNShape>
-         <bpmndi:BPMNShape bpmnElement="sid-977E261C-DC6C-4FD6-A773-6997DD4258A3" id="sid-977E261C-DC6C-4FD6-A773-6997DD4258A3_gui" isExpanded="true">
+         </bpmndi:APMNShape>
+         <bpmndi:APMNShape apmnElement="sid-977E261C-DC6C-4FD6-A773-6997DD4258A3" id="sid-977E261C-DC6C-4FD6-A773-6997DD4258A3_gui" isExpanded="true">
             <omgdc:Bounds height="160.0" width="200.0" x="135.0" y="660.0"/>
-            <bpmndi:BPMNLabel labelStyle="sid-385de329-bbfa-4618-8f2d-bffca39d9f50">
+            <bpmndi:APMNLabel labelStyle="sid-385de329-bbfa-4618-8f2d-bffca39d9f50">
                <omgdc:Bounds height="24.0" width="180.85714721679688" x="143.0" y="670.0"/>
-            </bpmndi:BPMNLabel>
-         </bpmndi:BPMNShape>
-         <bpmndi:BPMNShape bpmnElement="sid-313D1E97-7B57-45F9-8F77-A2FD412E6526" id="sid-313D1E97-7B57-45F9-8F77-A2FD412E6526_gui">
+            </bpmndi:APMNLabel>
+         </bpmndi:APMNShape>
+         <bpmndi:APMNShape apmnElement="sid-313D1E97-7B57-45F9-8F77-A2FD412E6526" id="sid-313D1E97-7B57-45F9-8F77-A2FD412E6526_gui">
             <omgdc:Bounds height="30.0" width="30.0" x="165.0" y="725.0"/>
-         </bpmndi:BPMNShape>
-         <bpmndi:BPMNShape bpmnElement="sid-6684B5A1-1C53-42FB-A205-E6F380C7A0CA" id="sid-6684B5A1-1C53-42FB-A205-E6F380C7A0CA_gui" isExpanded="true">
+         </bpmndi:APMNShape>
+         <bpmndi:APMNShape apmnElement="sid-6684B5A1-1C53-42FB-A205-E6F380C7A0CA" id="sid-6684B5A1-1C53-42FB-A205-E6F380C7A0CA_gui" isExpanded="true">
             <omgdc:Bounds height="160.0" width="200.0" x="485.0" y="660.0"/>
-            <bpmndi:BPMNLabel labelStyle="sid-385de329-bbfa-4618-8f2d-bffca39d9f50">
+            <bpmndi:APMNLabel labelStyle="sid-385de329-bbfa-4618-8f2d-bffca39d9f50">
                <omgdc:Bounds height="24.0" width="138.0" x="493.0" y="670.0"/>
-            </bpmndi:BPMNLabel>
-         </bpmndi:BPMNShape>
-         <bpmndi:BPMNShape bpmnElement="sid-89DCE12A-C4BD-4A4A-A5A1-BFDAE10AD58C" id="sid-89DCE12A-C4BD-4A4A-A5A1-BFDAE10AD58C_gui">
+            </bpmndi:APMNLabel>
+         </bpmndi:APMNShape>
+         <bpmndi:APMNShape apmnElement="sid-89DCE12A-C4BD-4A4A-A5A1-BFDAE10AD58C" id="sid-89DCE12A-C4BD-4A4A-A5A1-BFDAE10AD58C_gui">
             <omgdc:Bounds height="30.0" width="30.0" x="515.0" y="725.0"/>
-         </bpmndi:BPMNShape>
-         <bpmndi:BPMNShape bpmnElement="sid-92B7E9AA-A1E3-4C53-8566-6C3C23720743" id="sid-92B7E9AA-A1E3-4C53-8566-6C3C23720743_gui" isExpanded="true">
+         </bpmndi:APMNShape>
+         <bpmndi:APMNShape apmnElement="sid-92B7E9AA-A1E3-4C53-8566-6C3C23720743" id="sid-92B7E9AA-A1E3-4C53-8566-6C3C23720743_gui" isExpanded="true">
             <omgdc:Bounds height="160.0" width="200.0" x="135.0" y="865.0"/>
-            <bpmndi:BPMNLabel labelStyle="sid-385de329-bbfa-4618-8f2d-bffca39d9f50">
+            <bpmndi:APMNLabel labelStyle="sid-385de329-bbfa-4618-8f2d-bffca39d9f50">
                <omgdc:Bounds height="24.0" width="180.85714721679688" x="143.0" y="875.0"/>
-            </bpmndi:BPMNLabel>
-         </bpmndi:BPMNShape>
-         <bpmndi:BPMNShape bpmnElement="sid-D14FEB4C-7597-4215-82F0-B9F44DD4BF4E" id="sid-D14FEB4C-7597-4215-82F0-B9F44DD4BF4E_gui">
+            </bpmndi:APMNLabel>
+         </bpmndi:APMNShape>
+         <bpmndi:APMNShape apmnElement="sid-D14FEB4C-7597-4215-82F0-B9F44DD4BF4E" id="sid-D14FEB4C-7597-4215-82F0-B9F44DD4BF4E_gui">
             <omgdc:Bounds height="30.0" width="30.0" x="165.0" y="930.0"/>
-         </bpmndi:BPMNShape>
-         <bpmndi:BPMNShape bpmnElement="sid-3244E144-1EEF-41FA-95CE-10793EE0CF2A" id="sid-3244E144-1EEF-41FA-95CE-10793EE0CF2A_gui" isExpanded="true">
+         </bpmndi:APMNShape>
+         <bpmndi:APMNShape apmnElement="sid-3244E144-1EEF-41FA-95CE-10793EE0CF2A" id="sid-3244E144-1EEF-41FA-95CE-10793EE0CF2A_gui" isExpanded="true">
             <omgdc:Bounds height="160.0" width="200.0" x="135.0" y="1070.0"/>
-            <bpmndi:BPMNLabel labelStyle="sid-385de329-bbfa-4618-8f2d-bffca39d9f50">
+            <bpmndi:APMNLabel labelStyle="sid-385de329-bbfa-4618-8f2d-bffca39d9f50">
                <omgdc:Bounds height="24.0" width="180.85714721679688" x="143.0" y="1080.0"/>
-            </bpmndi:BPMNLabel>
-         </bpmndi:BPMNShape>
-         <bpmndi:BPMNShape bpmnElement="sid-01D24CC5-B9ED-4EDB-8DDC-5FC437017FCA" id="sid-01D24CC5-B9ED-4EDB-8DDC-5FC437017FCA_gui">
+            </bpmndi:APMNLabel>
+         </bpmndi:APMNShape>
+         <bpmndi:APMNShape apmnElement="sid-01D24CC5-B9ED-4EDB-8DDC-5FC437017FCA" id="sid-01D24CC5-B9ED-4EDB-8DDC-5FC437017FCA_gui">
             <omgdc:Bounds height="30.0" width="30.0" x="165.0" y="1135.0"/>
-         </bpmndi:BPMNShape>
-         <bpmndi:BPMNShape bpmnElement="sid-688214F1-CA73-4689-8175-A17C8206F59A" id="sid-688214F1-CA73-4689-8175-A17C8206F59A_gui" isExpanded="true">
+         </bpmndi:APMNShape>
+         <bpmndi:APMNShape apmnElement="sid-688214F1-CA73-4689-8175-A17C8206F59A" id="sid-688214F1-CA73-4689-8175-A17C8206F59A_gui" isExpanded="true">
             <omgdc:Bounds height="160.0" width="200.0" x="485.0" y="1070.0"/>
-            <bpmndi:BPMNLabel labelStyle="sid-385de329-bbfa-4618-8f2d-bffca39d9f50">
+            <bpmndi:APMNLabel labelStyle="sid-385de329-bbfa-4618-8f2d-bffca39d9f50">
                <omgdc:Bounds height="24.0" width="147.42857360839844" x="493.0" y="1080.0"/>
-            </bpmndi:BPMNLabel>
-         </bpmndi:BPMNShape>
-         <bpmndi:BPMNShape bpmnElement="sid-0C9AA152-894E-484F-B5FE-0BCEF139F9F2" id="sid-0C9AA152-894E-484F-B5FE-0BCEF139F9F2_gui">
+            </bpmndi:APMNLabel>
+         </bpmndi:APMNShape>
+         <bpmndi:APMNShape apmnElement="sid-0C9AA152-894E-484F-B5FE-0BCEF139F9F2" id="sid-0C9AA152-894E-484F-B5FE-0BCEF139F9F2_gui">
             <omgdc:Bounds height="30.0" width="30.0" x="515.0" y="1135.0"/>
-         </bpmndi:BPMNShape>
-         <bpmndi:BPMNShape bpmnElement="sid-4BDB6240-A88E-4287-B123-B39BF94B0E42" id="sid-4BDB6240-A88E-4287-B123-B39BF94B0E42_gui" isExpanded="true">
+         </bpmndi:APMNShape>
+         <bpmndi:APMNShape apmnElement="sid-4BDB6240-A88E-4287-B123-B39BF94B0E42" id="sid-4BDB6240-A88E-4287-B123-B39BF94B0E42_gui" isExpanded="true">
             <omgdc:Bounds height="160.0" width="200.0" x="135.0" y="1275.0"/>
-            <bpmndi:BPMNLabel labelStyle="sid-385de329-bbfa-4618-8f2d-bffca39d9f50">
+            <bpmndi:APMNLabel labelStyle="sid-385de329-bbfa-4618-8f2d-bffca39d9f50">
                <omgdc:Bounds height="24.0" width="180.85714721679688" x="143.0" y="1285.0"/>
-            </bpmndi:BPMNLabel>
-         </bpmndi:BPMNShape>
-         <bpmndi:BPMNShape bpmnElement="sid-E02E9A35-5626-4BB9-9145-A6DEDEB65E9B" id="sid-E02E9A35-5626-4BB9-9145-A6DEDEB65E9B_gui">
+            </bpmndi:APMNLabel>
+         </bpmndi:APMNShape>
+         <bpmndi:APMNShape apmnElement="sid-E02E9A35-5626-4BB9-9145-A6DEDEB65E9B" id="sid-E02E9A35-5626-4BB9-9145-A6DEDEB65E9B_gui">
             <omgdc:Bounds height="30.0" width="30.0" x="165.0" y="1340.0"/>
-         </bpmndi:BPMNShape>
-         <bpmndi:BPMNShape bpmnElement="sid-CDF5EF19-02A6-417E-B907-F2962D279C40" id="sid-CDF5EF19-02A6-417E-B907-F2962D279C40_gui" isExpanded="true">
+         </bpmndi:APMNShape>
+         <bpmndi:APMNShape apmnElement="sid-CDF5EF19-02A6-417E-B907-F2962D279C40" id="sid-CDF5EF19-02A6-417E-B907-F2962D279C40_gui" isExpanded="true">
             <omgdc:Bounds height="160.0" width="200.0" x="135.0" y="1480.0"/>
-            <bpmndi:BPMNLabel labelStyle="sid-385de329-bbfa-4618-8f2d-bffca39d9f50">
+            <bpmndi:APMNLabel labelStyle="sid-385de329-bbfa-4618-8f2d-bffca39d9f50">
                <omgdc:Bounds height="24.0" width="180.85714721679688" x="143.0" y="1490.0"/>
-            </bpmndi:BPMNLabel>
-         </bpmndi:BPMNShape>
-         <bpmndi:BPMNShape bpmnElement="sid-43A95C1E-337E-45E0-AC6B-2F2F28CA62DC" id="sid-43A95C1E-337E-45E0-AC6B-2F2F28CA62DC_gui">
+            </bpmndi:APMNLabel>
+         </bpmndi:APMNShape>
+         <bpmndi:APMNShape apmnElement="sid-43A95C1E-337E-45E0-AC6B-2F2F28CA62DC" id="sid-43A95C1E-337E-45E0-AC6B-2F2F28CA62DC_gui">
             <omgdc:Bounds height="30.0" width="30.0" x="165.0" y="1545.0"/>
-         </bpmndi:BPMNShape>
-         <bpmndi:BPMNShape bpmnElement="sid-CAB21AF6-204C-4262-8B5E-6A69E84A3B8C" id="sid-CAB21AF6-204C-4262-8B5E-6A69E84A3B8C_gui" isExpanded="true">
+         </bpmndi:APMNShape>
+         <bpmndi:APMNShape apmnElement="sid-CAB21AF6-204C-4262-8B5E-6A69E84A3B8C" id="sid-CAB21AF6-204C-4262-8B5E-6A69E84A3B8C_gui" isExpanded="true">
             <omgdc:Bounds height="160.0" width="200.0" x="485.0" y="1480.0"/>
-            <bpmndi:BPMNLabel labelStyle="sid-385de329-bbfa-4618-8f2d-bffca39d9f50">
+            <bpmndi:APMNLabel labelStyle="sid-385de329-bbfa-4618-8f2d-bffca39d9f50">
                <omgdc:Bounds height="24.0" width="138.0" x="493.0" y="1490.0"/>
-            </bpmndi:BPMNLabel>
-         </bpmndi:BPMNShape>
-         <bpmndi:BPMNShape bpmnElement="sid-8E05E835-1F9D-4F74-8A11-E78B9B143890" id="sid-8E05E835-1F9D-4F74-8A11-E78B9B143890_gui">
+            </bpmndi:APMNLabel>
+         </bpmndi:APMNShape>
+         <bpmndi:APMNShape apmnElement="sid-8E05E835-1F9D-4F74-8A11-E78B9B143890" id="sid-8E05E835-1F9D-4F74-8A11-E78B9B143890_gui">
             <omgdc:Bounds height="30.0" width="30.0" x="515.0" y="1545.0"/>
-         </bpmndi:BPMNShape>
-         <bpmndi:BPMNShape bpmnElement="sid-D4CD7F53-3527-4AB6-8272-712F94CBC6AC" id="sid-D4CD7F53-3527-4AB6-8272-712F94CBC6AC_gui" isExpanded="true">
+         </bpmndi:APMNShape>
+         <bpmndi:APMNShape apmnElement="sid-D4CD7F53-3527-4AB6-8272-712F94CBC6AC" id="sid-D4CD7F53-3527-4AB6-8272-712F94CBC6AC_gui" isExpanded="true">
             <omgdc:Bounds height="160.0" width="200.0" x="135.0" y="1685.0"/>
-            <bpmndi:BPMNLabel labelStyle="sid-385de329-bbfa-4618-8f2d-bffca39d9f50">
+            <bpmndi:APMNLabel labelStyle="sid-385de329-bbfa-4618-8f2d-bffca39d9f50">
                <omgdc:Bounds height="24.0" width="180.85714721679688" x="143.0" y="1695.0"/>
-            </bpmndi:BPMNLabel>
-         </bpmndi:BPMNShape>
-         <bpmndi:BPMNShape bpmnElement="sid-8A864C5D-ACB1-46EC-A61E-2E40F7A338C0" id="sid-8A864C5D-ACB1-46EC-A61E-2E40F7A338C0_gui">
+            </bpmndi:APMNLabel>
+         </bpmndi:APMNShape>
+         <bpmndi:APMNShape apmnElement="sid-8A864C5D-ACB1-46EC-A61E-2E40F7A338C0" id="sid-8A864C5D-ACB1-46EC-A61E-2E40F7A338C0_gui">
             <omgdc:Bounds height="30.0" width="30.0" x="165.0" y="1750.0"/>
-         </bpmndi:BPMNShape>
-         <bpmndi:BPMNShape bpmnElement="sid-3AA65260-1EFB-4E71-9DD5-34EA03295029" id="sid-3AA65260-1EFB-4E71-9DD5-34EA03295029_gui" isExpanded="true">
+         </bpmndi:APMNShape>
+         <bpmndi:APMNShape apmnElement="sid-3AA65260-1EFB-4E71-9DD5-34EA03295029" id="sid-3AA65260-1EFB-4E71-9DD5-34EA03295029_gui" isExpanded="true">
             <omgdc:Bounds height="160.0" width="200.0" x="485.0" y="1685.0"/>
-            <bpmndi:BPMNLabel labelStyle="sid-385de329-bbfa-4618-8f2d-bffca39d9f50">
+            <bpmndi:APMNLabel labelStyle="sid-385de329-bbfa-4618-8f2d-bffca39d9f50">
                <omgdc:Bounds height="24.0" width="176.57142639160156" x="493.0" y="1695.0"/>
-            </bpmndi:BPMNLabel>
-         </bpmndi:BPMNShape>
-         <bpmndi:BPMNShape bpmnElement="sid-897DF4F2-CF88-4B64-BD28-A18523F9D9F6" id="sid-897DF4F2-CF88-4B64-BD28-A18523F9D9F6_gui">
+            </bpmndi:APMNLabel>
+         </bpmndi:APMNShape>
+         <bpmndi:APMNShape apmnElement="sid-897DF4F2-CF88-4B64-BD28-A18523F9D9F6" id="sid-897DF4F2-CF88-4B64-BD28-A18523F9D9F6_gui">
             <omgdc:Bounds height="30.0" width="30.0" x="515.0" y="1750.0"/>
-         </bpmndi:BPMNShape>
-         <bpmndi:BPMNShape bpmnElement="sid-7AB5E77A-9182-44EA-83C6-8666BA69D14C" id="sid-7AB5E77A-9182-44EA-83C6-8666BA69D14C_gui">
+         </bpmndi:APMNShape>
+         <bpmndi:APMNShape apmnElement="sid-7AB5E77A-9182-44EA-83C6-8666BA69D14C" id="sid-7AB5E77A-9182-44EA-83C6-8666BA69D14C_gui">
             <omgdc:Bounds height="50.0" width="127.0" x="535.0" y="920.0"/>
-            <bpmndi:BPMNLabel labelStyle="sid-1b8db542-bcc2-4df8-a03b-3eb13dbd52bd">
+            <bpmndi:APMNLabel labelStyle="sid-1b8db542-bcc2-4df8-a03b-3eb13dbd52bd">
                <omgdc:Bounds height="12.0" width="123.42857360839844" x="539.0" y="936.0"/>
-            </bpmndi:BPMNLabel>
-         </bpmndi:BPMNShape>
-         <bpmndi:BPMNShape bpmnElement="sid-D90F1894-EA85-44A2-AC16-C6F03348B6F7" id="sid-D90F1894-EA85-44A2-AC16-C6F03348B6F7_gui">
+            </bpmndi:APMNLabel>
+         </bpmndi:APMNShape>
+         <bpmndi:APMNShape apmnElement="sid-D90F1894-EA85-44A2-AC16-C6F03348B6F7" id="sid-D90F1894-EA85-44A2-AC16-C6F03348B6F7_gui">
             <omgdc:Bounds height="50.0" width="127.0" x="535.0" y="1330.0"/>
-            <bpmndi:BPMNLabel labelStyle="sid-1b8db542-bcc2-4df8-a03b-3eb13dbd52bd">
+            <bpmndi:APMNLabel labelStyle="sid-1b8db542-bcc2-4df8-a03b-3eb13dbd52bd">
                <omgdc:Bounds height="12.0" width="123.42857360839844" x="539.0" y="1346.0"/>
-            </bpmndi:BPMNLabel>
-         </bpmndi:BPMNShape>
-      </bpmndi:BPMNPlane>
-      <bpmndi:BPMNLabelStyle id="sid-1b8db542-bcc2-4df8-a03b-3eb13dbd52bd">
+            </bpmndi:APMNLabel>
+         </bpmndi:APMNShape>
+      </bpmndi:APMNPlane>
+      <bpmndi:APMNLabelStyle id="sid-1b8db542-bcc2-4df8-a03b-3eb13dbd52bd">
          <omgdc:Font isBold="false" isItalic="false" isStrikeThrough="false" isUnderline="false" name="Arial" size="11.0"/>
-      </bpmndi:BPMNLabelStyle>
-      <bpmndi:BPMNLabelStyle id="sid-385de329-bbfa-4618-8f2d-bffca39d9f50">
+      </bpmndi:APMNLabelStyle>
+      <bpmndi:APMNLabelStyle id="sid-385de329-bbfa-4618-8f2d-bffca39d9f50">
          <omgdc:Font isBold="false" isItalic="false" isStrikeThrough="false" isUnderline="false" name="Arial" size="12.0"/>
-      </bpmndi:BPMNLabelStyle>
-   </bpmndi:BPMNDiagram>
+      </bpmndi:APMNLabelStyle>
+   </bpmndi:APMNDiagram>
 </definitions>

@@ -2,7 +2,7 @@
 
 import BpmnTreeWalker from 'lib/import/BpmnTreeWalker';
 
-import BpmnModdle from 'bpmn-moddle';
+import ApmnModdle from 'apmn-moddle';
 
 import { find } from 'min-dash';
 
@@ -24,7 +24,7 @@ describe('import - BpmnTreeWalker', function() {
   });
 
 
-  it('should walk bpmn:Definitions', function(done) {
+  it('should walk apmn:Definitions', function(done) {
 
     // given
     var elementSpy = sinon.spy(),
@@ -52,7 +52,7 @@ describe('import - BpmnTreeWalker', function() {
   });
 
 
-  it('should walk bpmn:SubProcess', function(done) {
+  it('should walk apmn:SubProcess', function(done) {
 
     // given
     var elementSpy = sinon.spy(),
@@ -127,9 +127,9 @@ describe('import - BpmnTreeWalker', function() {
 // helpers //////////
 
 function createModdle(xml, done) {
-  var moddle = new BpmnModdle();
+  var moddle = new ApmnModdle();
 
-  moddle.fromXML(xml, 'bpmn:Definitions', function(err, definitions, context) {
+  moddle.fromXML(xml, 'apmn:Definitions', function(err, definitions, context) {
     done(err, definitions, context, moddle);
   });
 }

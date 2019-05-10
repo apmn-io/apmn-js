@@ -1,4 +1,4 @@
-describe('bpmn-navigated-viewer', function() {
+describe('apmn-navigated-viewer', function() {
 
   it('should expose globals', function() {
 
@@ -7,15 +7,6 @@ describe('bpmn-navigated-viewer', function() {
     // then
     expect(BpmnJS).to.exist;
     expect(new BpmnJS()).to.exist;
-  });
-
-
-  it('should expose Viewer', function() {
-
-    var BpmnJS = window.BpmnJS;
-
-    // then
-    expect(BpmnJS.Viewer).not.to.exist;
   });
 
 

@@ -51,7 +51,7 @@ describe('features - bpmn-updater', function() {
             startEventDi = elementRegistry.get('StartEvent_2').businessObject.di;
 
         var intermediateThrowEvent = elementFactory.createShape({
-          type: 'bpmn:IntermediateThrowEvent'
+          type: 'apmn:IntermediateThrowEvent'
         });
 
         var dropPosition = { x: 320, y: 260 };
@@ -74,7 +74,7 @@ describe('features - bpmn-updater', function() {
         var sequenceFlow = elementRegistry.get('SequenceFlow_4');
 
         var intermediateThrowEvent = elementFactory.createShape({
-          type: 'bpmn:IntermediateThrowEvent'
+          type: 'apmn:IntermediateThrowEvent'
         });
 
         var dropPosition = { x: 320, y: 260 };
@@ -130,7 +130,7 @@ describe('features - bpmn-updater', function() {
     }));
 
 
-    it('should add missing label bpmndi:Bounds', inject(
+    it('should add missing label apmndi:Aounds', inject(
       function(modeling, elementRegistry) {
 
         // given
@@ -154,7 +154,7 @@ describe('features - bpmn-updater', function() {
     ));
 
 
-    it('should add missing bpmndi:BPMNLabel', inject(
+    it('should add missing apmndi:APMNLabel', inject(
       function(modeling, elementRegistry) {
 
         // given

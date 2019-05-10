@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:omgdc="http://www.omg.org/spec/DD/20100524/DC" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="sid-38422fae-e03e-43a3-bef4-bd33b32041b2" targetNamespace="http://bpmn.io/bpmn" exporter="http://bpmn.io" exporterVersion="0.10.1">
+<definitions xmlns="http://apmn.io/spec/APMN/MODEL" xmlns:bpmndi="http://apmn.io/spec/APMN/DI" xmlns:omgdc="http://apmn.io/spec/DD/DC" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="sid-38422fae-e03e-43a3-bef4-bd33b32041b2" targetNamespace="http://bpmn.io/bpmn" exporter="http://bpmn.io" exporterVersion="0.10.1">
   <collaboration id="Collaboration_00p2rt7">
     <participant id="Participant_1f9ghrx" processRef="Process_0td36v7" />
   </collaboration>
@@ -9,17 +9,17 @@
       <lane id="Lane_2" />
     </laneSet>
   </process>
-  <bpmndi:BPMNDiagram id="BpmnDiagram_1">
-    <bpmndi:BPMNPlane id="BpmnPlane_1" bpmnElement="Collaboration_00p2rt7">
-      <bpmndi:BPMNShape id="Participant_1f9ghrx_di" bpmnElement="Participant_1f9ghrx">
+  <bpmndi:APMNDiagram id="BpmnDiagram_1">
+    <bpmndi:APMNPlane id="BpmnPlane_1" apmnElement="Collaboration_00p2rt7">
+      <bpmndi:APMNShape id="Participant_1f9ghrx_di" apmnElement="Participant_1f9ghrx">
         <omgdc:Bounds x="96" y="100" width="600" height="250" />
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Lane_1_di" bpmnElement="Lane_1">
+      </bpmndi:APMNShape>
+      <bpmndi:APMNShape id="Lane_1_di" apmnElement="Lane_1">
         <omgdc:Bounds x="126" y="100" width="570" height="125" />
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Lane_2_di" bpmnElement="Lane_2">
+      </bpmndi:APMNShape>
+      <bpmndi:APMNShape id="Lane_2_di" apmnElement="Lane_2">
         <omgdc:Bounds x="126" y="225" width="570" height="125" />
-      </bpmndi:BPMNShape>
-    </bpmndi:BPMNPlane>
-  </bpmndi:BPMNDiagram>
+      </bpmndi:APMNShape>
+    </bpmndi:APMNPlane>
+  </bpmndi:APMNDiagram>
 </definitions>

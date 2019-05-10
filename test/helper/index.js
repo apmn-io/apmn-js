@@ -1,11 +1,11 @@
 /**
- * A helper file that may be used in test cases for bpmn-js and extensions.
+ * A helper file that may be used in test cases for apmn-js and extensions.
  *
  * Provides the globals
  *
  * * bootstrapModeler(): bootstrap a modeler instance
  * * bootstrapViewer(): bootstrap a viewer instance
- * * inject(function(a, b) {}): inject the bpmn-js services in the given function
+ * * inject(function(a, b) {}): inject the apmn-js services in the given function
  *
  *
  * In addition it provides the utilities
@@ -17,11 +17,11 @@
  * and perform custom bootstrapping (CSS, ...) in that utility.
  *
  * ```
- * export * from 'bpmn-js/test/helper';
+ * export * from 'apmn-js/test/helper';
  *
  * import {
  *   insertCSS
- * } from 'bpmn-js/test/helper';
+ * } from 'apmn-js/test/helper';
  *
  * var fs = require('fs');
  *
@@ -111,7 +111,7 @@ export function bootstrapBpmnJS(BpmnJS, diagram, options, locals) {
       );
     }
 
-    // clean up old bpmn-js instance
+    // clean up old apmn-js instance
     if (BPMN_JS) {
       BPMN_JS.destroy();
     }
@@ -207,7 +207,7 @@ export function inject(fn) {
 
     if (!BPMN_JS) {
       throw new Error(
-        'no bootstraped bpmn-js instance, ' +
+        'no bootstraped apmn-js instance, ' +
         'ensure you created it via #boostrap(Modeler|Viewer)'
       );
     }

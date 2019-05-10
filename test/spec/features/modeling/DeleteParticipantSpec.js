@@ -42,7 +42,7 @@ describe('features/modeling - delete participant', function() {
         var newRootShape = canvas.getRootElement(),
             newRootBusinessObject = newRootShape.businessObject;
 
-        expect(newRootBusinessObject.$instanceOf('bpmn:Process')).to.be.true;
+        expect(newRootBusinessObject.$instanceOf('apmn:Process')).to.be.true;
 
         // collaboration DI is unwired
         expect(participantDi.$parent).not.to.be.ok;
@@ -52,7 +52,7 @@ describe('features/modeling - delete participant', function() {
         expect(bpmnDefinitions.rootElements).not.to.include(collaboration);
 
         // process DI is wired
-        expect(diPlane.bpmnElement).to.eql(newRootBusinessObject);
+        expect(diPlane.apmnElement).to.eql(newRootBusinessObject);
         expect(newRootBusinessObject.di).to.eql(diPlane);
 
         expect(bpmnDefinitions.rootElements).to.include(newRootBusinessObject);
@@ -85,7 +85,7 @@ describe('features/modeling - delete participant', function() {
         expect(participantDi.$parent).to.eql(originalRootElementBo.di);
 
         // new di is wired
-        expect(diPlane.bpmnElement).to.eql(originalRootElementBo);
+        expect(diPlane.apmnElement).to.eql(originalRootElementBo);
       }));
 
     });

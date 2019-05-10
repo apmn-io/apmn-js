@@ -1,7 +1,7 @@
 {
-  "name": "bpmn-js",
-  "version": "3.4.1",
-  "description": "A bpmn 2.0 toolkit and web modeler",
+  "name": "apmn-js",
+  "version": "3.4.4",
+  "description": "A apmn toolkit and web modeler",
   "scripts": {
     "all": "run-s lint test distro test:distro",
     "lint": "eslint .",
@@ -13,11 +13,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/bpmn-io/bpmn-js"
+    "url": "https://github.com/apmn-io/apmn-js"
   },
   "keywords": [
-    "bpmn",
-    "bpmn-js",
+    "apmn",
+    "apmn-js",
     "toolkit",
     "web modeler",
     "modeler",
@@ -78,11 +78,11 @@
     "webpack": "^4.30.0"
   },
   "dependencies": {
+    "apmn-moddle": "^5.1.8",
     "bpmn-font": "^0.8.0",
-    "bpmn-moddle": "^5.1.6",
     "css.escape": "^1.5.1",
     "diagram-js": "^3.3.0",
-    "diagram-js-direct-editing": "^1.4.2",
+    "diagram-js-direct-editing": "^1.4.1",
     "ids": "^0.2.0",
     "inherits": "^2.0.1",
     "min-dash": "^3.4.0",

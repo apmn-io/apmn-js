@@ -26,7 +26,7 @@ describe('modeling/behavior - fix DataInputAssociation#targetRef', function() {
 
     // when
     var newConnection = modeling.connect(dataObjectShape, taskShape, {
-      type: 'bpmn:DataInputAssociation'
+      type: 'apmn:DataInputAssociation'
     });
 
     var dataInputAssociation = newConnection.businessObject;
@@ -44,7 +44,7 @@ describe('modeling/behavior - fix DataInputAssociation#targetRef', function() {
         taskShape = elementRegistry.get('Task_B');
 
     var newConnection = modeling.connect(dataObjectShape, taskShape, {
-      type: 'bpmn:DataInputAssociation'
+      type: 'apmn:DataInputAssociation'
     });
 
     var dataInputAssociation = newConnection.businessObject;

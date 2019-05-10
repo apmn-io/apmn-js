@@ -40,7 +40,7 @@ describe('features/modeling - create participant', function() {
             collaboration = collaborationRoot.businessObject,
             collaborationDi = collaboration.di;
 
-        expect(collaboration.$instanceOf('bpmn:Collaboration')).to.be.true;
+        expect(collaboration.$instanceOf('apmn:Collaboration')).to.be.true;
 
         // participant / collaboration are wired
         expect(participant.$parent).to.eql(collaboration);
@@ -118,7 +118,7 @@ describe('features/modeling - create participant', function() {
         var newRootShape = canvas.getRootElement(),
             collaboration = newRootShape.businessObject;
 
-        expect(collaboration.$instanceOf('bpmn:Collaboration')).to.be.true;
+        expect(collaboration.$instanceOf('apmn:Collaboration')).to.be.true;
 
         expect(participant.$parent).to.eql(collaboration);
         expect(collaboration.participants).to.include(participant);

@@ -113,7 +113,7 @@ describe('features/popup-menu - replace menu provider', function() {
         openPopup(task);
 
         // then
-        expect(is(loopCharacteristics, 'bpmn:MultiInstanceLoopCharacteristics')).to.be.true;
+        expect(is(loopCharacteristics, 'apmn:MultiInstanceLoopCharacteristics')).to.be.true;
 
         expect(toggleActive('toggle-parallel-mi')).to.be.true;
       }));
@@ -127,7 +127,7 @@ describe('features/popup-menu - replace menu provider', function() {
 
         // assume
         expect(loopCharacteristics.isSequential).to.be.true;
-        expect(is(loopCharacteristics, 'bpmn:MultiInstanceLoopCharacteristics')).to.be.true;
+        expect(is(loopCharacteristics, 'apmn:MultiInstanceLoopCharacteristics')).to.be.true;
 
         // when
         openPopup(task);
@@ -145,7 +145,7 @@ describe('features/popup-menu - replace menu provider', function() {
 
         // assume
         expect(loopCharacteristics.isSequential).not.to.exist;
-        expect(is(loopCharacteristics, 'bpmn:MultiInstanceLoopCharacteristics')).to.be.false;
+        expect(is(loopCharacteristics, 'apmn:MultiInstanceLoopCharacteristics')).to.be.false;
 
         // when
         openPopup(task);
@@ -276,7 +276,7 @@ describe('features/popup-menu - replace menu provider', function() {
         // then
         expect(domClasses(parallelEntry).has('active')).to.be.true;
         expect(task.businessObject.loopCharacteristics.isSequential).to.be.false;
-        expect(is(task.businessObject.loopCharacteristics, 'bpmn:MultiInstanceLoopCharacteristics')).to.be.true;
+        expect(is(task.businessObject.loopCharacteristics, 'apmn:MultiInstanceLoopCharacteristics')).to.be.true;
       }));
 
 
@@ -367,7 +367,7 @@ describe('features/popup-menu - replace menu provider', function() {
         // then
         expect(domClasses(sequentialEntry).has('active')).to.be.true;
         expect(task.businessObject.loopCharacteristics.isSequential).to.be.true;
-        expect(is(task.businessObject.loopCharacteristics, 'bpmn:MultiInstanceLoopCharacteristics')).to.be.true;
+        expect(is(task.businessObject.loopCharacteristics, 'apmn:MultiInstanceLoopCharacteristics')).to.be.true;
       }));
 
 
@@ -435,7 +435,7 @@ describe('features/popup-menu - replace menu provider', function() {
 
         // then
         expect(domClasses(loopEntry).has('active')).to.be.false;
-        expect(is(task.businessObject.loopCharacteristics, 'bpmn:MultiInstanceLoopCharacteristics')).not.to.exist;
+        expect(is(task.businessObject.loopCharacteristics, 'apmn:MultiInstanceLoopCharacteristics')).not.to.exist;
       }));
 
 
@@ -457,7 +457,7 @@ describe('features/popup-menu - replace menu provider', function() {
 
         // then
         expect(domClasses(loopEntry).has('active')).to.be.true;
-        expect(is(task.businessObject.loopCharacteristics, 'bpmn:StandardLoopCharacteristics')).to.be.true;
+        expect(is(task.businessObject.loopCharacteristics, 'apmn:StandardLoopCharacteristics')).to.be.true;
       }));
 
 
@@ -526,7 +526,7 @@ describe('features/popup-menu - replace menu provider', function() {
       // then
       expect(sendTask.businessObject.loopCharacteristics).to.exist;
       expect(sendTask.businessObject.loopCharacteristics.isSequential).to.be.true;
-      expect(is(sendTask.businessObject.loopCharacteristics, 'bpmn:MultiInstanceLoopCharacteristics')).to.be.true;
+      expect(is(sendTask.businessObject.loopCharacteristics, 'apmn:MultiInstanceLoopCharacteristics')).to.be.true;
     }));
 
 
@@ -547,7 +547,7 @@ describe('features/popup-menu - replace menu provider', function() {
         // then
         expect(callActivity.businessObject.loopCharacteristics).to.exist;
         expect(callActivity.businessObject.loopCharacteristics.isSequential).to.be.true;
-        expect(is(callActivity.businessObject.loopCharacteristics, 'bpmn:MultiInstanceLoopCharacteristics')).to.be.true;
+        expect(is(callActivity.businessObject.loopCharacteristics, 'apmn:MultiInstanceLoopCharacteristics')).to.be.true;
       })
     );
 
@@ -724,8 +724,8 @@ describe('features/popup-menu - replace menu provider', function() {
           var startEvent = elementRegistry.get('StartEvent_3');
 
           var newElement = bpmnReplace.replaceElement(startEvent, {
-            type: 'bpmn:StartEvent',
-            eventDefinitionType: 'bpmn:ConditionalEventDefinition',
+            type: 'apmn:StartEvent',
+            eventDefinitionType: 'apmn:ConditionalEventDefinition',
             isInterrupting: false
           });
 
@@ -1407,7 +1407,7 @@ describe('features/popup-menu - replace menu provider', function() {
 
 
       [
-        'bpmn:StartEvent'
+        'apmn:StartEvent'
       ].forEach(function(type) {
 
         it('should replace DefaultFlow with SequenceFlow when changing target to ' + type,
@@ -1443,9 +1443,9 @@ describe('features/popup-menu - replace menu provider', function() {
 
 
       [
-        'bpmn:Activity',
-        'bpmn:EndEvent',
-        'bpmn:IntermediateThrowEvent'
+        'apmn:Activity',
+        'apmn:EndEvent',
+        'apmn:IntermediateThrowEvent'
       ].forEach(function(type) {
 
         it('should keep DefaultFlow when changing target to ' + type,
@@ -1487,7 +1487,7 @@ describe('features/popup-menu - replace menu provider', function() {
           var sequenceFlow = elementRegistry.get('SequenceFlow_1'),
               rootElement = canvas.getRootElement();
 
-          var intermediateEvent = elementFactory.createShape({ type: 'bpmn:StartEvent' });
+          var intermediateEvent = elementFactory.createShape({ type: 'apmn:StartEvent' });
 
           modeling.createShape(intermediateEvent, { x: 686, y: 50 }, rootElement);
 
@@ -1525,7 +1525,7 @@ describe('features/popup-menu - replace menu provider', function() {
 
         triggerAction(entries, 'replace-with-default-flow');
 
-        var inclusiveGateway = bpmnReplace.replaceElement(exclusiveGateway, { type: 'bpmn:InclusiveGateway' });
+        var inclusiveGateway = bpmnReplace.replaceElement(exclusiveGateway, { type: 'apmn:InclusiveGateway' });
 
         // then
         expect(inclusiveGateway.businessObject.default).to.equal(sequenceFlow.businessObject);
@@ -1547,7 +1547,7 @@ describe('features/popup-menu - replace menu provider', function() {
 
         replaceDefaultFlow.action();
 
-        var sendTask = bpmnReplace.replaceElement(task, { type: 'bpmn:SendTask' });
+        var sendTask = bpmnReplace.replaceElement(task, { type: 'apmn:SendTask' });
 
         // then
         expect(sendTask.businessObject.default).to.equal(sequenceFlow.businessObject);
@@ -1568,7 +1568,7 @@ describe('features/popup-menu - replace menu provider', function() {
 
           triggerAction(entries, 'replace-with-default-flow');
 
-          bpmnReplace.replaceElement(exclusiveGateway, { type: 'bpmn:InclusiveGateway' });
+          bpmnReplace.replaceElement(exclusiveGateway, { type: 'apmn:InclusiveGateway' });
 
           commandStack.undo();
 
@@ -1585,7 +1585,7 @@ describe('features/popup-menu - replace menu provider', function() {
           var sequenceFlow = elementRegistry.get('SequenceFlow_3'),
               exclusiveGateway = elementRegistry.get('ExclusiveGateway_1');
 
-          var conditionExpression = moddle.create('bpmn:FormalExpression', {
+          var conditionExpression = moddle.create('apmn:FormalExpression', {
             body: ''
           });
 
@@ -1615,7 +1615,7 @@ describe('features/popup-menu - replace menu provider', function() {
           var sequenceFlow = elementRegistry.get('SequenceFlow_3'),
               exclusiveGateway = elementRegistry.get('ExclusiveGateway_1');
 
-          var conditionExpression = moddle.create('bpmn:FormalExpression', { body: '' });
+          var conditionExpression = moddle.create('apmn:FormalExpression', { body: '' });
 
           modeling.updateProperties(sequenceFlow, { conditionExpression: conditionExpression });
 
@@ -1659,7 +1659,7 @@ describe('features/popup-menu - replace menu provider', function() {
         triggerAction(entries, 'replace-with-conditional-flow');
 
         // then
-        expect(sequenceFlow.businessObject.conditionExpression.$type).to.equal('bpmn:FormalExpression');
+        expect(sequenceFlow.businessObject.conditionExpression.$type).to.equal('apmn:FormalExpression');
       }));
 
 
@@ -1756,13 +1756,13 @@ describe('features/popup-menu - replace menu provider', function() {
           commandStack.undo();
 
           // then
-          expect(sequenceFlow.businessObject.conditionExpression.$type).to.equal('bpmn:FormalExpression');
+          expect(sequenceFlow.businessObject.conditionExpression.$type).to.equal('apmn:FormalExpression');
         })
       );
 
 
       [
-        'bpmn:StartEvent'
+        'apmn:StartEvent'
       ].forEach(function(type) {
 
         it('should replace ConditionalFlow with SequenceFlow when changing target to ' + type,
@@ -1796,9 +1796,9 @@ describe('features/popup-menu - replace menu provider', function() {
 
 
       [
-        'bpmn:Activity',
-        'bpmn:EndEvent',
-        'bpmn:IntermediateThrowEvent'
+        'apmn:Activity',
+        'apmn:EndEvent',
+        'apmn:IntermediateThrowEvent'
       ].forEach(function(type) {
 
         it('should keep ConditionalFlow when changing target to ' + type,
@@ -1837,7 +1837,7 @@ describe('features/popup-menu - replace menu provider', function() {
           // given
           var sequenceFlow = elementRegistry.get('SequenceFlow_3'),
               root = canvas.getRootElement(),
-              intermediateEvent = elementFactory.createShape({ type: 'bpmn:StartEvent' });
+              intermediateEvent = elementFactory.createShape({ type: 'apmn:StartEvent' });
 
           modeling.createShape(intermediateEvent, { x: 497, y: 197 }, root);
 
@@ -1857,7 +1857,7 @@ describe('features/popup-menu - replace menu provider', function() {
           commandStack.undo();
 
           // then
-          expect(sequenceFlow.businessObject.conditionExpression.$type).to.equal('bpmn:FormalExpression');
+          expect(sequenceFlow.businessObject.conditionExpression.$type).to.equal('apmn:FormalExpression');
         })
       );
 

@@ -253,7 +253,7 @@ describe('label bounds', function() {
           result = result.replace(/>\s+/g,'>');
 
           // get label width and height from XML
-          var matches = result.match(/StartEvent_1_di.*?BPMNLabel.*?width="(\d*).*?height="(\d*)/);
+          var matches = result.match(/StartEvent_1_di.*?APMNLabel.*?width="(\d*).*?height="(\d*)/);
 
           var width = parseInt(matches[1]),
               height = parseInt(matches[2]);
@@ -292,7 +292,7 @@ describe('label bounds', function() {
           result = result.replace(/>\s+/g,'>');
 
           // get label width and height from XML
-          var matches = result.match(/StartEvent_3_di.*?BPMNLabel.*?width="(\d*).*?height="(\d*)/);
+          var matches = result.match(/StartEvent_3_di.*?APMNLabel.*?width="(\d*).*?height="(\d*)/);
 
           var width = parseInt(matches[1]),
               height = parseInt(matches[2]);

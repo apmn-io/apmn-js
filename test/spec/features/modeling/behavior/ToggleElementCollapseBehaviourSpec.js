@@ -40,7 +40,7 @@ describe('features/modeling - collapse and expand elements', function() {
         // when
         var expandedSubProcess = bpmnReplace.replaceElement(collapsedSubProcess,
           {
-            type: 'bpmn:SubProcess',
+            type: 'apmn:SubProcess',
             isExpanded: true
           }
         );
@@ -62,7 +62,7 @@ describe('features/modeling - collapse and expand elements', function() {
         // when
         var expandedSubProcess = bpmnReplace.replaceElement(collapsedSubProcess,
           {
-            type: 'bpmn:SubProcess',
+            type: 'apmn:SubProcess',
             isExpanded: true
           }
         );
@@ -87,13 +87,13 @@ describe('features/modeling - collapse and expand elements', function() {
         // when
         var expandedAdHocSubProcess = bpmnReplace.replaceElement(collapsedAdHocSubProcess,
           {
-            type: 'bpmn:SubProcess',
+            type: 'apmn:SubProcess',
             isExpanded: true
           }
         );
 
         // then
-        expect(is(expandedAdHocSubProcess, 'bpmn:AdHocSubProcess')).to.eql(true);
+        expect(is(expandedAdHocSubProcess, 'apmn:AdHocSubProcess')).to.eql(true);
         var businessObject = expandedAdHocSubProcess.businessObject;
         expect(businessObject.loopCharacteristics).not.to.be.undefined;
       })
@@ -116,7 +116,7 @@ describe('features/modeling - collapse and expand elements', function() {
           // when
           var expandedSubProcess = bpmnReplace.replaceElement(collapsedSubProcess,
             {
-              type: 'bpmn:SubProcess',
+              type: 'apmn:SubProcess',
               isExpanded: true
             }
           );
@@ -142,7 +142,7 @@ describe('features/modeling - collapse and expand elements', function() {
           // when
           var expandedSubProcess = bpmnReplace.replaceElement(collapsedSubProcess,
             {
-              type: 'bpmn:SubProcess',
+              type: 'apmn:SubProcess',
               isExpanded: true
             }
           );
@@ -169,7 +169,7 @@ describe('features/modeling - collapse and expand elements', function() {
           // when
           var expandedSubProcess = bpmnReplace.replaceElement(collapsedSubProcess,
             {
-              type: 'bpmn:SubProcess',
+              type: 'apmn:SubProcess',
               isExpanded: true
             }
           );
@@ -206,7 +206,7 @@ describe('features/modeling - collapse and expand elements', function() {
           // when
           var expandedSubProcess = bpmnReplace.replaceElement(collapsedSubProcess,
             {
-              type: 'bpmn:SubProcess',
+              type: 'apmn:SubProcess',
               isExpanded: true
             }
           );
@@ -235,7 +235,7 @@ describe('features/modeling - collapse and expand elements', function() {
           var collapsedSubProcess = elementRegistry.get('SubProcess_1');
           var expandedSubProcess = bpmnReplace.replaceElement(collapsedSubProcess,
             {
-              type: 'bpmn:SubProcess',
+              type: 'apmn:SubProcess',
               isExpanded: true
             }
           );
@@ -264,7 +264,7 @@ describe('features/modeling - collapse and expand elements', function() {
 
           bpmnReplace.replaceElement(collapsedSubProcess,
             {
-              type: 'bpmn:SubProcess',
+              type: 'apmn:SubProcess',
               isExpanded: true
             }
           );
@@ -287,7 +287,7 @@ describe('features/modeling - collapse and expand elements', function() {
 
           bpmnReplace.replaceElement(collapsedSubProcess,
             {
-              type: 'bpmn:SubProcess',
+              type: 'apmn:SubProcess',
               isExpanded: true
             }
           );
@@ -326,7 +326,7 @@ describe('features/modeling - collapse and expand elements', function() {
         // when
         var collapsedSubProcess = bpmnReplace.replaceElement(expandedSubProcess,
           {
-            type: 'bpmn:SubProcess',
+            type: 'apmn:SubProcess',
             isExpanded: false
           }
         );
@@ -348,7 +348,7 @@ describe('features/modeling - collapse and expand elements', function() {
         // when
         var collapsedSubProcess = bpmnReplace.replaceElement(expandedSubProcess,
           {
-            type: 'bpmn:SubProcess',
+            type: 'apmn:SubProcess',
             isExpanded: false
           }
         );
@@ -373,13 +373,13 @@ describe('features/modeling - collapse and expand elements', function() {
         // when
         var collapsedSubProcess = bpmnReplace.replaceElement(expandedSubProcess,
           {
-            type: 'bpmn:SubProcess',
+            type: 'apmn:SubProcess',
             isExpanded: false
           }
         );
 
         // then
-        expect(is(collapsedSubProcess, 'bpmn:AdHocSubProcess')).to.eql(true);
+        expect(is(collapsedSubProcess, 'apmn:AdHocSubProcess')).to.eql(true);
         var businessObject = collapsedSubProcess.businessObject;
         expect(businessObject.loopCharacteristics).not.to.be.undefined;
       })
@@ -401,7 +401,7 @@ describe('features/modeling - collapse and expand elements', function() {
           // when
           var collapsedSubProcess = bpmnReplace.replaceElement(expandedSubProcess,
             {
-              type: 'bpmn:SubProcess',
+              type: 'apmn:SubProcess',
               isExpanded: false
             }
           );
@@ -431,7 +431,7 @@ describe('features/modeling - collapse and expand elements', function() {
           var expandedSubProcess = elementRegistry.get('SubProcess_2');
           var collapsedSubProcess = bpmnReplace.replaceElement(expandedSubProcess,
             {
-              type: 'bpmn:SubProcess',
+              type: 'apmn:SubProcess',
               isExpanded: false
             }
           );
@@ -460,7 +460,7 @@ describe('features/modeling - collapse and expand elements', function() {
 
           bpmnReplace.replaceElement(expandedSubProcess,
             {
-              type: 'bpmn:SubProcess',
+              type: 'apmn:SubProcess',
               isExpanded: false
             }
           );
@@ -483,7 +483,7 @@ describe('features/modeling - collapse and expand elements', function() {
 
           bpmnReplace.replaceElement(expandedSubProcess,
             {
-              type: 'bpmn:SubProcess',
+              type: 'apmn:SubProcess',
               isExpanded: false
             }
           );
@@ -523,7 +523,7 @@ describe('features/modeling - collapse and expand elements', function() {
           // when
           bpmnReplace.replaceElement(collapsedSubProcess,
             {
-              type: 'bpmn:AdHocSubProcess',
+              type: 'apmn:AdHocSubProcess',
               isExpanded: false
             }
           );
@@ -548,7 +548,7 @@ describe('features/modeling - collapse and expand elements', function() {
           // when
           bpmnReplace.replaceElement(collapsedSubProcess,
             {
-              type: 'bpmn:SubProcess',
+              type: 'apmn:SubProcess',
               isExpanded: false
             }
           );
@@ -577,7 +577,7 @@ describe('features/modeling - collapse and expand elements', function() {
           // when
           bpmnReplace.replaceElement(expandedSubProcess,
             {
-              type: 'bpmn:AdHocSubProcess',
+              type: 'apmn:AdHocSubProcess',
               isExpanded: true
             }
           );
@@ -602,7 +602,7 @@ describe('features/modeling - collapse and expand elements', function() {
           // when
           bpmnReplace.replaceElement(expandedSubProcess,
             {
-              type: 'bpmn:SubProcess',
+              type: 'apmn:SubProcess',
               isExpanded: true
             }
           );

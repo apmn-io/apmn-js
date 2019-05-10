@@ -32,7 +32,7 @@ describe('features/modeling - layout association', function() {
     var startEventShape = elementRegistry.get('StartEvent_1');
 
     // when
-    var textAnnotationShape = modeling.createShape({ type: 'bpmn:TextAnnotation' }, { x: 400, y: 400 }, rootShape);
+    var textAnnotationShape = modeling.createShape({ type: 'apmn:TextAnnotation' }, { x: 400, y: 400 }, rootShape);
 
     modeling.connect(textAnnotationShape, startEventShape);
 
@@ -51,7 +51,7 @@ describe('features/modeling - layout association', function() {
 
     // given
     var startEventShape = elementRegistry.get('StartEvent_1'),
-        textAnnotationShape = modeling.createShape({ type: 'bpmn:TextAnnotation' }, { x: 400, y: 400 }, rootShape);
+        textAnnotationShape = modeling.createShape({ type: 'apmn:TextAnnotation' }, { x: 400, y: 400 }, rootShape);
 
     modeling.connect(textAnnotationShape, startEventShape);
 
@@ -73,7 +73,7 @@ describe('features/modeling - layout association', function() {
 
     // given
     var startEventShape = elementRegistry.get('StartEvent_1'),
-        textAnnotationShape = modeling.createShape({ type: 'bpmn:TextAnnotation' }, { x: 400, y: 400 }, rootShape);
+        textAnnotationShape = modeling.createShape({ type: 'apmn:TextAnnotation' }, { x: 400, y: 400 }, rootShape);
 
     var connection = modeling.connect(textAnnotationShape, startEventShape),
         waypoints = connection.waypoints;

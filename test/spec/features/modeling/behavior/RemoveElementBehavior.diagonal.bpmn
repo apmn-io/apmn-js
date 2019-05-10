@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Definitions_1" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="3.0.1">
+<bpmn:definitions xmlns:bpmn="http://apmn.io/spec/APMN/MODEL" xmlns:bpmndi="http://apmn.io/spec/APMN/DI" xmlns:di="http://apmn.io/spec/DD/DI" xmlns:dc="http://apmn.io/spec/DD/DC" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Definitions_1" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="3.0.1">
   <bpmn:process id="Process_1" isExecutable="false">
     <bpmn:startEvent id="StartEvent1">
       <bpmn:outgoing>SequenceFlow1</bpmn:outgoing>
@@ -14,41 +14,41 @@
     </bpmn:endEvent>
     <bpmn:sequenceFlow id="SequenceFlow2" sourceRef="Task1" targetRef="EndEvent1" />
   </bpmn:process>
-  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
-    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Process_1">
-      <bpmndi:BPMNShape id="StartEvent1_di" bpmnElement="StartEvent1">
+  <bpmndi:APMNDiagram id="BPMNDiagram_1">
+    <bpmndi:APMNPlane id="BPMNPlane_1" apmnElement="Process_1">
+      <bpmndi:APMNShape id="StartEvent1_di" apmnElement="StartEvent1">
         <dc:Bounds x="204" y="36" width="36" height="36" />
-        <bpmndi:BPMNLabel>
+        <bpmndi:APMNLabel>
           <dc:Bounds x="177" y="72" width="90" height="20" />
-        </bpmndi:BPMNLabel>
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Task1_di" bpmnElement="Task1">
+        </bpmndi:APMNLabel>
+      </bpmndi:APMNShape>
+      <bpmndi:APMNShape id="Task1_di" apmnElement="Task1">
         <dc:Bounds x="407" y="73" width="100" height="80" />
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNEdge id="SequenceFlow1_di" bpmnElement="SequenceFlow1">
+      </bpmndi:APMNShape>
+      <bpmndi:APMNEdge id="SequenceFlow1_di" apmnElement="SequenceFlow1">
         <di:waypoint x="240" y="54" />
         <di:waypoint x="324" y="54" />
         <di:waypoint x="324" y="113" />
         <di:waypoint x="407" y="113" />
-        <bpmndi:BPMNLabel>
+        <bpmndi:APMNLabel>
           <dc:Bounds x="278.5" y="44" width="90" height="20" />
-        </bpmndi:BPMNLabel>
-      </bpmndi:BPMNEdge>
-      <bpmndi:BPMNShape id="EndEvent1_di" bpmnElement="EndEvent1">
+        </bpmndi:APMNLabel>
+      </bpmndi:APMNEdge>
+      <bpmndi:APMNShape id="EndEvent1_di" apmnElement="EndEvent1">
         <dc:Bounds x="650" y="199" width="36" height="36" />
-        <bpmndi:BPMNLabel>
+        <bpmndi:APMNLabel>
           <dc:Bounds x="622" y="72" width="90" height="20" />
-        </bpmndi:BPMNLabel>
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNEdge id="SequenceFlow2_di" bpmnElement="SequenceFlow2">
+        </bpmndi:APMNLabel>
+      </bpmndi:APMNShape>
+      <bpmndi:APMNEdge id="SequenceFlow2_di" apmnElement="SequenceFlow2">
         <di:waypoint x="507" y="113" />
         <di:waypoint x="579" y="113" />
         <di:waypoint x="579" y="217" />
         <di:waypoint x="650" y="217" />
-        <bpmndi:BPMNLabel>
+        <bpmndi:APMNLabel>
           <dc:Bounds x="533" y="44" width="90" height="20" />
-        </bpmndi:BPMNLabel>
-      </bpmndi:BPMNEdge>
-    </bpmndi:BPMNPlane>
-  </bpmndi:BPMNDiagram>
+        </bpmndi:APMNLabel>
+      </bpmndi:APMNEdge>
+    </bpmndi:APMNPlane>
+  </bpmndi:APMNDiagram>
 </bpmn:definitions>

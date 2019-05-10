@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Definitions_1" targetNamespace="http://bpmn.io/schema/bpmn">
+<bpmn:definitions xmlns:bpmn="http://apmn.io/spec/APMN/MODEL" xmlns:bpmndi="http://apmn.io/spec/APMN/DI" xmlns:di="http://apmn.io/spec/DD/DI" xmlns:dc="http://apmn.io/spec/DD/DC" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Definitions_1" targetNamespace="http://bpmn.io/schema/bpmn">
   <bpmn:process id="Process_1" isExecutable="false">
     <bpmn:startEvent id="StartEvent_1">
       <bpmn:outgoing>SequenceFlow_0fn1a6r</bpmn:outgoing>
@@ -47,127 +47,127 @@
     <bpmn:textAnnotation id="TextAnnotation_0kwplau" />
     <bpmn:association id="Association_0gzxvep" sourceRef="ExclusiveGateway_140v6lc" targetRef="TextAnnotation_0kwplau" />
   </bpmn:process>
-  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
-    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Process_1">
-      <bpmndi:BPMNShape id="_BPMNShape_StartEvent_2" bpmnElement="StartEvent_1">
+  <bpmndi:APMNDiagram id="BPMNDiagram_1">
+    <bpmndi:APMNPlane id="BPMNPlane_1" apmnElement="Process_1">
+      <bpmndi:APMNShape id="_BPMNShape_StartEvent_2" apmnElement="StartEvent_1">
         <dc:Bounds x="171" y="171" width="36" height="36" />
-        <bpmndi:BPMNLabel>
+        <bpmndi:APMNLabel>
           <dc:Bounds x="144" y="207" width="90" height="20" />
-        </bpmndi:BPMNLabel>
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Task_1_di" bpmnElement="Task_1">
+        </bpmndi:APMNLabel>
+      </bpmndi:APMNShape>
+      <bpmndi:APMNShape id="Task_1_di" apmnElement="Task_1">
         <dc:Bounds x="314" y="149" width="100" height="80" />
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNEdge id="SequenceFlow_0fn1a6r_di" bpmnElement="SequenceFlow_0fn1a6r">
+      </bpmndi:APMNShape>
+      <bpmndi:APMNEdge id="SequenceFlow_0fn1a6r_di" apmnElement="SequenceFlow_0fn1a6r">
         <di:waypoint xsi:type="dc:Point" x="207" y="189" />
         <di:waypoint xsi:type="dc:Point" x="314" y="189" />
-        <bpmndi:BPMNLabel>
+        <bpmndi:APMNLabel>
           <dc:Bounds x="311" y="179" width="90" height="20" />
-        </bpmndi:BPMNLabel>
-      </bpmndi:BPMNEdge>
-      <bpmndi:BPMNShape id="EndEvent_1_di" bpmnElement="EndEvent_1">
+        </bpmndi:APMNLabel>
+      </bpmndi:APMNEdge>
+      <bpmndi:APMNShape id="EndEvent_1_di" apmnElement="EndEvent_1">
         <dc:Bounds x="948" y="171" width="36" height="36" />
-        <bpmndi:BPMNLabel>
+        <bpmndi:APMNLabel>
           <dc:Bounds x="921" y="207" width="90" height="20" />
-        </bpmndi:BPMNLabel>
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="TextAnnotation_0e1etog_di" bpmnElement="TextAnnotation_0e1etog">
+        </bpmndi:APMNLabel>
+      </bpmndi:APMNShape>
+      <bpmndi:APMNShape id="TextAnnotation_0e1etog_di" apmnElement="TextAnnotation_0e1etog">
         <dc:Bounds x="213" y="15" width="100" height="80" />
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNEdge id="Association_1ncsghq_di" bpmnElement="Association_1ncsghq">
+      </bpmndi:APMNShape>
+      <bpmndi:APMNEdge id="Association_1ncsghq_di" apmnElement="Association_1ncsghq">
         <di:waypoint xsi:type="dc:Point" x="198" y="173" />
         <di:waypoint xsi:type="dc:Point" x="241" y="95" />
-      </bpmndi:BPMNEdge>
-      <bpmndi:BPMNShape id="EventBasedGateway_02j1pg7_di" bpmnElement="EventBasedGateway_02j1pg7">
+      </bpmndi:APMNEdge>
+      <bpmndi:APMNShape id="EventBasedGateway_02j1pg7_di" apmnElement="EventBasedGateway_02j1pg7">
         <dc:Bounds x="573" y="164" width="50" height="50" />
-        <bpmndi:BPMNLabel>
+        <bpmndi:APMNLabel>
           <dc:Bounds x="553" y="214" width="90" height="20" />
-        </bpmndi:BPMNLabel>
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="IntermediateCatchEvent_06ybm47_di" bpmnElement="IntermediateCatchEvent_06ybm47">
+        </bpmndi:APMNLabel>
+      </bpmndi:APMNShape>
+      <bpmndi:APMNShape id="IntermediateCatchEvent_06ybm47_di" apmnElement="IntermediateCatchEvent_06ybm47">
         <dc:Bounds x="733" y="171" width="36" height="36" />
-        <bpmndi:BPMNLabel>
+        <bpmndi:APMNLabel>
           <dc:Bounds x="706" y="207" width="90" height="20" />
-        </bpmndi:BPMNLabel>
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNEdge id="SequenceFlow_0agwpbc_di" bpmnElement="SequenceFlow_0agwpbc">
+        </bpmndi:APMNLabel>
+      </bpmndi:APMNShape>
+      <bpmndi:APMNEdge id="SequenceFlow_0agwpbc_di" apmnElement="SequenceFlow_0agwpbc">
         <di:waypoint xsi:type="dc:Point" x="623" y="189" />
         <di:waypoint xsi:type="dc:Point" x="733" y="189" />
-        <bpmndi:BPMNLabel>
+        <bpmndi:APMNLabel>
           <dc:Bounds x="633" y="179" width="90" height="20" />
-        </bpmndi:BPMNLabel>
-      </bpmndi:BPMNEdge>
-      <bpmndi:BPMNShape id="ReceiveTask_1r2e700_di" bpmnElement="ReceiveTask_1r2e700">
+        </bpmndi:APMNLabel>
+      </bpmndi:APMNEdge>
+      <bpmndi:APMNShape id="ReceiveTask_1r2e700_di" apmnElement="ReceiveTask_1r2e700">
         <dc:Bounds x="701" y="279" width="100" height="80" />
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNEdge id="SequenceFlow_1p61uf0_di" bpmnElement="SequenceFlow_1p61uf0">
+      </bpmndi:APMNShape>
+      <bpmndi:APMNEdge id="SequenceFlow_1p61uf0_di" apmnElement="SequenceFlow_1p61uf0">
         <di:waypoint xsi:type="dc:Point" x="623" y="189" />
         <di:waypoint xsi:type="dc:Point" x="662" y="189" />
         <di:waypoint xsi:type="dc:Point" x="662" y="319" />
         <di:waypoint xsi:type="dc:Point" x="701" y="319" />
-        <bpmndi:BPMNLabel>
+        <bpmndi:APMNLabel>
           <dc:Bounds x="617" y="244" width="90" height="20" />
-        </bpmndi:BPMNLabel>
-      </bpmndi:BPMNEdge>
-      <bpmndi:BPMNShape id="ExclusiveGateway_140v6lc_di" bpmnElement="ExclusiveGateway_140v6lc" isMarkerVisible="true">
+        </bpmndi:APMNLabel>
+      </bpmndi:APMNEdge>
+      <bpmndi:APMNShape id="ExclusiveGateway_140v6lc_di" apmnElement="ExclusiveGateway_140v6lc" isMarkerVisible="true">
         <dc:Bounds x="581" y="412" width="50" height="50" />
-        <bpmndi:BPMNLabel>
+        <bpmndi:APMNLabel>
           <dc:Bounds x="561" y="462" width="90" height="20" />
-        </bpmndi:BPMNLabel>
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="TextAnnotation_1ttal1r_di" bpmnElement="TextAnnotation_1ttal1r">
+        </bpmndi:APMNLabel>
+      </bpmndi:APMNShape>
+      <bpmndi:APMNShape id="TextAnnotation_1ttal1r_di" apmnElement="TextAnnotation_1ttal1r">
         <dc:Bounds x="629" y="36" width="100" height="80" />
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNEdge id="Association_0x00yl3_di" bpmnElement="Association_0x00yl3">
+      </bpmndi:APMNShape>
+      <bpmndi:APMNEdge id="Association_0x00yl3_di" apmnElement="Association_0x00yl3">
         <di:waypoint xsi:type="dc:Point" x="608" y="174" />
         <di:waypoint xsi:type="dc:Point" x="650" y="116" />
-      </bpmndi:BPMNEdge>
-      <bpmndi:BPMNShape id="TextAnnotation_0vmdja7_di" bpmnElement="TextAnnotation_0vmdja7">
+      </bpmndi:APMNEdge>
+      <bpmndi:APMNShape id="TextAnnotation_0vmdja7_di" apmnElement="TextAnnotation_0vmdja7">
         <dc:Bounds x="891" y="36" width="100" height="80" />
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNEdge id="Association_06tpzma_di" bpmnElement="Association_06tpzma">
+      </bpmndi:APMNShape>
+      <bpmndi:APMNEdge id="Association_06tpzma_di" apmnElement="Association_06tpzma">
         <di:waypoint xsi:type="dc:Point" x="962" y="172" />
         <di:waypoint xsi:type="dc:Point" x="950" y="116" />
-      </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge id="SequenceFlow_19u6x8u_di" bpmnElement="SequenceFlow_19u6x8u">
+      </bpmndi:APMNEdge>
+      <bpmndi:APMNEdge id="SequenceFlow_19u6x8u_di" apmnElement="SequenceFlow_19u6x8u">
         <di:waypoint xsi:type="dc:Point" x="769" y="189" />
         <di:waypoint xsi:type="dc:Point" x="948" y="189" />
-        <bpmndi:BPMNLabel>
+        <bpmndi:APMNLabel>
           <dc:Bounds x="813.5" y="179" width="90" height="20" />
-        </bpmndi:BPMNLabel>
-      </bpmndi:BPMNEdge>
-      <bpmndi:BPMNShape id="IntermediateThrowEvent_1u9wi1k_di" bpmnElement="IntermediateThrowEvent_1u9wi1k">
+        </bpmndi:APMNLabel>
+      </bpmndi:APMNEdge>
+      <bpmndi:APMNShape id="IntermediateThrowEvent_1u9wi1k_di" apmnElement="IntermediateThrowEvent_1u9wi1k">
         <dc:Bounds x="733" y="419" width="36" height="36" />
-        <bpmndi:BPMNLabel>
+        <bpmndi:APMNLabel>
           <dc:Bounds x="706" y="455" width="90" height="20" />
-        </bpmndi:BPMNLabel>
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNEdge id="SequenceFlow_0608fzs_di" bpmnElement="SequenceFlow_0608fzs">
+        </bpmndi:APMNLabel>
+      </bpmndi:APMNShape>
+      <bpmndi:APMNEdge id="SequenceFlow_0608fzs_di" apmnElement="SequenceFlow_0608fzs">
         <di:waypoint xsi:type="dc:Point" x="631" y="437" />
         <di:waypoint xsi:type="dc:Point" x="733" y="437" />
-        <bpmndi:BPMNLabel>
+        <bpmndi:APMNLabel>
           <dc:Bounds x="637" y="427" width="90" height="20" />
-        </bpmndi:BPMNLabel>
-      </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge id="SequenceFlow_1rme11l_di" bpmnElement="SequenceFlow_1rme11l">
+        </bpmndi:APMNLabel>
+      </bpmndi:APMNEdge>
+      <bpmndi:APMNEdge id="SequenceFlow_1rme11l_di" apmnElement="SequenceFlow_1rme11l">
         <di:waypoint xsi:type="dc:Point" x="631" y="437" />
         <di:waypoint xsi:type="dc:Point" x="666" y="437" />
         <di:waypoint xsi:type="dc:Point" x="666" y="555" />
         <di:waypoint xsi:type="dc:Point" x="701" y="555" />
-        <bpmndi:BPMNLabel>
+        <bpmndi:APMNLabel>
           <dc:Bounds x="621" y="486" width="90" height="20" />
-        </bpmndi:BPMNLabel>
-      </bpmndi:BPMNEdge>
-      <bpmndi:BPMNShape id="ReceiveTask_1cqxjyr_di" bpmnElement="ReceiveTask_1cqxjyr">
+        </bpmndi:APMNLabel>
+      </bpmndi:APMNEdge>
+      <bpmndi:APMNShape id="ReceiveTask_1cqxjyr_di" apmnElement="ReceiveTask_1cqxjyr">
         <dc:Bounds x="701" y="515" width="100" height="80" />
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="TextAnnotation_0kwplau_di" bpmnElement="TextAnnotation_0kwplau">
+      </bpmndi:APMNShape>
+      <bpmndi:APMNShape id="TextAnnotation_0kwplau_di" apmnElement="TextAnnotation_0kwplau">
         <dc:Bounds x="437" y="495" width="100" height="80" />
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNEdge id="Association_0gzxvep_di" bpmnElement="Association_0gzxvep">
+      </bpmndi:APMNShape>
+      <bpmndi:APMNEdge id="Association_0gzxvep_di" apmnElement="Association_0gzxvep">
         <di:waypoint xsi:type="dc:Point" x="592" y="448" />
         <di:waypoint xsi:type="dc:Point" x="536" y="495" />
-      </bpmndi:BPMNEdge>
-    </bpmndi:BPMNPlane>
-  </bpmndi:BPMNDiagram>
+      </bpmndi:APMNEdge>
+    </bpmndi:APMNPlane>
+  </bpmndi:APMNDiagram>
 </bpmn:definitions>

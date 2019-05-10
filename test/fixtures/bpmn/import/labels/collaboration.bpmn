@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd" id="_qNeOgNTyEeORzsRKJ7o0Ew" targetNamespace="http://activiti.org/bpmn">
+<bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn2="http://apmn.io/spec/APMN/MODEL" xmlns:bpmndi="http://apmn.io/spec/APMN/DI" xmlns:dc="http://apmn.io/spec/DD/DC" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd" id="_qNeOgNTyEeORzsRKJ7o0Ew" targetNamespace="http://activiti.org/bpmn">
   <bpmn2:collaboration id="_Collaboration_2">
     <bpmn2:participant id="_Participant_2" name="single line" processRef="Process_1"/>
     <bpmn2:participant id="Participant_1" name="multi line label&#xD;&#xA;(manual break)" processRef="Process_3"/>
@@ -27,47 +27,47 @@
   <bpmn2:process id="Process_4" isExecutable="false">
     <bpmn2:task id="Task_1"/>
   </bpmn2:process>
-  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
-    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="_Collaboration_2">
-      <bpmndi:BPMNShape id="_BPMNShape_Participant_2" bpmnElement="_Participant_2" isHorizontal="true">
+  <bpmndi:APMNDiagram id="BPMNDiagram_1">
+    <bpmndi:APMNPlane id="BPMNPlane_1" apmnElement="_Collaboration_2">
+      <bpmndi:APMNShape id="_BPMNShape_Participant_2" apmnElement="_Participant_2" isHorizontal="true">
         <dc:Bounds height="133.0" width="540.0" x="72.0" y="48.0"/>
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="_BPMNShape_Participant_3" bpmnElement="Participant_1" isHorizontal="true">
+      </bpmndi:APMNShape>
+      <bpmndi:APMNShape id="_BPMNShape_Participant_3" apmnElement="Participant_1" isHorizontal="true">
         <dc:Bounds height="148.0" width="540.0" x="72.0" y="216.0"/>
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="_BPMNShape_Participant_4" bpmnElement="Participant_2" isHorizontal="true">
+      </bpmndi:APMNShape>
+      <bpmndi:APMNShape id="_BPMNShape_Participant_4" apmnElement="Participant_2" isHorizontal="true">
         <dc:Bounds height="469.0" width="540.0" x="72.0" y="528.0"/>
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="_BPMNShape_Lane_2" bpmnElement="Lane_1" isHorizontal="true">
+      </bpmndi:APMNShape>
+      <bpmndi:APMNShape id="_BPMNShape_Lane_2" apmnElement="Lane_1" isHorizontal="true">
         <dc:Bounds height="157.0" width="510.0" x="102.0" y="528.0"/>
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="_BPMNShape_Lane_3" bpmnElement="Lane_2" isHorizontal="true">
+      </bpmndi:APMNShape>
+      <bpmndi:APMNShape id="_BPMNShape_Lane_3" apmnElement="Lane_2" isHorizontal="true">
         <dc:Bounds height="313.0" width="510.0" x="102.0" y="684.0"/>
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="_BPMNShape_Lane_4" bpmnElement="Lane_3" isHorizontal="true">
+      </bpmndi:APMNShape>
+      <bpmndi:APMNShape id="_BPMNShape_Lane_4" apmnElement="Lane_3" isHorizontal="true">
         <dc:Bounds height="157.0" width="480.0" x="132.0" y="684.0"/>
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="_BPMNShape_Lane_5" bpmnElement="Lane_4" isHorizontal="true">
+      </bpmndi:APMNShape>
+      <bpmndi:APMNShape id="_BPMNShape_Lane_5" apmnElement="Lane_4" isHorizontal="true">
         <dc:Bounds height="157.0" width="480.0" x="132.0" y="840.0"/>
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="_BPMNShape_Participant_5" bpmnElement="Participant_3" isHorizontal="true">
+      </bpmndi:APMNShape>
+      <bpmndi:APMNShape id="_BPMNShape_Participant_5" apmnElement="Participant_3" isHorizontal="true">
         <dc:Bounds height="100.0" width="540.0" x="72.0" y="396.0"/>
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="_BPMNShape_StartEvent_2" bpmnElement="StartEvent_1">
+      </bpmndi:APMNShape>
+      <bpmndi:APMNShape id="_BPMNShape_StartEvent_2" apmnElement="StartEvent_1">
         <dc:Bounds height="36.0" width="36.0" x="516.0" y="255.0"/>
-        <bpmndi:BPMNLabel>
+        <bpmndi:APMNLabel>
           <dc:Bounds height="0.0" width="0.0" x="534.0" y="296.0"/>
-        </bpmndi:BPMNLabel>
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="_BPMNShape_Task_2" bpmnElement="Task_1">
+        </bpmndi:APMNLabel>
+      </bpmndi:APMNShape>
+      <bpmndi:APMNShape id="_BPMNShape_Task_2" apmnElement="Task_1">
         <dc:Bounds height="80.0" width="100.0" x="492.0" y="407.0"/>
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="_BPMNShape_DataObjectReference_2" bpmnElement="DataObjectReference_1">
+      </bpmndi:APMNShape>
+      <bpmndi:APMNShape id="_BPMNShape_DataObjectReference_2" apmnElement="DataObjectReference_1">
         <dc:Bounds height="50.0" width="36.0" x="540.0" y="72.0"/>
-        <bpmndi:BPMNLabel>
+        <bpmndi:APMNLabel>
           <dc:Bounds height="22.0" width="148.0" x="484.0" y="127.0"/>
-        </bpmndi:BPMNLabel>
-      </bpmndi:BPMNShape>
-    </bpmndi:BPMNPlane>
-  </bpmndi:BPMNDiagram>
+        </bpmndi:APMNLabel>
+      </bpmndi:APMNShape>
+    </bpmndi:APMNPlane>
+  </bpmndi:APMNDiagram>
 </bpmn2:definitions>

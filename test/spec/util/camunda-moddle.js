@@ -4,13 +4,13 @@ import {
 
 var ALLOWED_TYPES = {
   FailedJobRetryTimeCycle: [
-    'bpmn:StartEvent',
-    'bpmn:BoundaryEvent',
-    'bpmn:IntermediateCatchEvent',
-    'bpmn:Activity'
+    'apmn:StartEvent',
+    'apmn:BoundaryEvent',
+    'apmn:IntermediateCatchEvent',
+    'apmn:Activity'
   ],
-  Connector: [ 'bpmn:EndEvent', 'bpmn:IntermediateThrowEvent' ],
-  Field: [ 'bpmn:EndEvent', 'bpmn:IntermediateThrowEvent' ]
+  Connector: [ 'apmn:EndEvent', 'apmn:IntermediateThrowEvent' ],
+  Field: [ 'apmn:EndEvent', 'apmn:IntermediateThrowEvent' ]
 };
 
 
@@ -59,14 +59,14 @@ CamundaModdleExtension.prototype.canCloneProperty = function(
     newElement, refTopLevelProperty, propDescriptor) {
 
   if (isAllowed('camunda:FailedJobRetryTimeCycle', propDescriptor, newElement)) {
-    return includesType(newElement.eventDefinitions, 'bpmn:TimerEventDefinition') ||
-           includesType(newElement.eventDefinitions, 'bpmn:SignalEventDefinition') ||
-           is(newElement.loopCharacteristics, 'bpmn:MultiInstanceLoopCharacteristics');
+    return includesType(newElement.eventDefinitions, 'apmn:TimerEventDefinition') ||
+           includesType(newElement.eventDefinitions, 'apmn:SignalEventDefinition') ||
+           is(newElement.loopCharacteristics, 'apmn:MultiInstanceLoopCharacteristics');
   }
 
   if (isAllowed('camunda:Connector', propDescriptor, newElement) ||
       isAllowed('camunda:Field', propDescriptor, newElement)) {
-    return is(refTopLevelProperty, 'bpmn:MessageEventDefinition');
+    return is(refTopLevelProperty, 'apmn:MessageEventDefinition');
   }
 };
 

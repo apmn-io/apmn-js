@@ -21,7 +21,7 @@ function ifCustomElement(fn) {
     var context = event.context,
         element = context.shape || context.connection;
 
-    if (!isBpmn(element, 'bpmn:BaseElement')) {
+    if (!isBpmn(element, 'apmn:BaseElement')) {
       fn(event);
     }
   };
@@ -54,11 +54,11 @@ export default function CustomUpdater(eventBus, modeling) {
       return;
     }
 
-    if (isBpmn(parent, 'bpmn:SubProcess')) {
+    if (isBpmn(parent, 'apmn:SubProcess')) {
       shape.businessObject.foo = 'geil';
     }
 
-    if (!isBpmn(parent, 'bpmn:SubProcess')) {
+    if (!isBpmn(parent, 'apmn:SubProcess')) {
       shape.businessObject.foo = 'bar';
     }
 

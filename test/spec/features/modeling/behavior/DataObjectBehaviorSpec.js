@@ -33,14 +33,14 @@ describe('features/modeling/behavior - data object', function() {
     it('should create the corresponding DataObject', inject(function(modeling) {
 
       // when
-      var dataObjectRefShape = modeling.createShape({ type: 'bpmn:DataObjectReference' },
+      var dataObjectRefShape = modeling.createShape({ type: 'apmn:DataObjectReference' },
         { x: 220, y: 220 }, rootShape);
 
       var dataObject = dataObjectRefShape.businessObject.dataObjectRef;
 
       // then
       expect(dataObject).to.exist;
-      expect(is(dataObject, 'bpmn:DataObject')).to.be.true;
+      expect(is(dataObject, 'apmn:DataObject')).to.be.true;
       expect(dataObject.id).to.exist;
     }));
 
@@ -51,9 +51,9 @@ describe('features/modeling/behavior - data object', function() {
     it('should have the right parents', inject(function(modeling) {
 
       // when
-      var dataObjectRefShape1 = modeling.createShape({ type: 'bpmn:DataObjectReference' },
+      var dataObjectRefShape1 = modeling.createShape({ type: 'apmn:DataObjectReference' },
         { x: 220, y: 220 }, rootShape);
-      var dataObjectRefShape2 = modeling.createShape({ type: 'bpmn:DataObjectReference' },
+      var dataObjectRefShape2 = modeling.createShape({ type: 'apmn:DataObjectReference' },
         { x: 380, y: 220 }, subProcess1);
 
       var dataObject1 = dataObjectRefShape1.businessObject.dataObjectRef;

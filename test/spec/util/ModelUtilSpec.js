@@ -26,27 +26,27 @@ describe('util/ModelUtil', function() {
   it('should work with diagram element', inject(function(elementFactory) {
 
     // given
-    var messageFlowConnection = elementFactory.createConnection({ type: 'bpmn:MessageFlow' });
+    var messageFlowConnection = elementFactory.createConnection({ type: 'apmn:MessageFlow' });
 
     // then
-    expect(is(messageFlowConnection, 'bpmn:MessageFlow')).to.be.true;
-    expect(is(messageFlowConnection, 'bpmn:BaseElement')).to.be.true;
+    expect(is(messageFlowConnection, 'apmn:MessageFlow')).to.be.true;
+    expect(is(messageFlowConnection, 'apmn:BaseElement')).to.be.true;
 
-    expect(is(messageFlowConnection, 'bpmn:SequenceFlow')).to.be.false;
-    expect(is(messageFlowConnection, 'bpmn:Task')).to.be.false;
+    expect(is(messageFlowConnection, 'apmn:SequenceFlow')).to.be.false;
+    expect(is(messageFlowConnection, 'apmn:Task')).to.be.false;
   }));
 
 
   it('should work with business object', inject(function(bpmnFactory) {
 
     // given
-    var gateway = bpmnFactory.create('bpmn:Gateway');
+    var gateway = bpmnFactory.create('apmn:Gateway');
 
     // then
-    expect(is(gateway, 'bpmn:Gateway')).to.be.true;
-    expect(is(gateway, 'bpmn:BaseElement')).to.be.true;
+    expect(is(gateway, 'apmn:Gateway')).to.be.true;
+    expect(is(gateway, 'apmn:BaseElement')).to.be.true;
 
-    expect(is(gateway, 'bpmn:SequenceFlow')).to.be.false;
+    expect(is(gateway, 'apmn:SequenceFlow')).to.be.false;
   }));
 
 

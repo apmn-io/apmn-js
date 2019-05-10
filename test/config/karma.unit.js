@@ -79,7 +79,7 @@ module.exports = function(karma) {
       module: {
         rules: [
           {
-            test: /\.css|\.bpmn$/,
+            test: /\.css|\.apmn|\.bpmn$/,
             use: 'raw-loader'
           }
         ].concat(coverage ?

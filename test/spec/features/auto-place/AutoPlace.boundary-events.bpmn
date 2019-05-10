@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:omgdi="http://www.omg.org/spec/DD/20100524/DI" xmlns:omgdc="http://www.omg.org/spec/DD/20100524/DC" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="sid-38422fae-e03e-43a3-bef4-bd33b32041b2" targetNamespace="http://bpmn.io/bpmn" exporter="http://bpmn.io" exporterVersion="0.10.1">
+<definitions xmlns="http://apmn.io/spec/APMN/MODEL" xmlns:bpmndi="http://apmn.io/spec/APMN/DI" xmlns:omgdi="http://apmn.io/spec/DD/DI" xmlns:omgdc="http://apmn.io/spec/DD/DC" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="sid-38422fae-e03e-43a3-bef4-bd33b32041b2" targetNamespace="http://bpmn.io/bpmn" exporter="http://bpmn.io" exporterVersion="0.10.1">
   <process id="Process_1" isExecutable="false">
     <task id="TASK_1" name="TASK_1">
       <outgoing>SequenceFlow_0o6gp3o</outgoing>
@@ -16,57 +16,57 @@
     <boundaryEvent id="BOUNDARY_SUBPROCESS_BOTTOM" name="BOUNDARY_SUBPROCESS_BOTTOM" attachedToRef="SUBPROCESS" />
     <boundaryEvent id="BOUNDARY_SUBPROCESS_TOP" name="BOUNDARY_SUBPROCESS_TOP" attachedToRef="SUBPROCESS" />
   </process>
-  <bpmndi:BPMNDiagram id="BpmnDiagram_1">
-    <bpmndi:BPMNPlane id="BpmnPlane_1" bpmnElement="Process_1">
-      <bpmndi:BPMNShape id="TASK_1_di" bpmnElement="TASK_1">
+  <bpmndi:APMNDiagram id="BpmnDiagram_1">
+    <bpmndi:APMNPlane id="BpmnPlane_1" apmnElement="Process_1">
+      <bpmndi:APMNShape id="TASK_1_di" apmnElement="TASK_1">
         <omgdc:Bounds x="121" y="93" width="100" height="80" />
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="BOUNDARY_BOTTOM_di" bpmnElement="BOUNDARY_BOTTOM">
+      </bpmndi:APMNShape>
+      <bpmndi:APMNShape id="BOUNDARY_BOTTOM_di" apmnElement="BOUNDARY_BOTTOM">
         <omgdc:Bounds x="155" y="155" width="36" height="36" />
-        <bpmndi:BPMNLabel>
+        <bpmndi:APMNLabel>
           <omgdc:Bounds x="72" y="188" width="87" height="24" />
-        </bpmndi:BPMNLabel>
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="TASK_2_di" bpmnElement="TASK_2">
+        </bpmndi:APMNLabel>
+      </bpmndi:APMNShape>
+      <bpmndi:APMNShape id="TASK_2_di" apmnElement="TASK_2">
         <omgdc:Bounds x="305" y="93" width="100" height="80" />
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNEdge id="SequenceFlow_0o6gp3o_di" bpmnElement="SequenceFlow_0o6gp3o">
+      </bpmndi:APMNShape>
+      <bpmndi:APMNEdge id="SequenceFlow_0o6gp3o_di" apmnElement="SequenceFlow_0o6gp3o">
         <omgdi:waypoint xsi:type="omgdc:Point" x="221" y="133" />
         <omgdi:waypoint xsi:type="omgdc:Point" x="305" y="133" />
-        <bpmndi:BPMNLabel>
+        <bpmndi:APMNLabel>
           <omgdc:Bounds x="263" y="112" width="0" height="12" />
-        </bpmndi:BPMNLabel>
-      </bpmndi:BPMNEdge>
-      <bpmndi:BPMNShape id="TASK_3_di" bpmnElement="TASK_3">
+        </bpmndi:APMNLabel>
+      </bpmndi:APMNEdge>
+      <bpmndi:APMNShape id="TASK_3_di" apmnElement="TASK_3">
         <omgdc:Bounds x="305" y="203" width="100" height="80" />
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="BOUNDARY_TOP_di" bpmnElement="BOUNDARY_TOP">
+      </bpmndi:APMNShape>
+      <bpmndi:APMNShape id="BOUNDARY_TOP_di" apmnElement="BOUNDARY_TOP">
         <omgdc:Bounds x="156" y="75" width="36" height="36" />
-        <bpmndi:BPMNLabel>
+        <bpmndi:APMNLabel>
           <omgdc:Bounds x="78" y="52" width="86" height="24" />
-        </bpmndi:BPMNLabel>
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="BOUNDARY_TOP_RIGHT_di" bpmnElement="BOUNDARY_TOP_RIGHT">
+        </bpmndi:APMNLabel>
+      </bpmndi:APMNShape>
+      <bpmndi:APMNShape id="BOUNDARY_TOP_RIGHT_di" apmnElement="BOUNDARY_TOP_RIGHT">
         <omgdc:Bounds x="387" y="75" width="36" height="36" />
-        <bpmndi:BPMNLabel>
+        <bpmndi:APMNLabel>
           <omgdc:Bounds x="363" y="44" width="84" height="24" />
-        </bpmndi:BPMNLabel>
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="SUBPROCESS_di" bpmnElement="SUBPROCESS" isExpanded="true">
+        </bpmndi:APMNLabel>
+      </bpmndi:APMNShape>
+      <bpmndi:APMNShape id="SUBPROCESS_di" apmnElement="SUBPROCESS" isExpanded="true">
         <omgdc:Bounds x="142" y="314" width="258" height="141" />
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="BOUNDARY_SUBPROCESS_BOTTOM_di" bpmnElement="BOUNDARY_SUBPROCESS_BOTTOM">
+      </bpmndi:APMNShape>
+      <bpmndi:APMNShape id="BOUNDARY_SUBPROCESS_BOTTOM_di" apmnElement="BOUNDARY_SUBPROCESS_BOTTOM">
         <omgdc:Bounds x="192" y="437" width="36" height="36" />
-        <bpmndi:BPMNLabel>
+        <bpmndi:APMNLabel>
           <omgdc:Bounds x="110" y="473" width="86" height="36" />
-        </bpmndi:BPMNLabel>
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="BOUNDARY_SUBPROCESS_TOP_di" bpmnElement="BOUNDARY_SUBPROCESS_TOP">
+        </bpmndi:APMNLabel>
+      </bpmndi:APMNShape>
+      <bpmndi:APMNShape id="BOUNDARY_SUBPROCESS_TOP_di" apmnElement="BOUNDARY_SUBPROCESS_TOP">
         <omgdc:Bounds x="189" y="296" width="36" height="36" />
-        <bpmndi:BPMNLabel>
+        <bpmndi:APMNLabel>
           <omgdc:Bounds x="98" y="259" width="86" height="36" />
-        </bpmndi:BPMNLabel>
-      </bpmndi:BPMNShape>
-    </bpmndi:BPMNPlane>
-  </bpmndi:BPMNDiagram>
+        </bpmndi:APMNLabel>
+      </bpmndi:APMNShape>
+    </bpmndi:APMNPlane>
+  </bpmndi:APMNDiagram>
 </definitions>

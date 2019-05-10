@@ -162,9 +162,9 @@ describe('features/replace-preview', function() {
       // then
       // check if the visual representation remains a non interrupting message start event
       var startEventGfx = getGfx({
-        type: 'bpmn:StartEvent',
+        type: 'apmn:StartEvent',
         isInterrupting: false,
-        eventDefinitionType: 'bpmn:MessageEventDefinition'
+        eventDefinitionType: 'apmn:MessageEventDefinition'
       });
 
       expect(innerSVG(context.dragGroup.childNodes[0])).to.equal(innerSVG(startEventGfx));
@@ -182,7 +182,7 @@ describe('features/replace-preview', function() {
 
       // then
       // check if the visual replacement is a blank interrupting start event
-      var startEventGfx = getGfx({ type: 'bpmn:StartEvent' });
+      var startEventGfx = getGfx({ type: 'apmn:StartEvent' });
 
       expect(innerSVG(context.dragGroup.childNodes[1])).to.equal(innerSVG(startEventGfx));
     })
@@ -203,9 +203,9 @@ describe('features/replace-preview', function() {
       // then
       // check if the visual representation remains a non interrupting message start event
       var startEventGfx = getGfx({
-        type: 'bpmn:StartEvent',
+        type: 'apmn:StartEvent',
         isInterrupting: false,
-        eventDefinitionType: 'bpmn:MessageEventDefinition'
+        eventDefinitionType: 'apmn:MessageEventDefinition'
       });
 
       expect(innerSVG(context.dragGroup.childNodes[0])).to.equal(innerSVG(startEventGfx));
@@ -226,7 +226,7 @@ describe('features/replace-preview', function() {
 
       // then
       // check if the visual representation remains a non interrupting message start event
-      var startEventGfx = getGfx({ type: 'bpmn:StartEvent' });
+      var startEventGfx = getGfx({ type: 'apmn:StartEvent' });
 
       expect(innerSVG(context.dragGroup.childNodes[1])).to.equal(innerSVG(startEventGfx));
     })
@@ -249,7 +249,7 @@ describe('features/replace-preview', function() {
 
       // then
       // check if the visual replacements are blank interrupting start events
-      var startEventGfx = getGfx({ type: 'bpmn:StartEvent' });
+      var startEventGfx = getGfx({ type: 'apmn:StartEvent' });
 
       expect(innerSVG(context.dragGroup.childNodes[1])).to.equal(innerSVG(startEventGfx));
       expect(innerSVG(context.dragGroup.childNodes[3])).to.equal(innerSVG(startEventGfx));
@@ -267,18 +267,18 @@ describe('features/replace-preview', function() {
           subProcess2 = elementRegistry.get('SubProcess_2');
 
       var messageStartEventGfx = getGfx({
-        type: 'bpmn:StartEvent',
+        type: 'apmn:StartEvent',
         isInterrupting: false,
-        eventDefinitionType: 'bpmn:MessageEventDefinition'
+        eventDefinitionType: 'apmn:MessageEventDefinition'
       });
 
       var timerStartEventGfx = getGfx({
-        type: 'bpmn:StartEvent',
+        type: 'apmn:StartEvent',
         isInterrupting: false,
-        eventDefinitionType: 'bpmn:TimerEventDefinition'
+        eventDefinitionType: 'apmn:TimerEventDefinition'
       });
 
-      var startEventGfx = getGfx({ type: 'bpmn:StartEvent' });
+      var startEventGfx = getGfx({ type: 'apmn:StartEvent' });
 
       // when
       selection.select([ startEvent1, startEvent2, startEvent3 ]);
@@ -302,7 +302,7 @@ describe('features/replace-preview', function() {
       var startEvent1 = elementRegistry.get('StartEvent.1'),
           subProcess3 = elementRegistry.get('SubProcess_3');
 
-      var intermediateEvent = elementFactory.createShape({ type: 'bpmn:IntermediateThrowEvent' });
+      var intermediateEvent = elementFactory.createShape({ type: 'apmn:IntermediateThrowEvent' });
 
       var boundaryEvent = modeling.createShape(
         intermediateEvent,

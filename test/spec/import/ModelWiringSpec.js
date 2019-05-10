@@ -26,7 +26,7 @@ describe('import - model wiring', function() {
       expect(subProcessShape.parent).to.eql(processElement);
       expect(canvas.getRootElement()).to.eql(processElement);
 
-      expect(is(processElement, 'bpmn:Process')).to.be.true;
+      expect(is(processElement, 'apmn:Process')).to.be.true;
     }));
 
 
@@ -37,7 +37,7 @@ describe('import - model wiring', function() {
       var startEventShape = elementRegistry.get('StartEvent_1');
 
       // then
-      expect(startEventShape.type).to.equal('bpmn:StartEvent');
+      expect(startEventShape.type).to.equal('apmn:StartEvent');
       expect(startEventShape.parent).to.eql(subProcessShape);
 
       expect(subProcessShape.children.length).to.equal(4);
@@ -69,10 +69,10 @@ describe('import - model wiring', function() {
 
       // then
       expect(subProcess).to.exist;
-      expect(is(subProcess, 'bpmn:SubProcess')).to.be.true;
+      expect(is(subProcess, 'apmn:SubProcess')).to.be.true;
 
       expect(startEvent).to.exist;
-      expect(is(startEvent, 'bpmn:StartEvent')).to.be.true;
+      expect(is(startEvent, 'apmn:StartEvent')).to.be.true;
     }));
 
 
@@ -86,7 +86,7 @@ describe('import - model wiring', function() {
 
       // then
       expect(subProcessDi).to.exist;
-      expect(subProcessDi.bpmnElement).to.eql(subProcess);
+      expect(subProcessDi.apmnElement).to.eql(subProcess);
     }));
 
 
@@ -100,7 +100,7 @@ describe('import - model wiring', function() {
 
       // then
       expect(sequenceFlowDi).to.exist;
-      expect(sequenceFlowDi.bpmnElement).to.eql(sequenceFlow);
+      expect(sequenceFlowDi.apmnElement).to.eql(sequenceFlow);
     }));
 
   });

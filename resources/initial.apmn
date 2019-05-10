@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<apmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:apmn="http://apmn.io/spec/APMN/MODEL" xmlns:apmndi="http://apmn.io/spec/APMN/DI" xmlns:dc="http://apmn.io/spec/DD/DC" targetNamespace="http://bpmn.io/schema/bpmn" id="Definitions_1">
+  <apmn:process id="Process_1" isExecutable="false">
+    <apmn:startEvent id="StartEvent_1"/>
+  </apmn:process>
+  <apmndi:APMNDiagram id="APMNDiagram_1">
+    <apmndi:APMNPlane id="APMNPlane_1" apmnElement="Process_1">
+      <apmndi:APMNShape id="_APMNShape_StartEvent_2" apmnElement="StartEvent_1">
+        <dc:Bounds height="36.0" width="36.0" x="173.0" y="102.0"/>
+      </apmndi:APMNShape>
+    </apmndi:APMNPlane>
+  </apmndi:APMNDiagram>
+</apmn:definitions>

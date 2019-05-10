@@ -26,7 +26,7 @@ describe('features/replace - rules', function() {
       var element = elementRegistry.get('ExclusiveGateway_140v6lc');
 
       var target = {
-        type: 'bpmn:EventBasedGateway'
+        type: 'apmn:EventBasedGateway'
       };
 
       // when
@@ -44,7 +44,7 @@ describe('features/replace - rules', function() {
       // given
       var element = elementRegistry.get('StartEvent_1');
       var target = {
-        type: 'bpmn:EndEvent'
+        type: 'apmn:EndEvent'
       };
 
       // when
@@ -61,7 +61,7 @@ describe('features/replace - rules', function() {
       // given
       var element = elementRegistry.get('EndEvent_1');
       var target = {
-        type: 'bpmn:StartEvent'
+        type: 'apmn:StartEvent'
       };
 
       // when

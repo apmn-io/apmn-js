@@ -31,7 +31,7 @@ describe('features/modeling - layout data association', function() {
   it('should layout straight after DataObjectReference creation', inject(function(modeling) {
 
     // when
-    var dataObjectShape = modeling.createShape({ type: 'bpmn:DataObjectReference' }, { x: 200, y: 400 }, rootShape);
+    var dataObjectShape = modeling.createShape({ type: 'apmn:DataObjectReference' }, { x: 200, y: 400 }, rootShape);
 
     modeling.connect(dataObjectShape, taskShape);
 
@@ -49,7 +49,7 @@ describe('features/modeling - layout data association', function() {
   it('should layout straight after DataObjectReference move', inject(function(modeling) {
 
     // given
-    var dataObjectShape = modeling.createShape({ type: 'bpmn:DataObjectReference' }, { x: 200, y: 400 }, rootShape);
+    var dataObjectShape = modeling.createShape({ type: 'apmn:DataObjectReference' }, { x: 200, y: 400 }, rootShape);
 
     modeling.connect(dataObjectShape, taskShape);
 
@@ -70,7 +70,7 @@ describe('features/modeling - layout data association', function() {
   it('should retain waypoints after DataObjectReference move', inject(function(modeling) {
 
     // given
-    var dataObjectShape = modeling.createShape({ type: 'bpmn:DataObjectReference' }, { x: 200, y: 400 }, rootShape),
+    var dataObjectShape = modeling.createShape({ type: 'apmn:DataObjectReference' }, { x: 200, y: 400 }, rootShape),
         connection = modeling.connect(dataObjectShape, taskShape),
         waypoints = connection.waypoints;
 

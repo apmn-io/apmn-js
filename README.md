@@ -1,8 +1,8 @@
-# bpmn-js - BPMN 2.0 for the web
+# apmn-js - APMN for the web
 
 [![Build Status](https://travis-ci.org/bpmn-io/bpmn-js.svg?branch=master)](https://travis-ci.org/bpmn-io/bpmn-js)
 
-View and edit BPMN 2.0 diagrams in the browser.
+View and edit APMN diagrams in the browser.
 
 [![bpmn-js screencast](./resources/screencast.gif "bpmn-js in action")](http://demo.bpmn.io/s/start)
 
@@ -19,7 +19,7 @@ To get started, create a [bpmn-js](https://github.com/bpmn-io/bpmn-js) instance
 and render [BPMN 2.0 diagrams](https://www.omg.org/spec/BPMN/2.0.2/) in the browser:
 
 ```javascript
-var xml; // my BPMN 2.0 xml
+var xml; // my APMN xml
 var viewer = new BpmnJS({
   container: 'body'
 });
@@ -83,7 +83,7 @@ file an issue or pull request.
 
 bpmn-js builds on top of a few additional powerful tools:
 
-* [bpmn-moddle](https://github.com/bpmn-io/bpmn-moddle): Read / write support for BPMN 2.0 XML in the browsers
+* [apmn-moddle](https://github.com/apmn-io/apmn-moddle): Read / write support for APMN XML in the browsers
 * [diagram-js](https://github.com/bpmn-io/diagram-js): Diagram rendering and editing toolkit
 
 

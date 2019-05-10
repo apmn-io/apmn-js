@@ -41,11 +41,11 @@ describe('util/clone/ModelCloneHelper', function() {
     it('should pass property', inject(function(moddle) {
 
       // given
-      var userTask = moddle.create('bpmn:UserTask', {
+      var userTask = moddle.create('apmn:UserTask', {
         asyncBefore: true
       });
 
-      var serviceTask = helper.clone(userTask, moddle.create('bpmn:ServiceTask'), [ 'camunda:asyncBefore' ]);
+      var serviceTask = helper.clone(userTask, moddle.create('apmn:ServiceTask'), [ 'camunda:asyncBefore' ]);
 
       expect(getProp(serviceTask, 'camunda:asyncBefore')).to.be.true;
     }));
@@ -54,11 +54,11 @@ describe('util/clone/ModelCloneHelper', function() {
     it('should not pass property', inject(function(moddle) {
 
       // given
-      var userTask = moddle.create('bpmn:UserTask', {
+      var userTask = moddle.create('apmn:UserTask', {
         assignee: 'foobar'
       });
 
-      var serviceTask = helper.clone(userTask, moddle.create('bpmn:ServiceTask'), []);
+      var serviceTask = helper.clone(userTask, moddle.create('apmn:ServiceTask'), []);
 
       expect(getProp(serviceTask, 'camunda:assignee')).not.to.exist;
     }));
@@ -71,17 +71,17 @@ describe('util/clone/ModelCloneHelper', function() {
     it('should pass nested property - documentation', inject(function(moddle) {
 
       // given
-      var userTask = moddle.create('bpmn:UserTask');
+      var userTask = moddle.create('apmn:UserTask');
 
       var docs = userTask.get('documentation');
 
-      docs.push(moddle.create('bpmn:Documentation', { textFormat: 'xyz', text: 'FOO\nBAR' }));
-      docs.push(moddle.create('bpmn:Documentation', { text: '<some /><html></html>' }));
+      docs.push(moddle.create('apmn:Documentation', { textFormat: 'xyz', text: 'FOO\nBAR' }));
+      docs.push(moddle.create('apmn:Documentation', { text: '<some /><html></html>' }));
 
-      var serviceTask = helper.clone(userTask, moddle.create('bpmn:ServiceTask'), [ 'bpmn:documentation' ]);
+      var serviceTask = helper.clone(userTask, moddle.create('apmn:ServiceTask'), [ 'apmn:documentation' ]);
 
-      var serviceTaskDocs = getProp(serviceTask, 'bpmn:documentation'),
-          userTaskDocs = getProp(userTask, 'bpmn:documentation');
+      var serviceTaskDocs = getProp(serviceTask, 'apmn:documentation'),
+          userTaskDocs = getProp(userTask, 'apmn:documentation');
 
       expect(userTaskDocs[0]).not.to.equal(serviceTaskDocs[0]);
 
@@ -107,14 +107,14 @@ describe('util/clone/ModelCloneHelper', function() {
         script: script
       });
 
-      var extensionElements = moddle.create('bpmn:ExtensionElements', { values: [ execListener ] });
+      var extensionElements = moddle.create('apmn:ExtensionElements', { values: [ execListener ] });
 
-      var userTask = moddle.create('bpmn:UserTask', {
+      var userTask = moddle.create('apmn:UserTask', {
         extensionElements: extensionElements
       });
 
-      var serviceTask = helper.clone(userTask, moddle.create('bpmn:ServiceTask'), [
-        'bpmn:extensionElements',
+      var serviceTask = helper.clone(userTask, moddle.create('apmn:ServiceTask'), [
+        'apmn:extensionElements',
         'camunda:executionListener'
       ]);
 
@@ -155,20 +155,20 @@ describe('util/clone/ModelCloneHelper', function() {
         outputParameters: [ outputParameter ]
       });
 
-      var extensionElements = moddle.create('bpmn:ExtensionElements', { values: [ inputOutput ] });
+      var extensionElements = moddle.create('apmn:ExtensionElements', { values: [ inputOutput ] });
 
-      var userTask = moddle.create('bpmn:UserTask', {
+      var userTask = moddle.create('apmn:UserTask', {
         extensionElements: extensionElements
       });
 
-      var subProcess = helper.clone(userTask, moddle.create('bpmn:SubProcess'), [
-        'bpmn:extensionElements'
+      var subProcess = helper.clone(userTask, moddle.create('apmn:SubProcess'), [
+        'apmn:extensionElements'
       ]);
 
       expect(subProcess.extensionElements.values[0].$type).to.equal('camunda:InputOutput');
 
-      var serviceTask = helper.clone(userTask, moddle.create('bpmn:ServiceTask'), [
-        'bpmn:extensionElements',
+      var serviceTask = helper.clone(userTask, moddle.create('apmn:ServiceTask'), [
+        'apmn:extensionElements',
         'camunda:inputOutput'
       ]);
 
@@ -203,14 +203,14 @@ describe('util/clone/ModelCloneHelper', function() {
         connectorId: 'hello_connector'
       });
 
-      var extensionElements = moddle.create('bpmn:ExtensionElements', { values: [ connector ] });
+      var extensionElements = moddle.create('apmn:ExtensionElements', { values: [ connector ] });
 
-      var serviceTask = moddle.create('bpmn:UserTask', {
+      var serviceTask = moddle.create('apmn:UserTask', {
         extensionElements: extensionElements
       });
 
-      var userTask = helper.clone(serviceTask, moddle.create('bpmn:UserTask'), [
-        'bpmn:extensionElements'
+      var userTask = helper.clone(serviceTask, moddle.create('apmn:UserTask'), [
+        'apmn:extensionElements'
       ]);
 
       var extElem = userTask.extensionElements;
@@ -229,50 +229,50 @@ describe('util/clone/ModelCloneHelper', function() {
       function createExtElems() {
         var retryTimeCycle = moddle.create('camunda:FailedJobRetryTimeCycle', { body: 'foobar' });
 
-        return moddle.create('bpmn:ExtensionElements', { values: [ retryTimeCycle ] });
+        return moddle.create('apmn:ExtensionElements', { values: [ retryTimeCycle ] });
       }
 
       // given
-      var timerEvtDef = moddle.create('bpmn:TimerEventDefinition', {
+      var timerEvtDef = moddle.create('apmn:TimerEventDefinition', {
         timeDuration: 'foobar'
       });
 
-      var signalEvtDef = moddle.create('bpmn:SignalEventDefinition', {
+      var signalEvtDef = moddle.create('apmn:SignalEventDefinition', {
         async: true
       });
 
-      var multiInst = moddle.create('bpmn:MultiInstanceLoopCharacteristics', {
+      var multiInst = moddle.create('apmn:MultiInstanceLoopCharacteristics', {
         elementVariable: 'foobar'
       });
 
-      var timerStartEvent = moddle.create('bpmn:StartEvent', {
+      var timerStartEvent = moddle.create('apmn:StartEvent', {
         extensionElements: createExtElems(),
         eventDefinitions: [ timerEvtDef ]
       });
 
-      var signalStartEvt = moddle.create('bpmn:StartEvent', {
+      var signalStartEvt = moddle.create('apmn:StartEvent', {
         extensionElements: createExtElems(),
         eventDefinitions: [ signalEvtDef ]
       });
 
-      var subProcess = moddle.create('bpmn:SubProcess', {
+      var subProcess = moddle.create('apmn:SubProcess', {
         extensionElements: createExtElems(),
         loopCharacteristics: multiInst
       });
 
-      var intCatchEvt = helper.clone(timerStartEvent, moddle.create('bpmn:IntermediateCatchEvent'), [
-        'bpmn:extensionElements',
-        'bpmn:eventDefinitions'
+      var intCatchEvt = helper.clone(timerStartEvent, moddle.create('apmn:IntermediateCatchEvent'), [
+        'apmn:extensionElements',
+        'apmn:eventDefinitions'
       ]);
 
-      var startEvt = helper.clone(signalStartEvt, moddle.create('bpmn:StartEvent'), [
-        'bpmn:extensionElements',
-        'bpmn:eventDefinitions'
+      var startEvt = helper.clone(signalStartEvt, moddle.create('apmn:StartEvent'), [
+        'apmn:extensionElements',
+        'apmn:eventDefinitions'
       ]);
 
-      var newSubProcess = helper.clone(subProcess, moddle.create('bpmn:SubProcess'), [
-        'bpmn:extensionElements',
-        'bpmn:loopCharacteristics'
+      var newSubProcess = helper.clone(subProcess, moddle.create('apmn:SubProcess'), [
+        'apmn:extensionElements',
+        'apmn:loopCharacteristics'
       ]);
 
       var intCatchEvtExtElems = intCatchEvt.extensionElements.values,
@@ -298,19 +298,19 @@ describe('util/clone/ModelCloneHelper', function() {
         connectorId: 'hello_connector'
       });
 
-      var extensionElements = moddle.create('bpmn:ExtensionElements', { values: [ connector ] });
+      var extensionElements = moddle.create('apmn:ExtensionElements', { values: [ connector ] });
 
-      var msgEvtDef = moddle.create('bpmn:MessageEventDefinition', {
+      var msgEvtDef = moddle.create('apmn:MessageEventDefinition', {
         extensionElements: extensionElements
       });
 
-      var msgIntermThrowEvt = moddle.create('bpmn:IntermediateThrowEvent', {
+      var msgIntermThrowEvt = moddle.create('apmn:IntermediateThrowEvent', {
         eventDefinitions: [ msgEvtDef ]
       });
 
-      var clonedElement = helper.clone(msgIntermThrowEvt, moddle.create('bpmn:EndEvent'), [
-        'bpmn:extensionElements',
-        'bpmn:eventDefinitions'
+      var clonedElement = helper.clone(msgIntermThrowEvt, moddle.create('apmn:EndEvent'), [
+        'apmn:extensionElements',
+        'apmn:eventDefinitions'
       ]);
 
       var extElems = clonedElement.eventDefinitions[0].extensionElements.values;
@@ -328,19 +328,19 @@ describe('util/clone/ModelCloneHelper', function() {
         name: 'hello_field'
       });
 
-      var extensionElements = moddle.create('bpmn:ExtensionElements', { values: [ field ] });
+      var extensionElements = moddle.create('apmn:ExtensionElements', { values: [ field ] });
 
-      var msgEvtDef = moddle.create('bpmn:MessageEventDefinition', {
+      var msgEvtDef = moddle.create('apmn:MessageEventDefinition', {
         extensionElements: extensionElements
       });
 
-      var msgIntermThrowEvt = moddle.create('bpmn:IntermediateThrowEvent', {
+      var msgIntermThrowEvt = moddle.create('apmn:IntermediateThrowEvent', {
         eventDefinitions: [ msgEvtDef ]
       });
 
-      var clonedElement = helper.clone(msgIntermThrowEvt, moddle.create('bpmn:EndEvent'), [
-        'bpmn:extensionElements',
-        'bpmn:eventDefinitions'
+      var clonedElement = helper.clone(msgIntermThrowEvt, moddle.create('apmn:EndEvent'), [
+        'apmn:extensionElements',
+        'apmn:eventDefinitions'
       ]);
 
       var extElems = clonedElement.eventDefinitions[0].extensionElements.values;
@@ -358,18 +358,18 @@ describe('util/clone/ModelCloneHelper', function() {
         name: 'hello_field'
       });
 
-      var extensionElements = moddle.create('bpmn:ExtensionElements', { values: [ field ] });
+      var extensionElements = moddle.create('apmn:ExtensionElements', { values: [ field ] });
 
-      var msgEvtDef = moddle.create('bpmn:MessageEventDefinition', {
+      var msgEvtDef = moddle.create('apmn:MessageEventDefinition', {
         extensionElements: extensionElements
       });
 
-      var msgIntermThrowEvt = moddle.create('bpmn:IntermediateThrowEvent', {
+      var msgIntermThrowEvt = moddle.create('apmn:IntermediateThrowEvent', {
         eventDefinitions: [ msgEvtDef ]
       });
 
-      var clonedElement = helper.clone(msgIntermThrowEvt, moddle.create('bpmn:IntermediateThrowEvent'), [
-        'bpmn:extensionElements'
+      var clonedElement = helper.clone(msgIntermThrowEvt, moddle.create('apmn:IntermediateThrowEvent'), [
+        'apmn:extensionElements'
       ]);
 
       var extElems = clonedElement.extensionElements;

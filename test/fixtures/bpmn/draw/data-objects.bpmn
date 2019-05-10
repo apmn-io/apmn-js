@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:omgdc="http://www.omg.org/spec/DD/20100524/DC" xmlns:omgdi="http://www.omg.org/spec/DD/20100524/DI" xmlns:signavio="http://www.signavio.com" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd" id="sid-c3c12b6b-ce2f-456c-b55a-3ce4f22db48b" exporter="Signavio Process Editor, http://www.signavio.com" exporterVersion="7.8.1" targetNamespace="http://bpmn.io/schema/bpmn">
+<definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://apmn.io/spec/APMN/MODEL" xmlns:bpmndi="http://apmn.io/spec/APMN/DI" xmlns:omgdc="http://apmn.io/spec/DD/DC" xmlns:omgdi="http://apmn.io/spec/DD/DI" xmlns:signavio="http://www.signavio.com" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd" id="sid-c3c12b6b-ce2f-456c-b55a-3ce4f22db48b" exporter="Signavio Process Editor, http://www.signavio.com" exporterVersion="7.8.1" targetNamespace="http://bpmn.io/schema/bpmn">
   <dataStore id="sid-09f814b1-f9a1-45c7-8ce0-65a0ab69fddc" isUnlimited="false" name="Data Store 2"/>
   <dataStore id="sid-770aebf4-15fc-4ade-919f-d9558181997b" isUnlimited="false" name="Data Store"/>
   <collaboration id="sid-efcaf392-1a95-40dc-be12-8a12c80ec1e5">
@@ -173,94 +173,94 @@
       </extensionElements>
     </dataObjectReference>
   </process>
-  <bpmndi:BPMNDiagram id="sid-2afc2606-c2da-428e-a6df-1d046a82ed57">
-    <bpmndi:BPMNPlane id="sid-646a8f8e-d900-4b7d-8b7f-48364e1f53ce" bpmnElement="sid-efcaf392-1a95-40dc-be12-8a12c80ec1e5">
-      <bpmndi:BPMNShape id="_Participant_4_gui" bpmnElement="_Participant_4" isHorizontal="true">
+  <bpmndi:APMNDiagram id="sid-2afc2606-c2da-428e-a6df-1d046a82ed57">
+    <bpmndi:APMNPlane id="sid-646a8f8e-d900-4b7d-8b7f-48364e1f53ce" apmnElement="sid-efcaf392-1a95-40dc-be12-8a12c80ec1e5">
+      <bpmndi:APMNShape id="_Participant_4_gui" apmnElement="_Participant_4" isHorizontal="true">
         <omgdc:Bounds height="277.0" width="529.0" x="132.0" y="60.0"/>
-        <bpmndi:BPMNLabel labelStyle="sid-80896269-9188-4a42-8603-3ff45af4c1f8">
+        <bpmndi:APMNLabel labelStyle="sid-80896269-9188-4a42-8603-3ff45af4c1f8">
           <omgdc:Bounds height="24.857143" width="12.0" x="138.0" y="186.07143"/>
-        </bpmndi:BPMNLabel>
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Participant_1_gui" bpmnElement="Participant_1" isHorizontal="true">
+        </bpmndi:APMNLabel>
+      </bpmndi:APMNShape>
+      <bpmndi:APMNShape id="Participant_1_gui" apmnElement="Participant_1" isHorizontal="true">
         <omgdc:Bounds height="165.0" width="600.0" x="888.0" y="28.0"/>
-        <bpmndi:BPMNLabel labelStyle="sid-80896269-9188-4a42-8603-3ff45af4c1f8">
+        <bpmndi:APMNLabel labelStyle="sid-80896269-9188-4a42-8603-3ff45af4c1f8">
           <omgdc:Bounds height="24.857143" width="12.0" x="894.0" y="98.07143"/>
-        </bpmndi:BPMNLabel>
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Task_1_gui" bpmnElement="Task_1">
+        </bpmndi:APMNLabel>
+      </bpmndi:APMNShape>
+      <bpmndi:APMNShape id="Task_1_gui" apmnElement="Task_1">
         <omgdc:Bounds height="80.0" width="100.0" x="516.0" y="216.0"/>
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Task_2_gui" bpmnElement="Task_2">
+      </bpmndi:APMNShape>
+      <bpmndi:APMNShape id="Task_2_gui" apmnElement="Task_2">
         <omgdc:Bounds height="80.0" width="100.0" x="1029.0" y="68.0"/>
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="DataObjectReference_1_gui" bpmnElement="DataObjectReference_1">
+      </bpmndi:APMNShape>
+      <bpmndi:APMNShape id="DataObjectReference_1_gui" apmnElement="DataObjectReference_1">
         <omgdc:Bounds height="50.0" width="36.0" x="396.0" y="231.0"/>
-        <bpmndi:BPMNLabel labelStyle="sid-80896269-9188-4a42-8603-3ff45af4c1f8">
+        <bpmndi:APMNLabel labelStyle="sid-80896269-9188-4a42-8603-3ff45af4c1f8">
           <omgdc:Bounds height="36.0" width="34.285713" x="377.0" y="286.0"/>
-        </bpmndi:BPMNLabel>
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="_DataStoreReference_2_gui" bpmnElement="_DataStoreReference_2">
+        </bpmndi:APMNLabel>
+      </bpmndi:APMNShape>
+      <bpmndi:APMNShape id="_DataStoreReference_2_gui" apmnElement="_DataStoreReference_2">
         <omgdc:Bounds height="60.173" width="62.001" x="755.4995" y="66.4135"/>
-        <bpmndi:BPMNLabel labelStyle="sid-80896269-9188-4a42-8603-3ff45af4c1f8">
+        <bpmndi:APMNLabel labelStyle="sid-80896269-9188-4a42-8603-3ff45af4c1f8">
           <omgdc:Bounds height="12.0" width="66.0" x="752.9995" y="126.9995"/>
-        </bpmndi:BPMNLabel>
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="_DataStoreReference_3_gui" bpmnElement="_DataStoreReference_3">
+        </bpmndi:APMNLabel>
+      </bpmndi:APMNShape>
+      <bpmndi:APMNShape id="_DataStoreReference_3_gui" apmnElement="_DataStoreReference_3">
         <omgdc:Bounds height="60.173" width="62.001" x="202.4995" y="72.4135"/>
-        <bpmndi:BPMNLabel labelStyle="sid-80896269-9188-4a42-8603-3ff45af4c1f8">
+        <bpmndi:APMNLabel labelStyle="sid-80896269-9188-4a42-8603-3ff45af4c1f8">
           <omgdc:Bounds height="12.0" width="78.0" x="194.9995" y="132.9995"/>
-        </bpmndi:BPMNLabel>
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="sid-0B5F3253-68A7-4985-9E5F-EAA734C583B5_gui" bpmnElement="sid-0B5F3253-68A7-4985-9E5F-EAA734C583B5">
+        </bpmndi:APMNLabel>
+      </bpmndi:APMNShape>
+      <bpmndi:APMNShape id="sid-0B5F3253-68A7-4985-9E5F-EAA734C583B5_gui" apmnElement="sid-0B5F3253-68A7-4985-9E5F-EAA734C583B5">
         <omgdc:Bounds height="97.0" width="88.0" x="263.0" y="382.0"/>
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="DataInput_1_gui" bpmnElement="DataInput_1">
+      </bpmndi:APMNShape>
+      <bpmndi:APMNShape id="DataInput_1_gui" apmnElement="DataInput_1">
         <omgdc:Bounds height="50.0" width="36.0" x="355.0" y="84.0"/>
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="sid-ADF95ACC-DEA6-4F6F-AF91-8F5BABB299AF_gui" bpmnElement="sid-ADF95ACC-DEA6-4F6F-AF91-8F5BABB299AF">
+      </bpmndi:APMNShape>
+      <bpmndi:APMNShape id="sid-ADF95ACC-DEA6-4F6F-AF91-8F5BABB299AF_gui" apmnElement="sid-ADF95ACC-DEA6-4F6F-AF91-8F5BABB299AF">
         <omgdc:Bounds height="97.0" width="88.0" x="420.0" y="382.0"/>
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="DataOutput_1_gui" bpmnElement="DataOutput_1">
+      </bpmndi:APMNShape>
+      <bpmndi:APMNShape id="DataOutput_1_gui" apmnElement="DataOutput_1">
         <omgdc:Bounds height="50.0" width="36.0" x="480.0" y="84.0"/>
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="sid-16646BD1-38D3-499A-95A6-42A75D8D2510_gui" bpmnElement="sid-16646BD1-38D3-499A-95A6-42A75D8D2510">
+      </bpmndi:APMNShape>
+      <bpmndi:APMNShape id="sid-16646BD1-38D3-499A-95A6-42A75D8D2510_gui" apmnElement="sid-16646BD1-38D3-499A-95A6-42A75D8D2510">
         <omgdc:Bounds height="97.0" width="88.0" x="624.0" y="382.0"/>
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNEdge id="DataInputAssociation_3_gui" bpmnElement="DataInputAssociation_3">
+      </bpmndi:APMNShape>
+      <bpmndi:APMNEdge id="DataInputAssociation_3_gui" apmnElement="DataInputAssociation_3">
         <omgdi:waypoint xsi:type="omgdc:Point" x="432.0" y="244.0"/>
         <omgdi:waypoint xsi:type="omgdc:Point" x="478.0" y="215.0"/>
         <omgdi:waypoint xsi:type="omgdc:Point" x="516.0" y="233.0"/>
-      </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge id="DataInputAssociation_1_gui" bpmnElement="DataInputAssociation_1">
+      </bpmndi:APMNEdge>
+      <bpmndi:APMNEdge id="DataInputAssociation_1_gui" apmnElement="DataInputAssociation_1">
         <omgdi:waypoint xsi:type="omgdc:Point" x="817.5005" y="97.714455"/>
         <omgdi:waypoint xsi:type="omgdc:Point" x="1029.0" y="106.0"/>
-      </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge id="DataOutputAssociation_1_gui" bpmnElement="DataOutputAssociation_1">
+      </bpmndi:APMNEdge>
+      <bpmndi:APMNEdge id="DataOutputAssociation_1_gui" apmnElement="DataOutputAssociation_1">
         <omgdi:waypoint xsi:type="omgdc:Point" x="616.0" y="220.0"/>
         <omgdi:waypoint xsi:type="omgdc:Point" x="755.4995" y="118.95491"/>
-      </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge id="DataOutputAssociation_2_gui" bpmnElement="DataOutputAssociation_2">
+      </bpmndi:APMNEdge>
+      <bpmndi:APMNEdge id="DataOutputAssociation_2_gui" apmnElement="DataOutputAssociation_2">
         <omgdi:waypoint xsi:type="omgdc:Point" x="547.0" y="216.0"/>
         <omgdi:waypoint xsi:type="omgdc:Point" x="510.0" y="134.0"/>
-      </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge id="DataOutputAssociation_3_gui" bpmnElement="DataOutputAssociation_3">
+      </bpmndi:APMNEdge>
+      <bpmndi:APMNEdge id="DataOutputAssociation_3_gui" apmnElement="DataOutputAssociation_3">
         <omgdi:waypoint xsi:type="omgdc:Point" x="516.0" y="277.0"/>
         <omgdi:waypoint xsi:type="omgdc:Point" x="471.0" y="296.0"/>
         <omgdi:waypoint xsi:type="omgdc:Point" x="432.0" y="269.0"/>
-      </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge id="BPMNEdge_DataOutputAssociation_2" bpmnElement="DataOutputAssociation_5" sourceElement="Task_1_gui" targetElement="sid-16646BD1-38D3-499A-95A6-42A75D8D2510_gui">
+      </bpmndi:APMNEdge>
+      <bpmndi:APMNEdge id="BPMNEdge_DataOutputAssociation_2" apmnElement="DataOutputAssociation_5" sourceElement="Task_1_gui" targetElement="sid-16646BD1-38D3-499A-95A6-42A75D8D2510_gui">
         <omgdi:waypoint xsi:type="omgdc:Point" x="572.0" y="296.0"/>
         <omgdi:waypoint xsi:type="omgdc:Point" x="581.0" y="361.0"/>
         <omgdi:waypoint xsi:type="omgdc:Point" x="624.0" y="395.0"/>
-      </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge id="BPMNEdge_DataInputAssociation_1" bpmnElement="DataInputAssociation_2" sourceElement="sid-ADF95ACC-DEA6-4F6F-AF91-8F5BABB299AF_gui" targetElement="Task_1_gui">
+      </bpmndi:APMNEdge>
+      <bpmndi:APMNEdge id="BPMNEdge_DataInputAssociation_1" apmnElement="DataInputAssociation_2" sourceElement="sid-ADF95ACC-DEA6-4F6F-AF91-8F5BABB299AF_gui" targetElement="Task_1_gui">
         <omgdi:waypoint xsi:type="omgdc:Point" x="508.0" y="397.0"/>
         <omgdi:waypoint xsi:type="omgdc:Point" x="557.0" y="360.0"/>
         <omgdi:waypoint xsi:type="omgdc:Point" x="563.0" y="296.0"/>
-      </bpmndi:BPMNEdge>
-    </bpmndi:BPMNPlane>
-    <bpmndi:BPMNLabelStyle id="sid-80896269-9188-4a42-8603-3ff45af4c1f8">
+      </bpmndi:APMNEdge>
+    </bpmndi:APMNPlane>
+    <bpmndi:APMNLabelStyle id="sid-80896269-9188-4a42-8603-3ff45af4c1f8">
       <omgdc:Font name="Arial" size="12.0"/>
-    </bpmndi:BPMNLabelStyle>
-  </bpmndi:BPMNDiagram>
+    </bpmndi:APMNLabelStyle>
+  </bpmndi:APMNDiagram>
 </definitions>

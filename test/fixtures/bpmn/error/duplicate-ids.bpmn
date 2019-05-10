@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <bpmn2:definitions
-  xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL"
-  xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+  xmlns:bpmn2="http://apmn.io/spec/APMN/MODEL"
+  xmlns:bpmndi="http://apmn.io/spec/APMN/DI"
   id="definitions"
   targetNamespace="http://bpmn.io/schema/bpmn">
 
   <bpmn2:process id="test" />
   <bpmn2:process id="test" />
 
-  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
-    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="test">
-    </bpmndi:BPMNPlane>
-  </bpmndi:BPMNDiagram>
+  <bpmndi:APMNDiagram id="BPMNDiagram_1">
+    <bpmndi:APMNPlane id="BPMNPlane_1" apmnElement="test">
+    </bpmndi:APMNPlane>
+  </bpmndi:APMNDiagram>
 </bpmn2:definitions>

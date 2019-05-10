@@ -31,7 +31,7 @@ describe('features/modeling - append text-annotation', function() {
           process = elementRegistry.get('Participant_1').businessObject.processRef;
 
       // when
-      var annotationShape = modeling.appendShape(eventShape, { type: 'bpmn:TextAnnotation' }),
+      var annotationShape = modeling.appendShape(eventShape, { type: 'apmn:TextAnnotation' }),
           annotation = annotationShape.businessObject;
 
       var connectingConnection = find(annotationShape.incoming, function(c) {
@@ -42,9 +42,9 @@ describe('features/modeling - append text-annotation', function() {
 
       // then
       expect(annotationShape).to.exist;
-      expect(annotation.$instanceOf('bpmn:TextAnnotation')).to.be.true;
+      expect(annotation.$instanceOf('apmn:TextAnnotation')).to.be.true;
 
-      expect(connecting.$instanceOf('bpmn:Association')).to.be.true;
+      expect(connecting.$instanceOf('apmn:Association')).to.be.true;
       expect(connecting.sourceRef).to.eql(eventShape.businessObject);
       expect(connecting.targetRef).to.eql(annotation);
 
@@ -63,7 +63,7 @@ describe('features/modeling - append text-annotation', function() {
       var eventShape = elementRegistry.get('IntermediateThrowEvent_1');
 
       // when
-      var annotationShape = modeling.appendShape(eventShape, { type: 'bpmn:TextAnnotation' }),
+      var annotationShape = modeling.appendShape(eventShape, { type: 'apmn:TextAnnotation' }),
           annotation = annotationShape.businessObject;
 
       var connectingConnection = find(annotationShape.incoming, function(c) {
@@ -74,9 +74,9 @@ describe('features/modeling - append text-annotation', function() {
 
       // then
       expect(annotationShape).to.exist;
-      expect(annotation.$instanceOf('bpmn:TextAnnotation')).to.be.true;
+      expect(annotation.$instanceOf('apmn:TextAnnotation')).to.be.true;
 
-      expect(connecting.$instanceOf('bpmn:Association')).to.be.true;
+      expect(connecting.$instanceOf('apmn:Association')).to.be.true;
       expect(connecting.sourceRef).to.eql(eventShape.businessObject);
       expect(connecting.targetRef).to.eql(annotation);
 
@@ -91,7 +91,7 @@ describe('features/modeling - append text-annotation', function() {
       var eventShape = elementRegistry.get('IntermediateCatchEvent_1');
 
       // when
-      var annotationShape = modeling.appendShape(eventShape, { type: 'bpmn:TextAnnotation' });
+      var annotationShape = modeling.appendShape(eventShape, { type: 'apmn:TextAnnotation' });
 
       // then
       expect(annotationShape.width).to.eql(100);
@@ -109,7 +109,7 @@ describe('features/modeling - append text-annotation', function() {
       var eventShape = elementRegistry.get('IntermediateCatchEvent_1'),
           process = elementRegistry.get('Participant_1').businessObject.processRef;
 
-      var annotationShape = modeling.appendShape(eventShape, { type: 'bpmn:TextAnnotation' }),
+      var annotationShape = modeling.appendShape(eventShape, { type: 'apmn:TextAnnotation' }),
           annotation = annotationShape.businessObject;
 
       var connectingConnection = find(annotationShape.incoming, function(c) {

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" id="Definitions_1" targetNamespace="http://bpmn.io/schema/bpmn">
+<bpmn:definitions xmlns:bpmn="http://apmn.io/spec/APMN/MODEL" xmlns:bpmndi="http://apmn.io/spec/APMN/DI" xmlns:di="http://apmn.io/spec/DD/DI" xmlns:dc="http://apmn.io/spec/DD/DC" id="Definitions_1" targetNamespace="http://bpmn.io/schema/bpmn">
   <bpmn:collaboration id="Collaboration">
     <bpmn:textAnnotation id="TextAnnotation">
       <bpmn:text>Boundary Events are awesome!</bpmn:text>
@@ -23,71 +23,71 @@
     <bpmn:task id="Task_in_OtherProcess" name="3" />
     <bpmn:boundaryEvent id="BoundaryEvent_in_OtherProcess" name="4" attachedToRef="Task_in_OtherProcess" />
   </bpmn:process>
-  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
-    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Collaboration">
-      <bpmndi:BPMNShape id="Participant_di" bpmnElement="Participant">
+  <bpmndi:APMNDiagram id="BPMNDiagram_1">
+    <bpmndi:APMNPlane id="BPMNPlane_1" apmnElement="Collaboration">
+      <bpmndi:APMNShape id="Participant_di" apmnElement="Participant">
         <dc:Bounds x="111" y="31" width="600" height="275" />
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="OtherParticipant_di" bpmnElement="OtherParticipant">
+      </bpmndi:APMNShape>
+      <bpmndi:APMNShape id="OtherParticipant_di" apmnElement="OtherParticipant">
         <dc:Bounds x="382" y="394" width="329" height="182" />
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Task_in_OtherProcess_di" bpmnElement="Task_in_OtherProcess">
+      </bpmndi:APMNShape>
+      <bpmndi:APMNShape id="Task_in_OtherProcess_di" apmnElement="Task_in_OtherProcess">
         <dc:Bounds x="450" y="426" width="100" height="80" />
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="BoundaryEvent_in_OtherProcess_di" bpmnElement="BoundaryEvent_in_OtherProcess">
+      </bpmndi:APMNShape>
+      <bpmndi:APMNShape id="BoundaryEvent_in_OtherProcess_di" apmnElement="BoundaryEvent_in_OtherProcess">
         <dc:Bounds x="495" y="488" width="36" height="36" />
-        <bpmndi:BPMNLabel>
+        <bpmndi:APMNLabel>
           <dc:Bounds x="468" y="524" width="90" height="20" />
-        </bpmndi:BPMNLabel>
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="SubProcess_di" bpmnElement="SubProcess" isExpanded="true">
+        </bpmndi:APMNLabel>
+      </bpmndi:APMNShape>
+      <bpmndi:APMNShape id="SubProcess_di" apmnElement="SubProcess" isExpanded="true">
         <dc:Bounds x="196" y="67" width="243" height="155" />
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="BoundaryEvent_di" bpmnElement="BoundaryEvent_on_SubProcess">
+      </bpmndi:APMNShape>
+      <bpmndi:APMNShape id="BoundaryEvent_di" apmnElement="BoundaryEvent_on_SubProcess">
         <dc:Bounds x="237" y="204" width="36" height="36" />
-        <bpmndi:BPMNLabel>
+        <bpmndi:APMNLabel>
           <dc:Bounds x="210" y="240" width="90" height="20" />
-        </bpmndi:BPMNLabel>
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Task_nested_di" bpmnElement="Task_nested">
+        </bpmndi:APMNLabel>
+      </bpmndi:APMNShape>
+      <bpmndi:APMNShape id="Task_nested_di" apmnElement="Task_nested">
         <dc:Bounds x="295" y="88" width="100" height="80" />
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="BoundaryEvent_nested_di" bpmnElement="BoundaryEvent_nested">
+      </bpmndi:APMNShape>
+      <bpmndi:APMNShape id="BoundaryEvent_nested_di" apmnElement="BoundaryEvent_nested">
         <dc:Bounds x="340" y="150" width="36" height="36" />
-        <bpmndi:BPMNLabel>
+        <bpmndi:APMNLabel>
           <dc:Bounds x="313" y="186" width="90" height="20" />
-        </bpmndi:BPMNLabel>
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="EndEvent_di" bpmnElement="EndEvent_nested">
+        </bpmndi:APMNLabel>
+      </bpmndi:APMNShape>
+      <bpmndi:APMNShape id="EndEvent_di" apmnElement="EndEvent_nested">
         <dc:Bounds x="229" y="110" width="36" height="36" />
-        <bpmndi:BPMNLabel>
+        <bpmndi:APMNLabel>
           <dc:Bounds x="202" y="146" width="90" height="20" />
-        </bpmndi:BPMNLabel>
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="ExclusiveGateway_di" bpmnElement="ExclusiveGateway" isMarkerVisible="true">
+        </bpmndi:APMNLabel>
+      </bpmndi:APMNShape>
+      <bpmndi:APMNShape id="ExclusiveGateway_di" apmnElement="ExclusiveGateway" isMarkerVisible="true">
         <dc:Bounds x="596" y="232" width="50" height="50" />
-        <bpmndi:BPMNLabel>
+        <bpmndi:APMNLabel>
           <dc:Bounds x="576" y="282" width="90" height="20" />
-        </bpmndi:BPMNLabel>
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="TextAnnotation_di" bpmnElement="TextAnnotation">
+        </bpmndi:APMNLabel>
+      </bpmndi:APMNShape>
+      <bpmndi:APMNShape id="TextAnnotation_di" apmnElement="TextAnnotation">
         <dc:Bounds x="804" y="101" width="143" height="83" />
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Task_di" bpmnElement="Task">
+      </bpmndi:APMNShape>
+      <bpmndi:APMNShape id="Task_di" apmnElement="Task">
         <dc:Bounds x="557" y="95" width="100" height="80" />
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="BoundaryEvent_on_Task_di" bpmnElement="BoundaryEvent_on_Task">
+      </bpmndi:APMNShape>
+      <bpmndi:APMNShape id="BoundaryEvent_on_Task_di" apmnElement="BoundaryEvent_on_Task">
         <dc:Bounds x="603" y="157" width="36" height="36" />
-        <bpmndi:BPMNLabel>
+        <bpmndi:APMNLabel>
           <dc:Bounds x="576" y="193" width="90" height="20" />
-        </bpmndi:BPMNLabel>
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="StartEvent_None_di" bpmnElement="StartEvent_None">
+        </bpmndi:APMNLabel>
+      </bpmndi:APMNShape>
+      <bpmndi:APMNShape id="StartEvent_None_di" apmnElement="StartEvent_None">
         <dc:Bounds x="501" y="239" width="36" height="36" />
-        <bpmndi:BPMNLabel>
+        <bpmndi:APMNLabel>
           <dc:Bounds x="474" y="275" width="90" height="20" />
-        </bpmndi:BPMNLabel>
-      </bpmndi:BPMNShape>
-    </bpmndi:BPMNPlane>
-  </bpmndi:BPMNDiagram>
+        </bpmndi:APMNLabel>
+      </bpmndi:APMNShape>
+    </bpmndi:APMNPlane>
+  </bpmndi:APMNDiagram>
 </bpmn:definitions>

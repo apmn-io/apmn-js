@@ -8,7 +8,7 @@ import modelingModule from 'lib/features/modeling';
 import bpmnSearchModule from 'lib/features/search';
 
 
-describe('features - BPMN search provider', function() {
+describe('features - APMN search provider', function() {
 
   var testModules = [
     coreModule,

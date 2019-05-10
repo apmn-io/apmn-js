@@ -1,15 +1,15 @@
 #! /bin/bash
 
-# update bpmn-js version in the <bpmn-js-examples> project
+# update apmn-js version in the <apmn-js-examples> project
 
 PWD="$(pwd)"
 WORKDIR="$(pwd)/tmp"
-EXAMPLES_DIR="$WORKDIR/bpmn-js-examples"
+EXAMPLES_DIR="$WORKDIR/apmn-js-examples"
 
 # create work dir
 mkdir -p "$WORKDIR"
 
-git clone --depth=1 https://github.com/bpmn-io/bpmn-js-examples.git "$EXAMPLES_DIR"
+git clone --depth=1 https://github.com/apmn-io/apmn-js-examples.git "$EXAMPLES_DIR"
 
 cd "$EXAMPLES_DIR"
 
@@ -17,8 +17,8 @@ cd "$EXAMPLES_DIR"
 TOOLKIT_VERSION="${TRAVIS_TAG:1}"
 echo "Updating toolkit version to $TOOLKIT_VERSION"
 
-sed -i -E "s#(\"bpmn-js\": )\"[^\"]+\"#\1\"^$TOOLKIT_VERSION\"#" **/package.json
-sed -i -E "s#/bpmn-js@[^/]+/#/bpmn-js@$TOOLKIT_VERSION/#" **/*.{html,md}
+sed -i -E "s#(\"apmn-js\": )\"[^\"]+\"#\1\"^$TOOLKIT_VERSION\"#" **/package.json
+sed -i -E "s#/apmn-js@[^/]+/#/apmn-js@$TOOLKIT_VERSION/#" **/*.{html,md}
 
 if [[ "x$SKIP_COMMIT" = "x" ]]; then
 
@@ -30,8 +30,8 @@ if [[ "x$SKIP_COMMIT" = "x" ]]; then
   git add -A
   git commit -m "chore(project): bump examples to $TRAVIS_TAG"
   git tag "$TRAVIS_TAG"
-  git push -q "https://$GITHUB_AUTH@github.com/bpmn-io/bpmn-js-examples.git" &2>/dev/null
-  git push --tags -q "https://$GITHUB_AUTH@github.com/bpmn-io/bpmn-js-examples.git" &2>/dev/null
+  git push -q "https://$GITHUB_AUTH@github.com/apmn-io/apmn-js-examples.git" &2>/dev/null
+  git push --tags -q "https://$GITHUB_AUTH@github.com/apmn-io/apmn-js-examples.git" &2>/dev/null
 else
   echo "Skipping commit (SKIP_COMMIT=$SKIP_COMMIT)"
 fi

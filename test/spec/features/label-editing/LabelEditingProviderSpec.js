@@ -114,7 +114,7 @@ describe('features - label-editing', function() {
         // when
         autoPlace.append(shape, elementFactory.create(
           'shape',
-          { type: 'bpmn:ServiceTask' }
+          { type: 'apmn:ServiceTask' }
         ));
 
         // then

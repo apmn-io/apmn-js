@@ -54,7 +54,7 @@
       ],
       "meta": {
         "allowedIn": [
-          "bpmn:CallActivity"
+          "apmn:CallActivity"
         ]
       }
     },
@@ -65,7 +65,7 @@
       ],
       "meta": {
         "allowedIn": [
-          "bpmn:CallActivity"
+          "apmn:CallActivity"
         ]
       }
     },
@@ -73,9 +73,9 @@
       "name": "AsyncCapable",
       "isAbstract": true,
       "extends": [
-        "bpmn:Activity",
-        "bpmn:Gateway",
-        "bpmn:Event"
+        "apmn:Activity",
+        "apmn:Gateway",
+        "apmn:Event"
       ],
       "properties": [
         {
@@ -108,7 +108,7 @@
       "name": "JobPriorized",
       "isAbstract": true,
       "extends": [
-        "bpmn:Process",
+        "apmn:Process",
         "camunda:AsyncCapable"
       ],
       "properties": [
@@ -123,7 +123,7 @@
       "name": "SignalEventDefinition",
       "isAbstract": true,
       "extends": [
-        "bpmn:SignalEventDefinition"
+        "apmn:SignalEventDefinition"
       ],
       "properties": [
         {
@@ -138,7 +138,7 @@
       "name": "ErrorEventDefinition",
       "isAbstract": true,
       "extends": [
-        "bpmn:ErrorEventDefinition"
+        "apmn:ErrorEventDefinition"
       ],
       "properties": [
         {
@@ -161,7 +161,7 @@
       "properties": [
         {
           "name": "resourceAssignmentExpression",
-          "type": "bpmn:ResourceAssignmentExpression"
+          "type": "apmn:ResourceAssignmentExpression"
         }
       ]
     },
@@ -169,8 +169,8 @@
       "name": "FormSupported",
       "isAbstract": true,
       "extends": [
-        "bpmn:StartEvent",
-        "bpmn:UserTask"
+        "apmn:StartEvent",
+        "apmn:UserTask"
       ],
       "properties": [
         {
@@ -188,7 +188,7 @@
     {
       "name": "Initiator",
       "isAbstract": true,
-      "extends": [ "bpmn:StartEvent" ],
+      "extends": [ "apmn:StartEvent" ],
       "properties": [
         {
           "name": "initiator",
@@ -201,7 +201,7 @@
       "name": "ScriptTask",
       "isAbstract": true,
       "extends": [
-        "bpmn:ScriptTask"
+        "apmn:ScriptTask"
       ],
       "properties": [
         {
@@ -220,7 +220,7 @@
       "name": "Process",
       "isAbstract": true,
       "extends": [
-        "bpmn:Process"
+        "apmn:Process"
       ],
       "properties": [
         {
@@ -244,7 +244,7 @@
       "name": "EscalationEventDefinition",
       "isAbstract": true,
       "extends": [
-        "bpmn:EscalationEventDefinition"
+        "apmn:EscalationEventDefinition"
       ],
       "properties": [
         {
@@ -258,7 +258,7 @@
       "name": "FormalExpression",
       "isAbstract": true,
       "extends": [
-        "bpmn:FormalExpression"
+        "apmn:FormalExpression"
       ],
       "properties": [
         {
@@ -270,7 +270,7 @@
     },
     {
       "name": "Assignable",
-      "extends": [ "bpmn:UserTask" ],
+      "extends": [ "apmn:UserTask" ],
       "properties": [
         {
           "name": "assignee",
@@ -306,7 +306,7 @@
     },
     {
       "name": "CallActivity",
-      "extends": [ "bpmn:CallActivity" ],
+      "extends": [ "apmn:CallActivity" ],
       "properties": [
         {
           "name": "calledElementBinding",
@@ -360,10 +360,10 @@
     {
       "name": "ServiceTaskLike",
       "extends": [
-        "bpmn:ServiceTask",
-        "bpmn:BusinessRuleTask",
-        "bpmn:SendTask",
-        "bpmn:MessageEventDefinition"
+        "apmn:ServiceTask",
+        "apmn:BusinessRuleTask",
+        "apmn:SendTask",
+        "apmn:MessageEventDefinition"
       ],
       "properties": [
         {
@@ -391,7 +391,7 @@
     {
       "name": "DmnCapable",
       "extends": [
-        "bpmn:BusinessRuleTask"
+        "apmn:BusinessRuleTask"
       ],
       "properties": [
         {
@@ -444,7 +444,7 @@
     {
       "name": "TaskPriorized",
       "extends": [
-        "bpmn:Process",
+        "apmn:Process",
         "camunda:ExternalCapable"
       ],
       "properties": [
@@ -501,9 +501,9 @@
       ],
       "meta": {
         "allowedIn": [
-          "bpmn:ServiceTask",
-          "bpmn:BusinessRuleTask",
-          "bpmn:SendTask"
+          "apmn:ServiceTask",
+          "apmn:BusinessRuleTask",
+          "apmn:SendTask"
         ]
       },
       "properties": [
@@ -524,28 +524,28 @@
       ],
       "meta": {
         "allowedIn": [
-          "bpmn:Task",
-          "bpmn:UserTask",
-          "bpmn:ServiceTask",
-          "bpmn:SendTask",
-          "bpmn:BusinessRuleTask",
-          "bpmn:ReceiveTask",
-          "bpmn:ScriptTask",
-          "bpmn:ManualTask",
-          "bpmn:GlobalUserTask",
-          "bpmn:GlobalScriptTask",
-          "bpmn:GlobalBusinessRuleTask",
-          "bpmn:GlobalTask",
-          "bpmn:GlobalManualTask",
-          "bpmn:SubProcess",
-          "bpmn:Transaction",
-          "bpmn:IntermediateCatchEvent",
-          "bpmn:IntermediateThrowEvent",
-          "bpmn:EndEvent",
-          "bpmn:ThrowEvent",
-          "bpmn:CatchEvent",
-          "bpmn:ImplicitThrowEvent",
-          "bpmn:CallActivity"
+          "apmn:Task",
+          "apmn:UserTask",
+          "apmn:ServiceTask",
+          "apmn:SendTask",
+          "apmn:BusinessRuleTask",
+          "apmn:ReceiveTask",
+          "apmn:ScriptTask",
+          "apmn:ManualTask",
+          "apmn:GlobalUserTask",
+          "apmn:GlobalScriptTask",
+          "apmn:GlobalBusinessRuleTask",
+          "apmn:GlobalTask",
+          "apmn:GlobalManualTask",
+          "apmn:SubProcess",
+          "apmn:Transaction",
+          "apmn:IntermediateCatchEvent",
+          "apmn:IntermediateThrowEvent",
+          "apmn:EndEvent",
+          "apmn:ThrowEvent",
+          "apmn:CatchEvent",
+          "apmn:ImplicitThrowEvent",
+          "apmn:CallActivity"
         ]
       },
       "properties": [
@@ -682,9 +682,9 @@
       "superClass": [ "Element" ],
       "meta": {
         "allowedIn": [
-          "bpmn:ServiceTask",
-          "bpmn:BusinessRuleTask",
-          "bpmn:SendTask"
+          "apmn:ServiceTask",
+          "apmn:BusinessRuleTask",
+          "apmn:SendTask"
         ]
       },
       "properties": [
@@ -719,7 +719,7 @@
     {
       "name": "Collectable",
       "isAbstract": true,
-      "extends": [ "bpmn:MultiInstanceLoopCharacteristics" ],
+      "extends": [ "apmn:MultiInstanceLoopCharacteristics" ],
       "superClass": [ "camunda:AsyncCapable" ],
       "properties": [
         {
@@ -739,17 +739,17 @@
       "superClass": [ "Element" ],
       "meta": {
         "allowedIn": [
-          "bpmn:Task",
-          "bpmn:ServiceTask",
-          "bpmn:SendTask",
-          "bpmn:UserTask",
-          "bpmn:BusinessRuleTask",
-          "bpmn:ScriptTask",
-          "bpmn:ReceiveTask",
-          "bpmn:CallActivity",
-          "bpmn:TimerEventDefinition",
-          "bpmn:SignalEventDefinition",
-          "bpmn:MultiInstanceLoopCharacteristics"
+          "apmn:Task",
+          "apmn:ServiceTask",
+          "apmn:SendTask",
+          "apmn:UserTask",
+          "apmn:BusinessRuleTask",
+          "apmn:ScriptTask",
+          "apmn:ReceiveTask",
+          "apmn:CallActivity",
+          "apmn:TimerEventDefinition",
+          "apmn:SignalEventDefinition",
+          "apmn:MultiInstanceLoopCharacteristics"
         ]
       },
       "properties": [
@@ -765,25 +765,25 @@
       "superClass": [ "Element" ],
       "meta": {
         "allowedIn": [
-          "bpmn:Task",
-          "bpmn:ServiceTask",
-          "bpmn:UserTask",
-          "bpmn:BusinessRuleTask",
-          "bpmn:ScriptTask",
-          "bpmn:ReceiveTask",
-          "bpmn:ManualTask",
-          "bpmn:ExclusiveGateway",
-          "bpmn:SequenceFlow",
-          "bpmn:ParallelGateway",
-          "bpmn:InclusiveGateway",
-          "bpmn:EventBasedGateway",
-          "bpmn:StartEvent",
-          "bpmn:IntermediateCatchEvent",
-          "bpmn:IntermediateThrowEvent",
-          "bpmn:EndEvent",
-          "bpmn:BoundaryEvent",
-          "bpmn:CallActivity",
-          "bpmn:SubProcess"
+          "apmn:Task",
+          "apmn:ServiceTask",
+          "apmn:UserTask",
+          "apmn:BusinessRuleTask",
+          "apmn:ScriptTask",
+          "apmn:ReceiveTask",
+          "apmn:ManualTask",
+          "apmn:ExclusiveGateway",
+          "apmn:SequenceFlow",
+          "apmn:ParallelGateway",
+          "apmn:InclusiveGateway",
+          "apmn:EventBasedGateway",
+          "apmn:StartEvent",
+          "apmn:IntermediateCatchEvent",
+          "apmn:IntermediateThrowEvent",
+          "apmn:EndEvent",
+          "apmn:BoundaryEvent",
+          "apmn:CallActivity",
+          "apmn:SubProcess"
         ]
       },
       "properties": [
@@ -823,7 +823,7 @@
       "superClass": [ "Element" ],
       "meta": {
         "allowedIn": [
-          "bpmn:UserTask"
+          "apmn:UserTask"
         ]
       },
       "properties": [
@@ -863,8 +863,8 @@
       "superClass": [ "Element" ],
       "meta": {
         "allowedIn": [
-          "bpmn:StartEvent",
-          "bpmn:UserTask"
+          "apmn:StartEvent",
+          "apmn:UserTask"
         ]
       },
       "properties": [
@@ -930,8 +930,8 @@
       "superClass": [ "Element" ],
       "meta": {
         "allowedIn": [
-          "bpmn:StartEvent",
-          "bpmn:UserTask"
+          "apmn:StartEvent",
+          "apmn:UserTask"
         ]
       },
       "properties": [
@@ -1022,7 +1022,7 @@
       "name": "ConditionalEventDefinition",
       "isAbstract": true,
       "extends": [
-        "bpmn:ConditionalEventDefinition"
+        "apmn:ConditionalEventDefinition"
       ],
       "properties": [
         {

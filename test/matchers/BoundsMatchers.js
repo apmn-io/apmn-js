@@ -88,7 +88,7 @@ export default function(chai, utils) {
    * A simple dimensions matcher, that verifies an element
    * has the correct { width, height }.
    *
-   * Unwraps `element.bounds` (BPMNDI) if present.
+   * Unwraps `element.bounds` (APMNDI) if present.
    *
    * @example
    *
@@ -128,7 +128,7 @@ export default function(chai, utils) {
    * A simple position matcher, that verifies an element
    * has the correct { x, y }.
    *
-   * Unwraps `element.bounds` (BPMNDI) if present.
+   * Unwraps `element.bounds` (APMNDI) if present.
    *
    * @example
    *

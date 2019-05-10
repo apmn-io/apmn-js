@@ -22,7 +22,7 @@ describe('modeling/behavior - CompensationAssociation', function() {
 
     // when
     var newConnection = modeling.connect(boundaryShape, activityShape, {
-      type: 'bpmn:DataInputAssociation'
+      type: 'apmn:DataInputAssociation'
     });
 
     // then

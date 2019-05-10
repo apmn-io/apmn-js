@@ -1,7 +1,7 @@
 import TestContainer from 'mocha-test-container-support';
 
 import Diagram from 'diagram-js/lib/Diagram';
-import BpmnModdle from 'bpmn-moddle';
+import ApmnModdle from 'apmn-moddle';
 
 import {
   importBpmnDiagram
@@ -48,7 +48,7 @@ describe('import - Importer', function() {
       diagramId = null;
     }
 
-    var moddle = new BpmnModdle();
+    var moddle = new ApmnModdle();
 
     moddle.fromXML(xml, function(err, definitions) {
 
@@ -97,7 +97,7 @@ describe('import - Importer', function() {
     });
 
 
-    it('should fire <bpmnElement.added> during import', function(done) {
+    it('should fire <apmnElement.added> during import', function(done) {
 
       // given
       var xml = require('../../fixtures/bpmn/import/process.bpmn');
@@ -105,7 +105,7 @@ describe('import - Importer', function() {
       var eventCount = 0;
 
       // log events
-      diagram.get('eventBus').on('bpmnElement.added', function(e) {
+      diagram.get('eventBus').on('apmnElement.added', function(e) {
         eventCount++;
       });
 
@@ -132,7 +132,7 @@ describe('import - Importer', function() {
       var events = [];
 
       // log events
-      diagram.get('eventBus').on('bpmnElement.added', function(e) {
+      diagram.get('eventBus').on('apmnElement.added', function(e) {
         events.push({
           type: 'add',
           semantic: e.element.businessObject.id,
@@ -170,7 +170,7 @@ describe('import - Importer', function() {
       var events = [];
 
       // log events
-      diagram.get('eventBus').on('bpmnElement.added', function(e) {
+      diagram.get('eventBus').on('apmnElement.added', function(e) {
         events.push({
           type: 'add',
           semantic: e.element.businessObject.id,
@@ -212,7 +212,7 @@ describe('import - Importer', function() {
       var events = {};
 
       // log events
-      diagram.get('eventBus').on('bpmnElement.added', function(e) {
+      diagram.get('eventBus').on('apmnElement.added', function(e) {
 
         events[e.element.id] = e.element;
       });
@@ -238,7 +238,7 @@ describe('import - Importer', function() {
       var events = {};
 
       // log events
-      diagram.get('eventBus').on('bpmnElement.added', function(e) {
+      diagram.get('eventBus').on('apmnElement.added', function(e) {
 
         events[e.element.id] = e.element;
       });
@@ -277,9 +277,9 @@ describe('import - Importer', function() {
         // connections
         // other elements
         var correctlyOrdered = [].concat(
-          children.filter(function(c) { return is(c, 'bpmn:Lane'); }),
+          children.filter(function(c) { return is(c, 'apmn:Lane'); }),
           children.filter(function(c) { return c.waypoints; }),
-          children.filter(function(c) { return !is(c, 'bpmn:Lane') && !c.waypoints; })
+          children.filter(function(c) { return !is(c, 'apmn:Lane') && !c.waypoints; })
         );
 
         // then
@@ -302,7 +302,7 @@ describe('import - Importer', function() {
       var events = [];
 
       // log events
-      diagram.get('eventBus').on('bpmnElement.added', function(e) {
+      diagram.get('eventBus').on('apmnElement.added', function(e) {
         events.push({
           type: 'add',
           semantic: e.element.businessObject.id,
@@ -336,7 +336,7 @@ describe('import - Importer', function() {
       var events = {};
 
       // log events
-      diagram.get('eventBus').on('bpmnElement.added', function(e) {
+      diagram.get('eventBus').on('apmnElement.added', function(e) {
 
         events[e.element.id] = e.element;
       });
@@ -358,7 +358,7 @@ describe('import - Importer', function() {
       var events = {};
 
       // log events
-      diagram.get('eventBus').on('bpmnElement.added', function(e) {
+      diagram.get('eventBus').on('apmnElement.added', function(e) {
 
         events[e.element.id] = e.element;
       });
@@ -379,7 +379,7 @@ describe('import - Importer', function() {
       var events = {};
 
       // log events
-      diagram.get('eventBus').on('bpmnElement.added', function(e) {
+      diagram.get('eventBus').on('apmnElement.added', function(e) {
 
         events[e.element.id] = e.element;
       });
@@ -416,7 +416,7 @@ describe('import - Importer', function() {
       var events = [];
 
       // log events
-      diagram.get('eventBus').on('bpmnElement.added', function(e) {
+      diagram.get('eventBus').on('apmnElement.added', function(e) {
         events.push({
           type: 'add',
           semantic: e.element.businessObject.id,
@@ -426,7 +426,7 @@ describe('import - Importer', function() {
       });
 
       // when
-      runImport(diagram, xml, 'BPMNDiagram_2', function(err, warnings) {
+      runImport(diagram, xml, 'APMNDiagram_2', function(err, warnings) {
 
         // then
         expect(events).to.eql([
@@ -451,7 +451,7 @@ describe('import - Importer', function() {
       var events = [];
 
       // log events
-      diagram.get('eventBus').on('bpmnElement.added', function(e) {
+      diagram.get('eventBus').on('apmnElement.added', function(e) {
         events.push({
           type: 'add',
           semantic: e.element.businessObject.id,
@@ -509,7 +509,7 @@ describe('import - Importer', function() {
       runImport(diagram, xml, function(err, warnings) {
 
         var expectedMessage =
-          'multiple DI elements defined for <bpmn:InclusiveGateway id="InclusiveGateway_1" />';
+          'multiple DI elements defined for <apmn:InclusiveGateway id="InclusiveGateway_1" />';
 
         expect(warnings).to.have.length(1);
         expect(warnings[0].message).to.equal(expectedMessage);
@@ -566,8 +566,8 @@ describe('import - Importer', function() {
           // then
           expect(warnings.length).to.eql(2);
 
-          expect(warnings[0].message).to.eql('missing <bpmn:BoundaryEvent id="BoundaryEvent_1" />#attachedToRef');
-          expect(warnings[1].message).to.eql('element <bpmn:BoundaryEvent id="BoundaryEvent_1" /> referenced by <bpmn:SequenceFlow id="SequenceFlow_1" />#sourceRef not yet drawn');
+          expect(warnings[0].message).to.eql('missing <apmn:BoundaryEvent id="BoundaryEvent_1" />#attachedToRef');
+          expect(warnings[1].message).to.eql('element <apmn:BoundaryEvent id="BoundaryEvent_1" /> referenced by <apmn:SequenceFlow id="SequenceFlow_1" />#sourceRef not yet drawn');
 
           done(err);
         });
@@ -585,8 +585,8 @@ describe('import - Importer', function() {
           // then
           expect(warnings.length).to.eql(2);
 
-          expect(warnings[0].message).to.eql('missing <bpmn:BoundaryEvent id="BoundaryEvent_1" />#attachedToRef');
-          expect(warnings[1].message).to.eql('element <bpmn:BoundaryEvent id="BoundaryEvent_1" /> referenced by <bpmn:SequenceFlow id="SequenceFlow_1" />#sourceRef not yet drawn');
+          expect(warnings[0].message).to.eql('missing <apmn:BoundaryEvent id="BoundaryEvent_1" />#attachedToRef');
+          expect(warnings[1].message).to.eql('element <apmn:BoundaryEvent id="BoundaryEvent_1" /> referenced by <apmn:SequenceFlow id="SequenceFlow_1" />#sourceRef not yet drawn');
 
           done(err);
         });

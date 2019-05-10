@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Definitions_1" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="1.7.0-dev">
+<bpmn:definitions xmlns:bpmn="http://apmn.io/spec/APMN/MODEL" xmlns:bpmndi="http://apmn.io/spec/APMN/DI" xmlns:di="http://apmn.io/spec/DD/DI" xmlns:dc="http://apmn.io/spec/DD/DC" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Definitions_1" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="1.7.0-dev">
   <bpmn:collaboration id="Collaboration_0j2pyna">
     <bpmn:participant id="Participant_0x9lnke" name="foobar" processRef="Process_1" />
   </bpmn:collaboration>
@@ -55,87 +55,87 @@
     <bpmn:textAnnotation id="TextAnnotation_1cghzwc" />
     <bpmn:association id="Association_0edc446" sourceRef="Task_1" targetRef="TextAnnotation_1cghzwc" />
   </bpmn:process>
-  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
-    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Collaboration_0j2pyna">
-      <bpmndi:BPMNShape id="UserTask_033cl9l_di" bpmnElement="Task_1">
+  <bpmndi:APMNDiagram id="BPMNDiagram_1">
+    <bpmndi:APMNPlane id="BPMNPlane_1" apmnElement="Collaboration_0j2pyna">
+      <bpmndi:APMNShape id="UserTask_033cl9l_di" apmnElement="Task_1">
         <dc:Bounds x="261" y="159.5" width="100" height="80" />
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="StartEvent_1a4dsh8_di" bpmnElement="StartEvent_1a4dsh8">
+      </bpmndi:APMNShape>
+      <bpmndi:APMNShape id="StartEvent_1a4dsh8_di" apmnElement="StartEvent_1a4dsh8">
         <dc:Bounds x="168" y="181.5" width="36" height="36" />
-        <bpmndi:BPMNLabel>
+        <bpmndi:APMNLabel>
           <dc:Bounds x="186" y="217.5" width="0" height="0" />
-        </bpmndi:BPMNLabel>
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNEdge id="SequenceFlow_1e74z8m_di" bpmnElement="SequenceFlow_1e74z8m">
+        </bpmndi:APMNLabel>
+      </bpmndi:APMNShape>
+      <bpmndi:APMNEdge id="SequenceFlow_1e74z8m_di" apmnElement="SequenceFlow_1e74z8m">
         <di:waypoint xsi:type="dc:Point" x="204" y="199.5" />
         <di:waypoint xsi:type="dc:Point" x="261" y="199.5" />
-        <bpmndi:BPMNLabel>
+        <bpmndi:APMNLabel>
           <dc:Bounds x="233" y="174.5" width="0" height="0" />
-        </bpmndi:BPMNLabel>
-      </bpmndi:BPMNEdge>
-      <bpmndi:BPMNShape id="Task_042z61e_di" bpmnElement="Task_042z61e">
+        </bpmndi:APMNLabel>
+      </bpmndi:APMNEdge>
+      <bpmndi:APMNShape id="Task_042z61e_di" apmnElement="Task_042z61e">
         <dc:Bounds x="441" y="159.5" width="100" height="80" />
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNEdge id="SequenceFlow_1tdxph9_di" bpmnElement="SequenceFlow_1tdxph9">
+      </bpmndi:APMNShape>
+      <bpmndi:APMNEdge id="SequenceFlow_1tdxph9_di" apmnElement="SequenceFlow_1tdxph9">
         <di:waypoint xsi:type="dc:Point" x="361" y="199.5" />
         <di:waypoint xsi:type="dc:Point" x="441" y="199.5" />
-        <bpmndi:BPMNLabel>
+        <bpmndi:APMNLabel>
           <dc:Bounds x="401" y="184.5" width="0" height="0" />
-        </bpmndi:BPMNLabel>
-      </bpmndi:BPMNEdge>
-      <bpmndi:BPMNShape id="Participant_0x9lnke_di" bpmnElement="Participant_0x9lnke">
+        </bpmndi:APMNLabel>
+      </bpmndi:APMNEdge>
+      <bpmndi:APMNShape id="Participant_0x9lnke_di" apmnElement="Participant_0x9lnke">
         <dc:Bounds x="0" y="0" width="632" height="417" />
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="TextAnnotation_1cghzwc_di" bpmnElement="TextAnnotation_1cghzwc">
+      </bpmndi:APMNShape>
+      <bpmndi:APMNShape id="TextAnnotation_1cghzwc_di" apmnElement="TextAnnotation_1cghzwc">
         <dc:Bounds x="50" y="30.5" width="100" height="30" />
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="DataStoreReference_1elrt45_di" bpmnElement="DataStoreReference_1elrt45">
+      </bpmndi:APMNShape>
+      <bpmndi:APMNShape id="DataStoreReference_1elrt45_di" apmnElement="DataStoreReference_1elrt45">
         <dc:Bounds x="211" y="347.5" width="50" height="50" />
-        <bpmndi:BPMNLabel>
+        <bpmndi:APMNLabel>
           <dc:Bounds x="236" y="397.5" width="0" height="0" />
-        </bpmndi:BPMNLabel>
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="DataStoreReference_1j8ymac_di" bpmnElement="DataStoreReference_1j8ymac">
+        </bpmndi:APMNLabel>
+      </bpmndi:APMNShape>
+      <bpmndi:APMNShape id="DataStoreReference_1j8ymac_di" apmnElement="DataStoreReference_1j8ymac">
         <dc:Bounds x="345" y="347.5" width="50" height="50" />
-        <bpmndi:BPMNLabel>
+        <bpmndi:APMNLabel>
           <dc:Bounds x="370" y="397.5" width="0" height="0" />
-        </bpmndi:BPMNLabel>
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="DataObjectReference_1js94kb_di" bpmnElement="DataObjectReference_1js94kb">
+        </bpmndi:APMNLabel>
+      </bpmndi:APMNShape>
+      <bpmndi:APMNShape id="DataObjectReference_1js94kb_di" apmnElement="DataObjectReference_1js94kb">
         <dc:Bounds x="352" y="20.5" width="36" height="50" />
-        <bpmndi:BPMNLabel>
+        <bpmndi:APMNLabel>
           <dc:Bounds x="370" y="70.5" width="0" height="0" />
-        </bpmndi:BPMNLabel>
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="DataObjectReference_0hkbt95_di" bpmnElement="DataObjectReference_0hkbt95">
+        </bpmndi:APMNLabel>
+      </bpmndi:APMNShape>
+      <bpmndi:APMNShape id="DataObjectReference_0hkbt95_di" apmnElement="DataObjectReference_0hkbt95">
         <dc:Bounds x="218" y="20.5" width="36" height="50" />
-        <bpmndi:BPMNLabel>
+        <bpmndi:APMNLabel>
           <dc:Bounds x="236" y="70.5" width="0" height="0" />
-        </bpmndi:BPMNLabel>
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="SubProcess_04tmqcs_di" bpmnElement="SubProcess_04tmqcs" isExpanded="true">
+        </bpmndi:APMNLabel>
+      </bpmndi:APMNShape>
+      <bpmndi:APMNShape id="SubProcess_04tmqcs_di" apmnElement="SubProcess_04tmqcs" isExpanded="true">
         <dc:Bounds x="153" y="104.5" width="459" height="200" />
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNEdge id="Association_0edc446_di" bpmnElement="Association_0edc446">
+      </bpmndi:APMNShape>
+      <bpmndi:APMNEdge id="Association_0edc446_di" apmnElement="Association_0edc446">
         <di:waypoint xsi:type="dc:Point" x="265" y="165.5" />
         <di:waypoint xsi:type="dc:Point" x="121" y="60.5" />
-      </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge id="DataInputAssociation_0xdwl7n_di" bpmnElement="DataInputAssociation_0xdwl7n">
+      </bpmndi:APMNEdge>
+      <bpmndi:APMNEdge id="DataInputAssociation_0xdwl7n_di" apmnElement="DataInputAssociation_0xdwl7n">
         <di:waypoint xsi:type="dc:Point" x="244" y="347.5" />
         <di:waypoint xsi:type="dc:Point" x="276" y="239.5" />
-      </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge id="DataOutputAssociation_1wf2bxo_di" bpmnElement="DataOutputAssociation_1wf2bxo">
+      </bpmndi:APMNEdge>
+      <bpmndi:APMNEdge id="DataOutputAssociation_1wf2bxo_di" apmnElement="DataOutputAssociation_1wf2bxo">
         <di:waypoint xsi:type="dc:Point" x="323" y="239.5" />
         <di:waypoint xsi:type="dc:Point" x="354" y="347.5" />
-      </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge id="DataOutputAssociation_0hr21ne_di" bpmnElement="DataOutputAssociation_0hr21ne">
+      </bpmndi:APMNEdge>
+      <bpmndi:APMNEdge id="DataOutputAssociation_0hr21ne_di" apmnElement="DataOutputAssociation_0hr21ne">
         <di:waypoint xsi:type="dc:Point" x="329" y="159.5" />
         <di:waypoint xsi:type="dc:Point" x="368" y="70.5" />
-      </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge id="DataInputAssociation_188je0k_di" bpmnElement="DataInputAssociation_188je0k">
+      </bpmndi:APMNEdge>
+      <bpmndi:APMNEdge id="DataInputAssociation_188je0k_di" apmnElement="DataInputAssociation_188je0k">
         <di:waypoint xsi:type="dc:Point" x="245" y="70.5" />
         <di:waypoint xsi:type="dc:Point" x="275" y="159.5" />
-      </bpmndi:BPMNEdge>
-    </bpmndi:BPMNPlane>
-  </bpmndi:BPMNDiagram>
+      </bpmndi:APMNEdge>
+    </bpmndi:APMNPlane>
+  </bpmndi:APMNDiagram>
 </bpmn:definitions>

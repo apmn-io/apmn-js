@@ -22,7 +22,7 @@ describe('features/palette', function() {
   beforeEach(bootstrapModeler(diagramXML, { modules: testModules }));
 
 
-  it('should provide BPMN modeling palette', inject(function(canvas, palette) {
+  it('should provide APMN modeling palette', inject(function(canvas, palette) {
 
     // when
     var paletteElement = domQuery('.djs-palette', canvas._container);
